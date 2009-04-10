@@ -36,13 +36,14 @@
 var ShortenURL = {
 
   get prefService() {
-    return Cc["@mozilla.org/preferences-service;1"]
-             .getService(Ci.nsIPrefBranch)
-             .getBranch("extensions.shortenURL.");
+    return Components.classes["@mozilla.org/preferences-service;1"]
+                     .getService(Components.interfaces.nsIPrefBranch)
+                     .getBranch("extensions.shortenURL.");
   },
 
   get JSON() {
-    return Cc["@mozilla.org/dom/json;1"].createInstance(Ci.nsIJSON);
+    return Components.classes["@mozilla.org/dom/json;1"]
+                     .createInstance(Components.interfaces.nsIJSON);
   },
 
   get strings() {
@@ -66,9 +67,9 @@ var ShortenURL = {
   },
 
   alert: function shortenURL_alert(aString) {
-    Cc["@mozilla.org/embedcomp/prompt-service;1"]
-      .getService(Ci.nsIPromptService)
-      .alert(null, "Shorten URL", aString);
+    Components.classes["@mozilla.org/embedcomp/prompt-service;1"]
+              .getService(Components.interfaces.nsIPromptService)
+              .alert(null, "Shorten URL", aString);
   },
 
   isValidScheme: function shortenURL_isValidScheme(aProtocol) {
@@ -85,8 +86,9 @@ var ShortenURL = {
   },
 
   copy: function shortenURL_copy(aString) {
-    Cc["@mozilla.org/widget/clipboardhelper;1"]
-      .getService(Ci.nsIClipboardHelper).copyString(aString);
+    Components.classes["@mozilla.org/widget/clipboardhelper;1"]
+              .getService(Components.interfaces.nsIClipboardHelper)
+              .copyString(aString);
   },
 
   tweet: function shortenURL_tweet(aString) {
