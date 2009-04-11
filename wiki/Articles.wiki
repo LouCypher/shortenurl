@@ -12,4 +12,4 @@
 == Shorten URL ==
  * [http://www.killertechtips.com/2009/03/25/shorten-url-firefox/ Shorten URLs using Multiple Services in Firefox] on Killer Tech Tips
  * [http://blog.readburner.com/2009/04/11/cool-firefox-add-on-shorten-url/ Cool Firefox Add-On : Shorten URL] on Official !ReadBurner Blog
- * [http://www.foxiewire.com/Mozilla-Addons/Shorten_URL_Firefox_Add_ons Shorten URL Firefox Add-ons] on FoxieWire
+ * [http://www.foxiewire.com/Mozilla-Addons/Shorten_URL_Firefox_Add_ons Shorten URL Firefox Add-ons] on !FoxieWire
