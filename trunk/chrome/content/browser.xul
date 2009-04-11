@@ -73,7 +73,7 @@
 
   <menupopup id="menu_ToolsPopup">
     <menuitem
-      label="Shorten URL &options.title;"
+      label="&options.title;"
       insertbefore="menu_preferences"
       oncommand="ShortenURL.prefDialog();" />
   </menupopup>
