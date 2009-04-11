@@ -1,0 +1,14 @@
+#summary Articles about this extension and URL shortening
+#labels Featured
+
+== URL shortening ==
+ * [http://searchengineland.com/analysis-which-url-shortening-service-should-you-use-17204 Analysis: Which URL Shortening Service Should You Use?]
+ * [http://joshua.schachter.org/2009/04/on-url-shorteners.html joshua schachter's blog on url shorteners]
+ * [http://www.webmonkey.com/blog/Why_URL_Shortening_is_a_Threat_to_the_Web Why URL Shortening is a Threat to the Web]
+ * [http://mashable.com/2009/04/05/url-shorteners/ 5 Reasons Why URL Shorteners Are Useful]
+ * [http://www.navinot.com/2009/04/10/ada-apa-di-balik-url-shrinker/ Di Balik URL Shrinker, Apa?]
+
+
+== Shorten URL ==
+ * [http://www.killertechtips.com/2009/03/25/shorten-url-firefox/ Shorten URLs using Multiple Services in Firefox] / Killer Tech Tips
+ * [http://blog.readburner.com/2009/04/11/cool-firefox-add-on-shorten-url/ Cool Firefox Add-On : Shorten URL] / Official !ReadBurner Blog
