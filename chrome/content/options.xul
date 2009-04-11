@@ -41,7 +41,7 @@
 <prefwindow
   xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
   id="shortenURL-config"
-  title="Shorten URL &options.title;">
+  title="&options.title;">
 
   <prefpane id="prefpane">
 
@@ -62,10 +62,11 @@
 
     <vbox>
       <groupbox flex="1">
+        <caption>&options.shortener.caption;</caption>
         <hbox align="center">
-          <label value="Shorten URL &options.select;"
-                 accesskey="&options.select.key;"
-                 control="shortenService" />
+          <label value="&options.shortener.select;"
+                 accesskey="&options.shortener.select.key;"
+                 control="menulist" />
           <menulist id="menulist" sizetopopup="pref"
                     preference="extensions.shortenURL.baseURL">
             <menupopup id="menupopup"></menupopup>
@@ -74,17 +75,18 @@
       </groupbox>
 
       <groupbox flex="1">
+        <caption>&options.more.caption;</caption>
         <vbox>
           <hbox>
             <checkbox
               id="extensions.shortenURL.autocopy"
-              label="&options.autocopy;"
-              accesskey="&options.autocopy.key;"
+              label="&options.more.autocopy;"
+              accesskey="&options.more.autocopy.key;"
               preference="extensions.shortenURL.autocopy" />
             <checkbox
               id="extensions.shortenURL.autotweet"
-              label="&options.autotweet;"
-              accesskey="&options.autotweet.key;"
+              label="&options.more.autotweet;"
+              accesskey="&options.more.autotweet.key;"
               preference="extensions.shortenURL.autotweet" />
           </hbox>
         </vbox>

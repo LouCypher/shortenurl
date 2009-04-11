@@ -2,11 +2,11 @@
 <!ENTITY context.link           "Shorten this link URL">
 <!ENTITY context.frame          "Shorten this frame URL">
 
-<!ENTITY options.title          "Options">
-<!ENTITY options.select         "Service">
-<!ENTITY options.select.key     "S">
+<!ENTITY options.title          "Shorten URL Options">
+<!ENTITY options.select         "URL shortener service">
+<!ENTITY options.select.key     "s">
 <!ENTITY options.autocopy       "Copy to clipboard">
-<!ENTITY options.autocopy.key   "C">
+<!ENTITY options.autocopy.key   "c">
 <!ENTITY options.autotweet      "Post to Twitter">
 <!ENTITY options.autotweet.key  "T">
 
