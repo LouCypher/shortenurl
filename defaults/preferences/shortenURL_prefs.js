@@ -33,6 +33,7 @@ pref("extensions.shortenURL.name.27", "ZipMyURL");
 pref("extensions.shortenURL.name.28", "abbr");
 pref("extensions.shortenURL.name.29", "Lincr");
 pref("extensions.shortenURL.name.30", "kissa.be!");
+pref("extensions.shortenURL.name.31", "J2j.de");
 pref("extensions.shortenURL.0", "http://tinyurl.com/api-create.php?url=");
 pref("extensions.shortenURL.1", "http://bit.ly/api?url=");
 pref("extensions.shortenURL.2", "http://is.gd/api.php?longurl=");
@@ -64,4 +65,5 @@ pref("extensions.shortenURL.27", "http://zipmyurl.com/api.do?api=true&url=");
 pref("extensions.shortenURL.28", "http://api.abbrr.com/api.php?out=link&url=");
 pref("extensions.shortenURL.29", "http://lin.cr/?mode=api&l=");
 pref("extensions.shortenURL.30", "http://kissa.be/api/shortener/url?content=");
+pref("extensions.shortenURL.31", "http://pipes.yahoo.com/pipes/pipe.run?_id=43d606b08058896e62db64adf4eb2cac&_render=json&url=");
 
