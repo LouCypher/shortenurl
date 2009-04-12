@@ -1,5 +1,6 @@
 #summary Articles about this extension and URL shortening
 #labels Featured
+#sidebar sidebar
 
 == Shorten URL extension ==
  * [http://www.killertechtips.com/2009/03/25/shorten-url-firefox/ Shorten URLs using Multiple Services in Firefox] on Killer Tech Tips
