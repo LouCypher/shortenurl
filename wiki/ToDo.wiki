@@ -1,5 +1,5 @@
 #summary To-Do List
-#labels Featured,Phase-Support
+#labels Phase-Support
 
  # User authorizations
  # Shorten URL customizations
