@@ -114,7 +114,21 @@ var ShortenURL = {
     return aURL.indexOf(aString) > -1;
   },
 
-  prefDialog: function tabSession_openPrefs() {
+  prefDialog: function shortenURL_openPrefs() {
+    var wenum = Components.classes["@mozilla.org/embedcomp/window-watcher;1"]
+                          .getService(Components.interfaces.nsIWindowWatcher)
+                          .getWindowEnumerator();
+
+    var index = 1;
+    while (wenum.hasMoreElements()) {
+      var win = wenum.getNext();
+      if (win.name == "shortenurl-options") {
+        win.focus();
+        return;
+      }
+      index++
+    }
+
     openDialog("chrome://shortenurl/content/options.xul",
                "shortenurl-options",
                "chrome, dialog, centerscreen");
