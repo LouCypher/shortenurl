@@ -1,6 +1,6 @@
 #summary To-Do List
 #labels Phase-Support
 
- # Icon + toolbar button
- # User authorizations
- # Shorten URL customizations
+ * <s>Icon + toolbar button</s>
+ * User authentifications
+ * Shorten URL customizations
