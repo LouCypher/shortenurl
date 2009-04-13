@@ -1,10 +1,11 @@
 #summary Version history
+#labels Featured
 
- * version 20090413.01
+ * 0.0.20090413.01
   * longer extension description
   * added [https://developer.mozilla.org/En/NsIWindowCreator nsIWindowWatcher] to [http://code.google.com/p/shortenurl/source/browse/trunk/chrome/content/shortenURL.js?spec=svn30&r=30#117 prefDialog] method to focus the options dialog if it's already opened when it's called
 
- * version 0.0.20090412.04
+ * 0.0.20090412.04
   * added [http://cowurl.com/ cowurl.com]
 
  * 0.0.20090412.03
