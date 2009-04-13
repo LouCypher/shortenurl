@@ -1,7 +1,5 @@
 #summary Version history
 
-== Changelog ==
-
  * version 20090413.01
   * longer extension description
   * added [https://developer.mozilla.org/En/NsIWindowCreator nsIWindowWatcher] to [http://code.google.com/p/shortenurl/source/browse/trunk/chrome/content/shortenURL.js?spec=svn30&r=30#117 prefDialog] method to focus the options dialog if it's already opened when it's called
