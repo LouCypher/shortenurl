@@ -6,7 +6,7 @@
   <Description about="urn:mozilla:install-manifest">
     <em:id>ShortenURL@loucypher</em:id>
     <em:name>Shorten URL</em:name>
-    <em:version>0.0.20090412.03</em:version>
+    <em:version>0.0.20090412.04</em:version>
     <em:description>Shorten URL with your selected URL shortener service.</em:description>
     <em:creator>LouCypher</em:creator>
     <em:contributor>Rt (Pipe for Tweetburner)</em:contributor>
