@@ -3,9 +3,11 @@
 
 == Shorten URL reviews ==
  * [http://www.firefoxfacts.com/2009/04/15/better-way-to-make-tiny-shareable-urls/ Better Way to Make Tiny Shareable URLs] - Firefox Facts
- * [http://www.killertechtips.com/2009/03/25/shorten-url-firefox/ Shorten URLs using Multiple Services in Firefox] - Killer Tech Tips
+ * [http://www.trackback.it/articolo/shorten-url-una-sola-estensione-per-restringere-url/9893/ Shorten URL: una sola estensione per restringere URL] ([http://translate.google.com/translate?u=http://www.trackback.it/articolo/shorten-url-una-sola-estensione-per-restringere-url/9893/&hl=en&langpair=it|en&tbb=1&ie=UTF-8 translate])
  * [http://blog.readburner.com/2009/04/11/cool-firefox-add-on-shorten-url/ Cool Firefox Add-On : Shorten URL] - Official !ReadBurner Blog
  * [http://www.foxiewire.com/Mozilla-Addons/Shorten_URL_Firefox_Add_ons Shorten URL Firefox Add-ons] - !FoxieWire
+ * [http://www.killertechtips.com/2009/03/25/shorten-url-firefox/ Shorten URLs using Multiple Services in Firefox] - Killer Tech Tips
+
 
 == About URL shortening ==
  * [http://searchengineland.com/analysis-which-url-shortening-service-should-you-use-17204 Analysis: Which URL Shortening Service Should You Use?]
