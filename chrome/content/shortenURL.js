@@ -105,8 +105,8 @@ var ShortenURL = {
       t.value = aString;
       t.focus();
     } else {
-      gBrowser.loadOneTab("http://twitter.com/home/?status=" + aString +
-                          "&source=shortenurl", null, null, null, false);
+      gBrowser.loadOneTab("http://twitter.com/home/?status=" + aString,
+                          null, null, null, false);
     }
   },
 
@@ -180,6 +180,8 @@ var ShortenURL = {
           shortenURL = "http://xrl.in/" + req.responseText;
         } else if (this.isURLof(baseURL, "lin.cr")) {
           shortenURL = "http://lin.cr/" + req.responseText;
+        } else if (this.isURLof(baseURL, "r.im")) {
+          shortenURL = req.responseText.match(/[^\s]+/).toString();
         } else {
           shortenURL = req.responseText;
         }
@@ -189,12 +191,17 @@ var ShortenURL = {
             shortenURL = shortenURL.replace(/snurl\.com/, "sn.im");
           }
 
+          if (this.isURLof(shortenURL, "/www.")) {
+            shortenURL = shortenURL.replace(/\/www\./, "/");
+          }
+
           if (this.autoCopy) {
             this.copy(shortenURL);
           }
 
           if (this.autoTweet) {
             this.tweet(shortenURL);
+            return;
           }
 
           this.showShortenURL(shortenURL);

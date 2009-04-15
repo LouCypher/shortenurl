@@ -1,4 +1,5 @@
 content   shortenurl                                    jar:chrome/shortenURL.jar!/content/
+skin      shortenurl     classic/1.0                    jar:chrome/shortenURL.jar!/skin/classic/
 locale    shortenurl     en-US                          jar:chrome/shortenURL.jar!/locale/en-US/
 locale    shortenurl     id                             jar:chrome/shortenURL.jar!/locale/id/
 

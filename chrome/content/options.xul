@@ -35,6 +35,7 @@
 -->
 
 <?xml-stylesheet href="chrome://global/skin/"?>
+<?xml-stylesheet href="../skin/options.css"?>
 
 <!DOCTYPE overlay SYSTEM "../locale/shortenURL.dtd">
 
