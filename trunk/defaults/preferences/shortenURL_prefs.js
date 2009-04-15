@@ -37,6 +37,8 @@ pref("extensions.shortenURL.name.31", "J2j.de");
 pref("extensions.shortenURL.name.32", "Tiny.cc");
 pref("extensions.shortenURL.name.33", "MinURL");
 pref("extensions.shortenURL.name.34", "CowURL");
+pref("extensions.shortenURL.name.35", "r.im");
+pref("extensions.shortenURL.name.36", "Qurl");
 pref("extensions.shortenURL.0", "http://tinyurl.com/api-create.php?url=");
 pref("extensions.shortenURL.1", "http://bit.ly/api?url=");
 pref("extensions.shortenURL.2", "http://is.gd/api.php?longurl=");
@@ -72,4 +74,6 @@ pref("extensions.shortenURL.31", "http://pipes.yahoo.com/pipes/pipe.run?_id=43d6
 pref("extensions.shortenURL.32", "http://pipes.yahoo.com/pipes/pipe.run?_id=a0ec2e8e5ff96b6c991db09d7221c587&_render=json&url=");
 pref("extensions.shortenURL.33", "http://pipes.yahoo.com/pipes/pipe.run?_id=5b311c1d85bf77c7d8df5750a8814656&_render=json&url=");
 pref("extensions.shortenURL.34", "http://pipes.yahoo.com/pipes/pipe.run?_id=7be032fe4a590db6bb38cf9fa204ff4f&_render=json&url=");
+pref("extensions.shortenURL.35", "http://r.im/api/index.cfm?long_url=");
+pref("extensions.shortenURL.36", "http://qurl.com/automate.php?url=");
 
