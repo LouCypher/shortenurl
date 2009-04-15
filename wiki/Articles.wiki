@@ -1,12 +1,13 @@
 #summary Articles about this extension and URL shortening
 #labels Featured
 
-== Shorten URL extension ==
- * [http://www.killertechtips.com/2009/03/25/shorten-url-firefox/ Shorten URLs using Multiple Services in Firefox] on Killer Tech Tips
- * [http://blog.readburner.com/2009/04/11/cool-firefox-add-on-shorten-url/ Cool Firefox Add-On : Shorten URL] on Official !ReadBurner Blog
- * [http://www.foxiewire.com/Mozilla-Addons/Shorten_URL_Firefox_Add_ons Shorten URL Firefox Add-ons] on !FoxieWire
+== Shorten URL reviews ==
+ * [http://www.firefoxfacts.com/2009/04/15/better-way-to-make-tiny-shareable-urls/ Better Way to Make Tiny Shareable URLs] - Firefox Facts
+ * [http://www.killertechtips.com/2009/03/25/shorten-url-firefox/ Shorten URLs using Multiple Services in Firefox] - Killer Tech Tips
+ * [http://blog.readburner.com/2009/04/11/cool-firefox-add-on-shorten-url/ Cool Firefox Add-On : Shorten URL] - Official !ReadBurner Blog
+ * [http://www.foxiewire.com/Mozilla-Addons/Shorten_URL_Firefox_Add_ons Shorten URL Firefox Add-ons] - !FoxieWire
 
-== URL shortening ==
+== About URL shortening ==
  * [http://searchengineland.com/analysis-which-url-shortening-service-should-you-use-17204 Analysis: Which URL Shortening Service Should You Use?]
  * [http://joshua.schachter.org/2009/04/on-url-shorteners.html joshua schachter's blog on url shorteners]
  * [http://www.webmonkey.com/blog/Why_URL_Shortening_is_a_Threat_to_the_Web Why URL Shortening is a Threat to the Web]
