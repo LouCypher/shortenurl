@@ -1,6 +1,13 @@
 #summary Version history
 #labels Featured
 
+ * 0.0.20090417.03
+  # updated Firefox maxVersion to 3.5b4pre
+  # added services:
+   # [http://migra.me/ migra.me]
+   # [http://foxyurl.com/ Foxy URL]
+   # [http://tighturl.com/ TightURL]
+
  * 0.0.20090415.03
   # added skin directory
   # added style for options dialog
