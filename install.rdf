@@ -6,7 +6,7 @@
   <Description about="urn:mozilla:install-manifest">
     <em:id>ShortenURL@loucypher</em:id>
     <em:name>Shorten URL</em:name>
-    <em:version>0.0.20090415.03</em:version>
+    <em:version>0.0.20090417.03</em:version>
     <em:description>Shorten long URL from Firefox context menu with your selected URL shortening service and display the result in location bar.</em:description>
     <em:creator>LouCypher</em:creator>
     <em:contributor>Rt (Pipe for Tweetburner)</em:contributor>
@@ -18,7 +18,7 @@
       <Description>
         <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
         <em:minVersion>2.0</em:minVersion>
-        <em:maxVersion>3.1b3</em:maxVersion>
+        <em:maxVersion>3.5b4pre</em:maxVersion>
       </Description>
     </em:targetApplication>
 
