@@ -159,9 +159,7 @@ var ShortenURL = {
     var baseURL = this.getBaseURL(baseNum);
     try {
       var req = new XMLHttpRequest();
-      req.open("GET", baseURL + (this.isURLof(baseURL, "a.gd")
-                      ? encodeURIComponent(url) : url),
-               false);
+      req.open("GET", baseURL + encodeURIComponent(url), false);
       req.send(null);
 
       if (req.status == 200) {
