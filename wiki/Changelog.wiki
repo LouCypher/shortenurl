@@ -1,6 +1,9 @@
 #summary Version history
 #labels Featured
 
+ * 0.0.20090418.01
+  * replaced [http://cowurl.com/ CowURL] with [http://micurl.com/ micURL] since CowURL won't work
+
  * 0.0.20090417.03
   # updated Firefox maxVersion to 3.5b4pre
   # added services:
@@ -43,4 +46,3 @@
 
  * 0.0.20090410.01
   * addd [http://kissa.be/ kissa.be!]
-
