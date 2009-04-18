@@ -180,6 +180,8 @@ var ShortenURL = {
           shortenURL = "http://xrl.in/" + req.responseText;
         } else if (this.isURLof(baseURL, "lin.cr")) {
           shortenURL = "http://lin.cr/" + req.responseText;
+        } else if (this.isURLof(baseURL, "micurl.com")) {
+          shortenURL = "http://micurl.com/" + req.responseText;
         } else if (this.isURLof(baseURL, "r.im")) {
           shortenURL = req.responseText.match(/[^\s]+/).toString();
         } else {
