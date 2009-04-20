@@ -10,6 +10,7 @@
 
 
 == About URL shortening ==
+ * [http://www.inquisitr.com/22264/url-shorteners-the-herpes-of-the-web/ URL Shorteners – the herpes of the web]
  * [http://searchengineland.com/analysis-which-url-shortening-service-should-you-use-17204 Analysis: Which URL Shortening Service Should You Use?]
  * [http://joshua.schachter.org/2009/04/on-url-shorteners.html joshua schachter's blog on url shorteners]
  * [http://www.webmonkey.com/blog/Why_URL_Shortening_is_a_Threat_to_the_Web Why URL Shortening is a Threat to the Web]
