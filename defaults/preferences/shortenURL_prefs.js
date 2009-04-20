@@ -42,6 +42,7 @@ pref("extensions.shortenURL.name.36", "Qurl");
 pref("extensions.shortenURL.name.37", "migre.me");
 pref("extensions.shortenURL.name.38", "Foxy URL");
 pref("extensions.shortenURL.name.39", "TightURL");
+pref("extensions.shortenURL.name.40", "LNK.by");
 pref("extensions.shortenURL.0", "http://tinyurl.com/api-create.php?url=");
 pref("extensions.shortenURL.1", "http://bit.ly/api?url=");
 pref("extensions.shortenURL.2", "http://is.gd/api.php?longurl=");
@@ -79,7 +80,8 @@ pref("extensions.shortenURL.33", "http://pipes.yahoo.com/pipes/pipe.run?_id=5b31
 pref("extensions.shortenURL.34", "http://micurl.com/api.php?url=");
 pref("extensions.shortenURL.35", "http://r.im/api/index.cfm?long_url=");
 pref("extensions.shortenURL.36", "http://qurl.com/automate.php?url=");
-pref("extensions.shortenURL.37", "http://pipes.yahoo.com/pipes/pipe.run?_id=mpUO92Qr3hG6PMQQZcag4A&_render=json&url=");
+pref("extensions.shortenURL.37", "http://migre.me/api.xml?url=");
 pref("extensions.shortenURL.38", "http://pipes.yahoo.com/pipes/pipe.run?_id=dsWWH3Er3hGtWIf0bLsjiw&_render=json&url=");
 pref("extensions.shortenURL.39", "http://pipes.yahoo.com/pipes/pipe.run?_id=8uFEr3hGPf6cHBRNMsA&_render=json&url=");
+pref("extensions.shortenURL.40", "http://lnk.by/Shorten?applicationId=ShortenURL&format=json&url=");
 

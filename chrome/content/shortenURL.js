@@ -157,11 +157,11 @@ var ShortenURL = {
 
     var baseNum = aBaseNum != undefined ? aBaseNum : this.baseNum;
     var baseURL = this.getBaseURL(baseNum);
+    var error = null;
     try {
       var req = new XMLHttpRequest();
       req.open("GET", baseURL + encodeURIComponent(url), false);
       req.send(null);
-
       if (req.status == 200) {
         var shortenURL = "";
         if (this.isURLof(baseURL, "pipes.yahoo.com")) {
@@ -182,6 +182,12 @@ var ShortenURL = {
           shortenURL = "http://micurl.com/" + req.responseText;
         } else if (this.isURLof(baseURL, "r.im")) {
           shortenURL = req.responseText.match(/[^\s]+/).toString();
+        } else if (this.isURLof(baseURL, "lnk.by")) {
+          shortenURL = "http://" +
+                       this.JSON.decode(req.responseText).ShortUrl;
+        } else if (this.isURLof(baseURL, "migre.me")) {
+          shortenURL = req.responseXML.getElementsByTagName("migre")[0]
+                                      .textContent;
         } else {
           shortenURL = req.responseText;
         }
@@ -215,8 +221,12 @@ var ShortenURL = {
 
         }
       }
-    } catch(ex) {}
+      error = req.status;
+    } catch(ex) {
+      error = ex;
+    }
     this.alert(this.strings.getString("shorten_fail"));
+    throw new Error(error);
   },
 
   initContext: function shortenURL_initContext() {
