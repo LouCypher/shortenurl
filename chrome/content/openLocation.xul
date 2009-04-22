@@ -42,6 +42,7 @@
     function getShortenURL() {
       if ("arguments" in window && window.arguments.length > 1) {
         dialog.input.value = window.arguments[1];
+        doEnabling();
       }
     }
 

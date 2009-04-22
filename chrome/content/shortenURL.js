@@ -135,14 +135,20 @@ var ShortenURL = {
   },
 
   showShortenURL: function shortenURL_showShortenURL(aURL) {
-    if (window.fullScreen) {
+    if (window.fullScreen && ("mouseoverToggle" in FullScreen)) {
       FullScreen.mouseoverToggle(true);
     }
-    if (focusAndSelectUrlBar()) {
+
+    if (gURLBar &&
+        (gURLBar.boxObject.height > 0 && gURLBar.boxObject.width > 0) &&
+        !gURLBar.readOnly) {
       gURLBar.value = aURL;
+      gBrowser.userTypedValue = aURL;
       gURLBar.focus();
+      gURLBar.select();
       return;
     }
+
     openDialog("chrome://browser/content/openLocation.xul",
                "_blank", "chrome, modal, titlebar",
                window, aURL);
