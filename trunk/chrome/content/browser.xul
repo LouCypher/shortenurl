@@ -75,7 +75,7 @@
     <menuitem
       label="&options.title;"
       insertbefore="menu_preferences"
-      oncommand="ShortenURL.prefDialog();" />
+      oncommand="ShortenURL.openPrefs();" />
   </menupopup>
 
 </overlay>
