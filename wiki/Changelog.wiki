@@ -1,6 +1,15 @@
 #summary Version history
 #labels Featured
 
+ * 0.0.20090426.02
+  # fixed error on Firefox 2.0.0.*
+  # added services:
+   # [http://lnk.by/ LNK.by]
+   # [http://u.nu/ u.nu]
+   # [http://puke.it/ Puke.It]
+   # [http://kots.nu/ Kots.Nu]
+   # [http://arm.in/ arm.in]
+
  * 0.0.20090418.01
   * replaced [http://cowurl.com/ CowURL] with [http://micurl.com/ micURL] since CowURL won't work
 
