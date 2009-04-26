@@ -51,7 +51,7 @@
  # [http://zipmyurl.com/ ZipMyURL]
  # [http://lnk.by/ LNK.by]
 
-^1^ uses frame
+^1^ uses frame<br>
 ^2^ uses preview
 
 You can [http://code.google.com/p/shortenurl/issues/entry?template=Request%20for%20more%20service request] for more service.
