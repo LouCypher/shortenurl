@@ -109,7 +109,7 @@ var ShortenURL = {
     return aURL.indexOf(aString) > -1;
   },
 
-  prefDialog: function shortenURL_openPrefs() {
+  openPrefs: function shortenURL_openPrefs() {
     var wenum = Components.classes["@mozilla.org/embedcomp/window-watcher;1"]
                           .getService(Components.interfaces.nsIWindowWatcher)
                           .getWindowEnumerator();

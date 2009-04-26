@@ -47,6 +47,7 @@ pref("extensions.shortenURL.name.41", "u.nu");
 pref("extensions.shortenURL.name.42", "Puke.It");
 pref("extensions.shortenURL.name.43", "Kots.Nu");
 pref("extensions.shortenURL.name.44", "arm.in");
+pref("extensions.shortenURL.name.45", "Kisa.Ch");
 pref("extensions.shortenURL.0", "http://tinyurl.com/api-create.php?url=");
 pref("extensions.shortenURL.1", "http://bit.ly/api?url=");
 pref("extensions.shortenURL.2", "http://is.gd/api.php?longurl=");
@@ -92,4 +93,5 @@ pref("extensions.shortenURL.41", "http://u.nu/unu-api-simple?url=");
 pref("extensions.shortenURL.42", "http://puke.it/api.php?apikey=9bbc1cd964a997735141cedbfc95cd1f&url=");
 pref("extensions.shortenURL.43", "http://kots.nu/api.php?apikey=db9300ca20a11e3d1875ef70fb046e10&url=");
 pref("extensions.shortenURL.44", "http://arm.in/arminize/");
+pref("extensions.shortenURL.45", "http://kisa.ch/api.aspx?url=");
 
