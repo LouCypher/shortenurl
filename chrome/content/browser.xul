@@ -53,21 +53,21 @@
               label="&context.page;"
               onmouseover="ShortenURL.setStatus(content.location.href);"
               onmouseout="ShortenURL.setStatus('');"
-              onclick="if (event.button == 1) { ShortenURL.prefDialog(); closeMenus(this); }"
+              onclick="if (event.button == 1) { ShortenURL.openPrefs(); closeMenus(this); }"
               oncommand="ShortenURL.shorten(content.location.href);" />
     <menuitem id="context-shorten-linkURL"
               insertafter="context-bookmarklink"
               label="&context.link;"
               onmouseover="ShortenURL.setStatus(gContextMenu.linkURL);"
               onmouseout="ShortenURL.setStatus('');"
-              onclick="if (event.button == 1) { ShortenURL.prefDialog(); closeMenus(this); }"
+              onclick="if (event.button == 1) { ShortenURL.openPrefs(); closeMenus(this); }"
               oncommand="ShortenURL.shorten(gContextMenu.linkURL);" />
     <menuitem id="context-shorten-frameURL"
               insertafter="frame"
               label="&context.frame;"
               onmouseover="ShortenURL.setStatus(gContextMenu.target.ownerDocument.location.href);"
               onmouseout="ShortenURL.setStatus('');"
-              onclick="if (event.button == 1) { ShortenURL.prefDialog(); closeMenus(this); }"
+              onclick="if (event.button == 1) { ShortenURL.openPrefs(); closeMenus(this); }"
               oncommand="ShortenURL.shorten(gContextMenu.target.ownerDocument.location.href);" />
   </popup>
 
