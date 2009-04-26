@@ -41,11 +41,6 @@ var ShortenURL = {
                      .getBranch("extensions.shortenURL.");
   },
 
-  get JSON() {
-    return Components.classes["@mozilla.org/dom/json;1"]
-                     .createInstance(Components.interfaces.nsIJSON);
-  },
-
   get strings() {
     return document.getElementById("shorten-url-strings");
   },
@@ -166,34 +161,50 @@ var ShortenURL = {
     var error = null;
     try {
       var req = new XMLHttpRequest();
-      req.open("GET", baseURL + encodeURIComponent(url), false);
+      req.open("GET", baseURL +  (this.isURLof(baseURL, "arm.in")
+                                  ? url
+                                  : encodeURIComponent(url)),
+               false);
       req.send(null);
       if (req.status == 200) {
+        var JSON = Components.classes["@mozilla.org/dom/json;1"]
+                             .createInstance(Components.interfaces.nsIJSON);
+
         var shortenURL = "";
         if (this.isURLof(baseURL, "pipes.yahoo.com")) {
-          shortenURL = this.JSON.decode(req.responseText).value.items[0].link;
+          shortenURL = JSON.decode(req.responseText).value.items[0].link;
+
         } else if (this.isURLof(baseURL, "tr.im")) {
-          shortenURL = this.JSON.decode(req.responseText).url;
+          shortenURL = JSON.decode(req.responseText).url;
+
         } else if (this.isURLof(baseURL, "digg.com")) {
-          shortenURL = this.JSON.decode(req.responseText)
-                           .shorturls[0].short_url;
+          shortenURL = JSON.decode(req.responseText).shorturls[0].short_url;
+
         } else if (this.isURLof(baseURL, "zipmyurl.com")) {
           shortenURL = "http://zipmyurl.com/" +
-                        this.JSON.decode(req.responseText).zipURL;
+                        JSON.decode(req.responseText).zipURL;
+
         } else if (this.isURLof(baseURL, "xrl.in")) {
           shortenURL = "http://xrl.in/" + req.responseText;
+
         } else if (this.isURLof(baseURL, "lin.cr")) {
           shortenURL = "http://lin.cr/" + req.responseText;
+
         } else if (this.isURLof(baseURL, "micurl.com")) {
           shortenURL = "http://micurl.com/" + req.responseText;
+
         } else if (this.isURLof(baseURL, "r.im")) {
           shortenURL = req.responseText.match(/[^\s]+/).toString();
+
         } else if (this.isURLof(baseURL, "lnk.by")) {
-          shortenURL = "http://" +
-                       this.JSON.decode(req.responseText).ShortUrl;
+          shortenURL = "http://" + JSON.decode(req.responseText).ShortUrl;
+
         } else if (this.isURLof(baseURL, "migre.me")) {
-          shortenURL = req.responseXML.getElementsByTagName("migre")[0]
-                                      .textContent;
+          shortenURL = this.getXMLNodeValue(req.responseXML, "migre");
+
+        } else if (this.isURLof(baseURL, "arm.in")) {
+          shortenURL = this.getXMLNodeValue(req.responseXML, "arminized_url");
+
         } else {
           shortenURL = req.responseText;
         }
@@ -224,7 +235,6 @@ var ShortenURL = {
                                                        [url, shortenURL]));
           }
           return;
-
         }
       }
       error = req.status;
@@ -233,36 +243,35 @@ var ShortenURL = {
     }
     this.alert(this.strings.getString("shorten_fail"));
     throw new Error(error);
-  },
+  }
 
-  initContext: function shortenURL_initContext() {
+}
+
+window.addEventListener("load", shortenURL_init = function(e) {
+  var cm = document.getElementById("contentAreaContextMenu");
+  cm.addEventListener("popupshowing", contextInit = function(e) {
     gContextMenu.showItem("context-shorten-linkURL",
                           gContextMenu.onLink &&
-                          this.isValidScheme(gContextMenu.linkProtocol));
+                          ShortenURL.isValidScheme(gContextMenu.
+                                                   linkProtocol));
 
     gContextMenu.showItem("context-shorten-pageURL",
                           !(gContextMenu.isContentSelected ||
                             gContextMenu.onTextInput ||
                             gContextMenu.onLink ||
                             gContextMenu.onImage) &&
-                          this.isValidScheme(content.document.
-                                             location.protocol));
+                          ShortenURL.isValidScheme(content.document.
+                                                   location.protocol));
 
     gContextMenu.showItem("context-shorten-frameURL",
                           gContextMenu.inFrame &&
-                          this.isValidScheme(gContextMenu.target.
-                                             ownerDocument.location.protocol));
+                          ShortenURL.isValidScheme(gContextMenu.target.
+                                                   ownerDocument.location
+                                                                .protocol));
 
-  },
+  }, false);
+  cm.removeEventListener("popuphiding", contextInit, false);
+}, false);
 
-  onLoad: function shortenURL_onLoad() {
-    var cm = document.getElementById("contentAreaContextMenu");
-    cm.addEventListener("popupshowing", function() {
-      ShortenURL.initContext();
-    }, false);
-  }
-
-}
-
-window.addEventListener("load", ShortenURL.onLoad, false);
+window.removeEventListener("unload", shortenURL_init, false);
 
