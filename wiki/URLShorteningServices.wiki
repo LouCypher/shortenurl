@@ -1,0 +1,55 @@
+#summary Supported URL shortening services
+#labels Featured
+
+== Supported URL shortening services ==
+^(In alphabetical order)^
+
+ # [http://a.gd/ a.gd]
+ # [http://abbr.com/ abbr]
+ # [http://arm.in/ arm.in] ^1^
+ # [http://bit.ly/ bit.ly]
+ # [http://burnurl.com/ BurnURL] ^1^
+ # [http://chilp.it/ Chilp.it]
+ # [http://cli.gs/ cli.gs]
+ # [http://digg.com/tools/diggbar DiggBar]
+ # [http://foxyurl.com/ Foxy URL]
+ # [http://hex.io/ hex.io]
+ # [http://idek.net/ idek.net]
+ # [http://is.gd/ is.gd]
+ # [http://j2j.de/ J2j.de]
+ # [http://kissa.be/ kissa.be!]
+ # [http://kl.am/ kl.am]
+ # [http://krz.ch/ krz.ch]
+ # [http://kots.nu/ Kots.Nu]
+ # [http://lin.cr/ Lincr]
+ # [http://metamark.net/ Metamark (xrl.us)]
+ # [http://migre.me/ migre.me]
+ # [http://micurl.com micURL]
+ # [http://minurl.fr MinURL]
+ # [http://moourl.com/ Moourl]
+ # [http://pendek.in/ Pendek.in]
+ # [http://piurl.com/ PiURL]
+ # [http://plurl.me/ Plurl]
+ # [http://puke.it/ Puke.It]
+ # [http://qurl.com/ Qurl]
+ # [http://r.im/ r.im]
+ # [http://smallr.net/ Smallr.net]
+ # [http://short.ie/ Short.ie]
+ # [http://snipurl.com/ SnipURL (sn.im)]
+ # [http://tighturl.com/ TightURL]
+ # [http://tiny.cc/ Tiny.cc]
+ # [http://tinyurl.com/ TinyURL] (default)
+ # [http://tr.im/ tr.im]
+ # [http://tweetburner.com/ Tweetburner (twurl.nl)]
+ # [http://twirl.at/ Twirl.at]
+ # [http://u.nu/ u.nu]
+ # [http://urlborg.com/ urlBorg]
+ # [http://u.mavrev.com/ urlShort (u.mavrev.com)]
+ # [http://urlzen.com/ urlzen]
+ # [http://xrl.in/ xrl.in]
+ # [http://zipmyurl.com/ ZipMyURL]
+ # [http://lnk.by/ LNK.by]
+
+^1^ using frame
+
+You can [http://code.google.com/p/shortenurl/issues/entry?template=Request%20for%20more%20service request] for more service.
