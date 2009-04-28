@@ -52,12 +52,20 @@
         name="extensions.shortenURL.baseURL"
         type="int" />
       <preference
+        id="extensions.shortenURL.mp3.baseURL"
+        name="extensions.shortenURL.mp3.baseURL"
+        type="int" />
+      <preference
         id="extensions.shortenURL.autocopy"
         name="extensions.shortenURL.autocopy"
         type="bool" />
       <preference
         id="extensions.shortenURL.autotweet"
         name="extensions.shortenURL.autotweet"
+        type="bool" />
+      <preference
+        id="extensions.shortenURL.mp3"
+        name="extensions.shortenURL.mp3"
         type="bool" />
     </preferences>
 
@@ -73,6 +81,18 @@
             <menupopup id="menupopup"></menupopup>
           </menulist>
         </hbox>
+        <checkbox id="extensions.shortenURL.mp3"
+                  label="&options.mp3.caption;"
+                  preference="extensions.shortenURL.mp3" />
+        <radiogroup id="mp3-shortener" orient="horizontal" align="center"
+                    preference="extensions.shortenURL.mp3.baseURL">
+          <radio id="songly"
+                 label="song.ly"
+                 value="47" />
+          <radio id="trakz"
+                 label="tra.kz"
+                 value="46" />
+        </radiogroup>
       </groupbox>
 
       <groupbox flex="1">
