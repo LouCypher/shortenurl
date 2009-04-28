@@ -49,12 +49,8 @@ var ShortenURL = {
     return this.prefService.getIntPref("baseURL");
   },
 
-  get autoCopy() {
-    return this.prefService.getBoolPref("autocopy");
-  },
-
-  get autoTweet() {
-    return this.prefService.getBoolPref("autotweet");
+  get baseMP3Num() {
+    return this.prefService.getIntPref("mp3.baseURL");
   },
 
   setStatus: function shortenURL_setStatus(aString) {
@@ -70,6 +66,13 @@ var ShortenURL = {
   isValidScheme: function shortenURL_isValidScheme(aProtocol) {
     var reg = new RegExp("^https?", "i");
     return reg.test(aProtocol);
+  },
+
+  isMP3: function shortenURL_isMP3(aURL) {
+    var reg = new RegExp("^https?\:\/\/(?!" +
+                         "rapidshare|rapidlibrary|mediafire|" +
+                         "4share|easy\-share).*\.mp3", "i");
+    return reg.test(aURL) && this.prefService.getBoolPref("mp3");
   },
 
   getBaseURL: function shortenURL_getBaseURL(aBaseNum) {
@@ -129,7 +132,7 @@ var ShortenURL = {
                "chrome, dialog, centerscreen");
   },
 
-  showShortenURL: function shortenURL_showShortenURL(aURL) {
+  showShortURL: function shortenURL_showShortenURL(aURL) {
     if (window.fullScreen && ("mouseoverToggle" in FullScreen)) {
       FullScreen.mouseoverToggle(true);
     }
@@ -156,8 +159,12 @@ var ShortenURL = {
       return;
     }
 
-    var baseNum = aBaseNum != undefined ? aBaseNum : this.baseNum;
-    var baseURL = this.getBaseURL(baseNum);
+    var baseNum = (aBaseNum != undefined) ?
+                   aBaseNum : this.isMP3(aURL) ?
+                              this.baseMP3Num : this.baseNum;
+
+    var baseURL =  this.getBaseURL(baseNum);
+
     var error = null;
     try {
       var req = new XMLHttpRequest();
@@ -170,69 +177,82 @@ var ShortenURL = {
         var JSON = Components.classes["@mozilla.org/dom/json;1"]
                              .createInstance(Components.interfaces.nsIJSON);
 
-        var shortenURL = "";
+        var shortURL = "";
         if (this.isURLof(baseURL, "pipes.yahoo.com")) {
-          shortenURL = JSON.decode(req.responseText).value.items[0].link;
+          shortURL = JSON.decode(req.responseText).value.items[0].link;
 
         } else if (this.isURLof(baseURL, "tr.im")) {
-          shortenURL = JSON.decode(req.responseText).url;
+          shortURL = JSON.decode(req.responseText).url;
 
         } else if (this.isURLof(baseURL, "digg.com")) {
-          shortenURL = JSON.decode(req.responseText).shorturls[0].short_url;
+          shortURL = JSON.decode(req.responseText).shorturls[0].short_url;
 
         } else if (this.isURLof(baseURL, "zipmyurl.com")) {
-          shortenURL = "http://zipmyurl.com/" +
-                        JSON.decode(req.responseText).zipURL;
+          shortURL = "http://zipmyurl.com/" +
+                     JSON.decode(req.responseText).zipURL;
 
         } else if (this.isURLof(baseURL, "xrl.in")) {
-          shortenURL = "http://xrl.in/" + req.responseText;
+          shortURL = "http://xrl.in/" + req.responseText;
 
         } else if (this.isURLof(baseURL, "lin.cr")) {
-          shortenURL = "http://lin.cr/" + req.responseText;
+          shortURL = "http://lin.cr/" + req.responseText;
 
         } else if (this.isURLof(baseURL, "micurl.com")) {
-          shortenURL = "http://micurl.com/" + req.responseText;
+          shortURL = "http://micurl.com/" + req.responseText;
 
         } else if (this.isURLof(baseURL, "r.im")) {
-          shortenURL = req.responseText.match(/[^\s]+/).toString();
+          shortURL = req.responseText.match(/[^\s]+/).toString();
 
         } else if (this.isURLof(baseURL, "lnk.by")) {
-          shortenURL = "http://" + JSON.decode(req.responseText).ShortUrl;
+          shortURL = "http://" + JSON.decode(req.responseText).ShortUrl;
+
+        } else if (this.isURLof(baseURL, "tra.kz")) {
+          shortURL = "http://tra.kz/" + JSON.decode(req.responseText).s;
+
+        } else if (this.isURLof(baseURL, "song.ly")) {
+          shortURL = JSON.decode(req.responseText).shortUrl;
+
+        } else if (this.isURLof(baseURL, "2ze.us")) {
+          var obj = JSON.decode(req.responseText);
+          for (var i in obj.urls) {
+            shortURL = obj.urls[i].shortcut;
+            break;
+          }
 
         } else if (this.isURLof(baseURL, "migre.me")) {
-          shortenURL = this.getXMLNodeValue(req.responseXML, "migre");
+          shortURL = this.getXMLNodeValue(req.responseXML, "migre");
 
         } else if (this.isURLof(baseURL, "arm.in")) {
-          shortenURL = this.getXMLNodeValue(req.responseXML, "arminized_url");
+          shortURL = this.getXMLNodeValue(req.responseXML, "arminized_url");
 
         } else {
-          shortenURL = req.responseText;
+          shortURL = req.responseText;
         }
 
-        if (shortenURL.indexOf("http") == 0) {
-          if (this.isURLof(shortenURL, "snurl.com")) {
-            shortenURL = shortenURL.replace(/snurl\.com/, "sn.im");
+        if (shortURL.indexOf("http") == 0) {
+          if (this.isURLof(shortURL, "snurl.com")) {
+            shortURL = shortURL.replace(/snurl\.com/, "sn.im");
           }
 
-          if (this.isURLof(shortenURL, "/www.")) {
-            shortenURL = shortenURL.replace(/\/www\./, "/");
+          if (this.isURLof(shortURL, "/www.")) {
+            shortURL = shortURL.replace(/\/www\./, "/");
           }
 
-          if (this.autoCopy) {
-            this.copy(shortenURL);
+          if (this.prefService.getBoolPref("autocopy")) {
+            this.copy(shortURL);
           }
 
-          if (this.autoTweet) {
-            this.tweet(shortenURL);
+          if (this.prefService.getBoolPref("autotweet")) {
+            this.tweet(shortURL);
             return;
           }
 
-          this.showShortenURL(shortenURL);
-          this.setStatus(shortenURL);
+          this.showShortURL(shortURL);
+          this.setStatus(shortURL);
 
-          if (shortenURL.length > url.length) {
+          if (shortURL.length > url.length) {
             this.alert(this.strings.getFormattedString("is_shorter",
-                                                       [url, shortenURL]));
+                                                       [url, shortURL]));
           }
           return;
         }

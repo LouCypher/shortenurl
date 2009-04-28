@@ -1,6 +1,8 @@
 pref("extensions.ShortenURL@loucypher.description", "chrome://shortenurl/locale/shortenurl.properties");
 pref("extensions.shortenURL.autocopy", false);
 pref("extensions.shortenURL.autotweet", false);
+pref("extensions.shortenURL.mp3", true);
+pref("extensions.shortenURL.mp3.baseURL", 46);
 pref("extensions.shortenURL.baseURL", 0);
 pref("extensions.shortenURL.name.0", "TinyURL");
 pref("extensions.shortenURL.name.1", "bit.ly");
@@ -48,6 +50,10 @@ pref("extensions.shortenURL.name.42", "Puke.It");
 pref("extensions.shortenURL.name.43", "Kots.Nu");
 pref("extensions.shortenURL.name.44", "arm.in");
 pref("extensions.shortenURL.name.45", "Kisa.Ch");
+pref("extensions.shortenURL.name.46", "tra.kz");
+pref("extensions.shortenURL.name.47", "Song.ly");
+pref("extensions.shortenURL.name.48", "2Zeus");
+pref("extensions.shortenURL.name.49", "Tini.us");
 pref("extensions.shortenURL.0", "http://tinyurl.com/api-create.php?url=");
 pref("extensions.shortenURL.1", "http://bit.ly/api?url=");
 pref("extensions.shortenURL.2", "http://is.gd/api.php?longurl=");
@@ -94,4 +100,8 @@ pref("extensions.shortenURL.42", "http://puke.it/api.php?apikey=9bbc1cd964a99773
 pref("extensions.shortenURL.43", "http://kots.nu/api.php?apikey=db9300ca20a11e3d1875ef70fb046e10&url=");
 pref("extensions.shortenURL.44", "http://arm.in/arminize/");
 pref("extensions.shortenURL.45", "http://kisa.ch/api.aspx?url=");
+pref("extensions.shortenURL.46", "http://tra.kz/api/shorten?version=1.0&format=json&api=shortenurl&l=");
+pref("extensions.shortenURL.47", "http://song.ly/api/shorten.json?key=9f703253304d86d1274aa6da03586d40233062&url=");
+pref("extensions.shortenURL.48", "http://2ze.us/generate/?url=");
+pref("extensions.shortenURL.49", "http://tini.us/api.php?u=");
 

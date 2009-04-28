@@ -6,6 +6,7 @@
 <!ENTITY options.shortener.caption      "Pemendek URL">
 <!ENTITY options.shortener.select       "Layanan pilihan">
 <!ENTITY options.shortener.select.key   "a">
+<!ENTITY options.mp3.caption            "Menggunakan pemendek yang berbeda untuk tautan MP3">
 <!ENTITY options.more.caption           "Pengaturan Tambahan">
 <!ENTITY options.more.autocopy          "Salin ke clipboard">
 <!ENTITY options.more.autocopy.key      "c">

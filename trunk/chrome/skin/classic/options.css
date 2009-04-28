@@ -6,3 +6,13 @@
   max-height: 300px;
 }
 
+checkbox[id="extensions\.shortenURL\.mp3"][checked="true"] + #mp3-shortener {
+  display: -moz-box;
+}
+
+#mp3-shortener,
+#menupopup menuitem[value="46"],
+#menupopup menuitem[value="47"] {
+  display: none;
+}
+
