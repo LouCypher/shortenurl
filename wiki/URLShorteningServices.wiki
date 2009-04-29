@@ -4,6 +4,7 @@
 == Supported URL shortening services ==
 ^(In alphabetical order)^
 
+ # [http://2ze.us/ 2Zeus]
  # [http://a.gd/ a.gd]
  # [http://abbr.com/ abbr]
  # [http://arm.in/ arm.in] ^1^
@@ -37,10 +38,13 @@
  # [http://smallr.net/ Smallr.net]
  # [http://short.ie/ Short.ie]
  # [http://snipurl.com/ SnipURL (sn.im)]
+ # [http://song.ly/ song.ly] ^3^
  # [http://tighturl.com/ TightURL]
+ # [http://tini.us/ tini.us]
  # [http://tiny.cc/ Tiny.cc]
  # [http://tinyurl.com/ TinyURL] (default)
  # [http://tr.im/ tr.im]
+ # [http://tra.kz/ tra.kz] ^3^
  # [http://tweetburner.com/ Tweetburner (twurl.nl)]
  # [http://twirl.at/ Twirl.at]
  # [http://u.nu/ u.nu]
@@ -52,6 +56,7 @@
  # [http://lnk.by/ LNK.by]
 
 ^1^ uses frame<br>
-^2^ uses preview
+^2^ uses preview<br>
+^3^ for MP3 link only
 
 You can [http://code.google.com/p/shortenurl/issues/entry?template=Request%20for%20more%20service request] for more service.
