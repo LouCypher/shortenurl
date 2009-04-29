@@ -1,8 +1,13 @@
 #summary Version history
 #labels Featured
 
+ * 0.0.20090429.03
+  # added new optional feature: use [http://tra.kz/ tra.kz] or [http://song.ly/ song.ly] for MP3 URLs
+  # added [http://2ze.us/ 2ze.us] and [http://tini.us/ tini.us]
+
+
  * 0.0.20090426.02
-  # fixed error on Firefox 2.0.0.*
+  # fixed error on Firefox 2.0.0.`*`
   # added services:
    # [http://lnk.by/ LNK.by]
    # [http://u.nu/ u.nu]
