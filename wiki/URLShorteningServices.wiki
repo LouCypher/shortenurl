@@ -24,6 +24,7 @@
  # [http://krz.ch/ krz.ch]
  # [http://kots.nu/ Kots.Nu]
  # [http://lin.cr/ Lincr]
+ # [http://lnk.by/ LNK.by]
  # [http://metamark.net/ Metamark (xrl.us)]
  # [http://migre.me/ migre.me]
  # [http://micurl.com micURL]
@@ -53,7 +54,6 @@
  # [http://urlzen.com/ urlzen]
  # [http://xrl.in/ xrl.in]
  # [http://zipmyurl.com/ ZipMyURL]
- # [http://lnk.by/ LNK.by]
 
 ^1^ uses frame<br>
 ^2^ uses preview<br>
