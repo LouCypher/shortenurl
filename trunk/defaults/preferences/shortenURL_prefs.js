@@ -32,7 +32,7 @@ pref("extensions.shortenURL.name.24", "Short.ie");
 pref("extensions.shortenURL.name.25", "BurnURL");
 pref("extensions.shortenURL.name.26", "DiggBar");
 pref("extensions.shortenURL.name.27", "ZipMyURL");
-pref("extensions.shortenURL.name.28", "abbr");
+pref("extensions.shortenURL.name.28", "abbrr");
 pref("extensions.shortenURL.name.29", "Lincr");
 pref("extensions.shortenURL.name.30", "kissa.be!");
 pref("extensions.shortenURL.name.31", "J2j.de");
@@ -54,6 +54,9 @@ pref("extensions.shortenURL.name.46", "tra.kz");
 pref("extensions.shortenURL.name.47", "Song.ly");
 pref("extensions.shortenURL.name.48", "2Zeus");
 pref("extensions.shortenURL.name.49", "Tini.us");
+pref("extensions.shortenURL.name.50", "RDE.me");
+pref("extensions.shortenURL.name.51", "TimesURL");
+pref("extensions.shortenURL.name.52", "9mp");
 pref("extensions.shortenURL.0", "http://tinyurl.com/api-create.php?url=");
 pref("extensions.shortenURL.1", "http://bit.ly/api?url=");
 pref("extensions.shortenURL.2", "http://is.gd/api.php?longurl=");
@@ -104,4 +107,7 @@ pref("extensions.shortenURL.46", "http://tra.kz/api/shorten?version=1.0&format=j
 pref("extensions.shortenURL.47", "http://song.ly/api/shorten.json?key=9f703253304d86d1274aa6da03586d40233062&url=");
 pref("extensions.shortenURL.48", "http://2ze.us/generate/?url=");
 pref("extensions.shortenURL.49", "http://tini.us/api.php?u=");
+pref("extensions.shortenURL.50", "http://rde.me/index.php?rdeTask=api&longURL=");
+pref("extensions.shortenURL.51", "http://timesurl.at/api/rest.php?url=");
+pref("extensions.shortenURL.52", "http://pipes.yahoo.com/pipes/pipe.run?_id=gHpFlps13hGCEH_t6Scw5g&_render=json&url=");
 
