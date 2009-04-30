@@ -168,9 +168,10 @@ var ShortenURL = {
     var error = null;
     try {
       var req = new XMLHttpRequest();
-      req.open("GET", baseURL +  (this.isURLof(baseURL, "arm.in")
-                                  ? url
-                                  : encodeURIComponent(url)),
+      req.open("GET",
+               baseURL + ((this.isURLof(baseURL, "arm.in") ||
+                           this.isURLof(baseURL, "rde.me"))
+                          ? url : encodeURIComponent(url)),
                false);
       req.send(null);
       if (req.status == 200) {
@@ -220,10 +221,12 @@ var ShortenURL = {
           }
 
         } else if (this.isURLof(baseURL, "migre.me")) {
-          shortURL = this.getXMLNodeValue(req.responseXML, "migre");
+          shortURL = req.responseXML.getElementsByTagName("migre")[0]
+                                    .textContent;
 
         } else if (this.isURLof(baseURL, "arm.in")) {
-          shortURL = this.getXMLNodeValue(req.responseXML, "arminized_url");
+          shortURL = req.responseXML.getElementsByTagName("arminized_url")[0]
+                                    .textContent;
 
         } else {
           shortURL = req.responseText;
