@@ -42,7 +42,7 @@
  # [http://snipurl.com/ SnipURL (sn.im)]
  # [http://song.ly/ song.ly] ^3^
  # [http://tighturl.com/ TightURL]
- # [http://timesurl.com/ TimesURL]
+ # [http://timesurl.at/ TimesURL]
  # [http://tini.us/ tini.us]
  # [http://tiny.cc/ Tiny.cc]
  # [http://tinyurl.com/ TinyURL] (default)
