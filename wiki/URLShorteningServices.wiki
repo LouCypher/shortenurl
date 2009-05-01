@@ -1,10 +1,10 @@
 #summary Supported URL shortening services
 #labels Featured
 
-== Supported URL shortening services ==
 ^(In alphabetical order)^
 
  # [http://2ze.us/ 2Zeus]
+ # [http://9mp.com/ 9mp]
  # [http://a.gd/ a.gd]
  # [http://abbr.com/ abbr]
  # [http://arm.in/ arm.in] ^1^
@@ -36,11 +36,13 @@
  # [http://puke.it/ Puke.It]
  # [http://qurl.com/ Qurl]
  # [http://r.im/ r.im]
+ # [http://rde.me/ RDE.me]
  # [http://smallr.net/ Smallr.net]
  # [http://short.ie/ Short.ie]
  # [http://snipurl.com/ SnipURL (sn.im)]
  # [http://song.ly/ song.ly] ^3^
  # [http://tighturl.com/ TightURL]
+ # [http://timesurl.com/ TimesURL]
  # [http://tini.us/ tini.us]
  # [http://tiny.cc/ Tiny.cc]
  # [http://tinyurl.com/ TinyURL] (default)
