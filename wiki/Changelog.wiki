@@ -3,7 +3,7 @@
 
  * 0.0.20090430.01
   # fixed arm.in and migre.me
-  # added [http://rde.me/ RDE.me], [http://timesurl.com/ TimesURL], [http://9mp.com/ 9mp]
+  # added [http://rde.me/ RDE.me], [http://timesurl.at/ TimesURL], [http://9mp.com/ 9mp]
 
  * 0.0.20090429.03
   # added new optional feature: use [http://tra.kz/ tra.kz] or [http://song.ly/ song.ly] for MP3 URLs
