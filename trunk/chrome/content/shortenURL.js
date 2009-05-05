@@ -69,9 +69,9 @@ var ShortenURL = {
   },
 
   isMP3: function shortenURL_isMP3(aURL) {
-    var reg = new RegExp("^https?\:\/\/(?!" +
-                         "rapidshare|rapidlibrary|mediafire|" +
-                         "4share|easy\-share).*\.mp3", "i");
+    var reg = new RegExp("^https?\:\/\/cdn.*\.projectplaylist\.com.*" +
+                         "|(?!rapidshare|rapidlibrary|mediafire" +
+                         "|4share|easy\-share).*\.mp3", "i");
     return reg.test(aURL) && this.prefService.getBoolPref("mp3");
   },
 
@@ -129,7 +129,7 @@ var ShortenURL = {
 
     openDialog("chrome://shortenurl/content/options.xul",
                "shortenurl-options",
-               "chrome, dialog, centerscreen");
+               "chrome, centerscreen");
   },
 
   showShortURL: function shortenURL_showShortenURL(aURL) {
@@ -219,6 +219,9 @@ var ShortenURL = {
             shortURL = obj.urls[i].shortcut;
             break;
           }
+
+        } else if (this.isURLof(baseURL, "ur.ly")) {
+          shortURL = "http://ur.ly/" + JSON.decode(req.responseText).code;
 
         } else if (this.isURLof(baseURL, "migre.me")) {
           shortURL = req.responseXML.getElementsByTagName("migre")[0]
