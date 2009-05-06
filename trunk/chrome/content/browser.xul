@@ -69,6 +69,13 @@
               onmouseout="ShortenURL.setStatus('');"
               onclick="if (event.button == 1) { ShortenURL.openPrefs(); closeMenus(this); }"
               oncommand="ShortenURL.shorten(gContextMenu.target.ownerDocument.location.href);" />
+    <menuitem id="context-shorten-imageURL"
+              insertafter="context-copyimage"
+              label="&context.image;"
+              onmouseover="ShortenURL.setStatus('mediaURL' in gContextMenu ? gContextMenu.mediaURL : gContextMenu.imageURL);"
+              onmouseout="ShortenURL.setStatus('');"
+              onclick="if (event.button == 1) { ShortenURL.openPrefs(); closeMenus(this); }"
+              oncommand="ShortenURL.shorten('mediaURL' in gContextMenu ? gContextMenu.mediaURL : gContextMenu.imageURL);" />
   </popup>
 
   <menupopup id="menu_ToolsPopup">

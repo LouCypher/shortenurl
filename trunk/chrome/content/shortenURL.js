@@ -63,9 +63,9 @@ var ShortenURL = {
               .alert(null, "Shorten URL", aString);
   },
 
-  isValidScheme: function shortenURL_isValidScheme(aProtocol) {
+  isValidScheme: function shortenURL_isValidScheme(aURL) {
     var reg = new RegExp("^https?", "i");
-    return reg.test(aProtocol);
+    return reg.test(aURL);
   },
 
   isMP3: function shortenURL_isMP3(aURL) {
@@ -294,6 +294,12 @@ window.addEventListener("load", shortenURL_init = function(e) {
                           ShortenURL.isValidScheme(gContextMenu.target.
                                                    ownerDocument.location
                                                                 .protocol));
+
+    gContextMenu.showItem("context-shorten-imageURL",
+                          gContextMenu.onImage &&
+                          ShortenURL.isValidScheme("mediaURL" in gContextMenu
+                                                    ? gContextMenu.mediaURL
+                                                    : gContextMenu.imageURL));
 
   }, false);
   cm.removeEventListener("popuphiding", contextInit, false);

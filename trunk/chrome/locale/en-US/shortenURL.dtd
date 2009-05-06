@@ -1,6 +1,7 @@
 <!ENTITY context.page                   "Shorten this page URL">
 <!ENTITY context.link                   "Shorten this link URL">
 <!ENTITY context.frame                  "Shorten this frame URL">
+<!ENTITY context.image                  "Shorten this image URL">
 
 <!ENTITY options.title                  "Shorten URL Options">
 <!ENTITY options.shortener.caption      "URL Shorteners">
