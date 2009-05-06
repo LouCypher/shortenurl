@@ -5,4 +5,5 @@ locale    shortenurl     id                             jar:chrome/shortenURL.ja
 
 overlay   chrome://browser/content/browser.xul          chrome://shortenurl/content/browser.xul
 overlay   chrome://browser/content/openLocation.xul     chrome://shortenurl/content/openLocation.xul
+style     chrome://global/content/customizeToolbar.xul  chrome://shortenurl/skin/styles.css
 

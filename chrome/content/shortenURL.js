@@ -75,6 +75,12 @@ var ShortenURL = {
     return reg.test(aURL) && this.prefService.getBoolPref("mp3");
   },
 
+  makeURI: function shortenURL_makeURI(aURL, aOriginCharset, aBaseURI) {
+    var ioService = Components.classes['@mozilla.org/network/io-service;1']
+                              .getService(Components.interfaces.nsIIOService);
+    return ioService.newURI(aURL, aOriginCharset, aBaseURI);
+  },
+
   getBaseURL: function shortenURL_getBaseURL(aBaseNum) {
     try {
       return this.prefService.getCharPref(aBaseNum);

@@ -16,3 +16,12 @@ checkbox[id="extensions\.shortenURL\.mp3"][checked="true"] + #mp3-shortener {
   display: none;
 }
 
+#shortenurl-button {
+  list-style-image: url("toolbarbutton.png");
+  -moz-image-region: rect(0px, 24px, 24px, 0px);
+}
+
+toolbar[iconsize="small"] #shortenurl-button {
+  -moz-image-region: rect(0px, 40px, 16px, 24px);
+}
+
