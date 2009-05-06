@@ -1,6 +1,21 @@
 #summary Version history
 #labels Featured
 
+ * 0.0.20090506.03
+  # changed [http://code.google.com/p/shortenurl/source/browse/trunk/chrome/content/shortenURL.js?r=67#132 options dialog feature]
+  # added projectplaylist to [http://code.google.com/p/shortenurl/source/browse/trunk/chrome/content/shortenURL.js?r=67#72 mp3 regexp]
+  # changed [http://code.google.com/p/shortenurl/source/browse/trunk/defaults/preferences/shortenURL_prefs.js?r=67#94 Diggbar appkey]
+  # added services:
+   # [http://myurl.in/ MyURL.in]
+   # [http://rubyurl.com/ RubyURL]
+   # [http://shorl.com/ shorl]
+   # [http://short.to/ short.to]
+   # [http://twip.us/ Twip.us]
+   # [http://ur.ly ur.ly]
+   # [http://url.ue/ URL.ie]
+   # [http://virl.com/ Virl]
+   # [http://xrt.me/ XORTR]
+
  * 0.0.20090430.01
   # fixed arm.in and migre.me
   # added [http://rde.me/ RDE.me], [http://timesurl.at/ TimesURL], [http://9mp.com/ 9mp]
