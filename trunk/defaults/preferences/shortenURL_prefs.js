@@ -65,7 +65,7 @@ pref("extensions.shortenURL.name.57", "Twip.us");
 pref("extensions.shortenURL.name.58", "Virl");
 pref("extensions.shortenURL.name.59", "ur.ly");
 pref("extensions.shortenURL.name.60", "short.to");
-pref("extensions.shortenURL.name.60", "RubyURL");
+pref("extensions.shortenURL.name.61", "RubyURL");
 pref("extensions.shortenURL.0", "http://tinyurl.com/api-create.php?url=");
 pref("extensions.shortenURL.1", "http://bit.ly/api?url=");
 pref("extensions.shortenURL.2", "http://is.gd/api.php?longurl=");
