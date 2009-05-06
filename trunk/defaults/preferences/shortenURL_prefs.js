@@ -65,6 +65,7 @@ pref("extensions.shortenURL.name.57", "Twip.us");
 pref("extensions.shortenURL.name.58", "Virl");
 pref("extensions.shortenURL.name.59", "ur.ly");
 pref("extensions.shortenURL.name.60", "short.to");
+pref("extensions.shortenURL.name.60", "RubyURL");
 pref("extensions.shortenURL.0", "http://tinyurl.com/api-create.php?url=");
 pref("extensions.shortenURL.1", "http://bit.ly/api?url=");
 pref("extensions.shortenURL.2", "http://is.gd/api.php?longurl=");
@@ -126,4 +127,5 @@ pref("extensions.shortenURL.57", "http://pipes.yahoo.com/pipes/pipe.run?_id=1b13
 pref("extensions.shortenURL.58", "http://pipes.yahoo.com/pipes/pipe.run?_id=e4692e4e4fa7dd822fb291f165621ef4&_render=json&url=");
 pref("extensions.shortenURL.59", "http://ur.ly/new.json?href=");
 pref("extensions.shortenURL.60", "http://short.to/s.txt?url=");
+pref("extensions.shortenURL.61", "http://pipes.yahoo.com/pipes/pipe.run?_id=bJjKEBA63hGSQS2BwjSbTQ&_render=json&url=");
 
