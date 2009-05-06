@@ -34,12 +34,15 @@
   the terms of any one of the MPL, the GPL or the LGPL.
 -->
 
+<?xml-stylesheet href="../skin/styles.css"?>
+
 <!DOCTYPE overlay SYSTEM "../locale/shortenURL.dtd">
 
 <overlay id="shortenURL-browserOverlay"
   xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
 
   <script type="application/x-javascript" src="shortenURL.js" />
+  <script type="application/x-javascript" src="dragdrop.js" />
 
   <stringbundleset id="stringbundleset">
     <stringbundle
@@ -84,6 +87,22 @@
       insertbefore="menu_preferences"
       oncommand="ShortenURL.openPrefs();" />
   </menupopup>
+
+  <toolbarpalette id="BrowserToolbarPalette">
+    <toolbarbutton
+      id="shortenurl-button"
+      class="toolbarbutton-1"
+      label="Shorten URL"
+      tooltiptext="&context.page;"
+      oncommand="if (event.shiftKey) ShortenURL.openPrefs();
+ else ShortenURL.shorten(content.document.documentURI);"
+      onclick="if (event.button == 1) ShortenURL.openPrefs();"
+      onmouseover="ShortenURL.setStatus(content.document.documentURI);"
+      onmouseout="ShortenURL.setStatus('');"
+      ondragover="nsDragAndDrop.dragOver(event, ShortenURL.dndObserver);"
+      ondragdrop="nsDragAndDrop.drop(event, ShortenURL.dndObserver);"
+      ondragexit="nsDragAndDrop.dragExit(event, ShortenURL.dndObserver);" />
+  </toolbarpalette>
 
 </overlay>
 
