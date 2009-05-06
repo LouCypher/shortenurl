@@ -38,7 +38,7 @@
  # [http://qurl.com/ Qurl]
  # [http://r.im/ r.im]
  # [http://rde.me/ RDE.me]
- # [http://shorl.com/ shorl]
+ # [http://shorl.com/ shorl] ^2^
  # [http://short.ie/ Short.ie]
  # [http://short.to/ short.to]
  # [http://smallr.net/ Smallr.net]
@@ -60,7 +60,7 @@
  # [http://urlborg.com/ urlBorg]
  # [http://u.mavrev.com/ urlShort (u.mavrev.com)]
  # [http://urlzen.com/ urlzen]
- # [http://virl.com/ Virl]
+ # [http://virl.com/ Virl] ^1^
  # [http://xrt.me/ XORTR (xrt.me)]
  # [http://xrl.in/ xrl.in]
  # [http://zipmyurl.com/ ZipMyURL]
