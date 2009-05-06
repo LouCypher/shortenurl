@@ -237,6 +237,9 @@ var ShortenURL = {
           shortURL = req.responseXML.getElementsByTagName("arminized_url")[0]
                                     .textContent;
 
+        } else if (this.isURLof(baseURL, "buk.me")) {
+          shortURL = req.responseText.match(/^[^\<]+/).toString();
+
         } else {
           shortURL = req.responseText;
         }
