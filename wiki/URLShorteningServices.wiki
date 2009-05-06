@@ -38,6 +38,7 @@
  # [http://qurl.com/ Qurl]
  # [http://r.im/ r.im]
  # [http://rde.me/ RDE.me]
+ # [http://rubyurl.com/ RubyURL]
  # [http://shorl.com/ shorl] ^2^
  # [http://short.ie/ Short.ie]
  # [http://short.to/ short.to]
