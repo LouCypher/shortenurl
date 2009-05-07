@@ -7,6 +7,8 @@
  * [http://blog.readburner.com/2009/04/11/cool-firefox-add-on-shorten-url/ Cool Firefox Add-On : Shorten URL] - Official !ReadBurner Blog
  * [http://www.foxiewire.com/Mozilla-Addons/Shorten_URL_Firefox_Add_ons Shorten URL Firefox Add-ons] - !FoxieWire
  * [http://www.killertechtips.com/2009/03/25/shorten-url-firefox/ Shorten URLs using Multiple Services in Firefox] - Killer Tech Tips
+ * [http://www.metral.info/web2_outils/shorturl Réducteurs d'URL]
+ * [http://www.webwork-tools.de/2009/04/darfs-noch-ein-bisschen-kuerzer-seinurls-mit-firefox-addon-kuerzen/ Darfs noch ein bißchen kürzer sein? URLs mit Firefox-Addon kürzen]
 
 
 == About URL shortening ==
