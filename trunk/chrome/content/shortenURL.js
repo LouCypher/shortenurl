@@ -176,6 +176,7 @@ var ShortenURL = {
       var req = new XMLHttpRequest();
       req.open("GET",
                baseURL + ((this.isURLof(baseURL, "arm.in") ||
+                           this.isURLof(baseURL, "vl.am") ||
                            this.isURLof(baseURL, "rde.me"))
                           ? url : encodeURIComponent(url)),
                false);
