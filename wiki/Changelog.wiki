@@ -1,6 +1,18 @@
 #summary Version history
 #labels Featured
 
+ * 0.1 alpha 1
+  # added extension icon
+  # added shorten image URL on context menu
+  # added toolbarbutton and drag and drop support
+  # added more services:
+   # [http://buk.me/ Buk.me] (r76)
+   # [http://a.nf/ a.nf] (r79)
+   # [http://vl.am/ vl.am]
+   # [http://bloat.me/ bloat.me]
+   # [http://pnt.me/ pnt.me]
+   # [http://x.vu/ X.vu]
+
  * 0.0.20090506.03
   # changed [http://code.google.com/p/shortenurl/source/browse/trunk/chrome/content/shortenURL.js?r=67#132 options dialog feature]
   # added projectplaylist to [http://code.google.com/p/shortenurl/source/browse/trunk/chrome/content/shortenURL.js?r=67#72 mp3 regexp]
