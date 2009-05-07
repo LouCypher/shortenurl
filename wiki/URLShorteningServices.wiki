@@ -8,10 +8,10 @@
  # [http://a.gd/ a.gd]
  # [http://abbr.com/ abbr]
  # [http://arm.in/ arm.in] ^1^
- # [http://a.nf/ a.nf] ^`*`^
+ # [http://a.nf/ a.nf] `*`
  # [http://bit.ly/ bit.ly]
- # [http://bloat.me/ bloat.me] ^`*`^
- # [http://buk.me/ Buk.me] ^`*`^
+ # [http://bloat.me/ bloat.me] `*`
+ # [http://buk.me/ Buk.me] `*`
  # [http://burnurl.com/ BurnURL] ^1^
  # [http://chilp.it/ Chilp.it]
  # [http://cli.gs/ cli.gs]
@@ -37,7 +37,7 @@
  # [http://pendek.in/ Pendek.in]
  # [http://piurl.com/ PiURL]
  # [http://plurl.me/ Plurl]
- # [http://pnt.me/ pnt.me] ^`*`^
+ # [http://pnt.me/ pnt.me] `*`
  # [http://puke.it/ Puke.It]
  # [http://qurl.com/ Qurl]
  # [http://r.im/ r.im]
@@ -66,15 +66,15 @@
  # [http://u.mavrev.com/ urlShort (u.mavrev.com)]
  # [http://urlzen.com/ urlzen]
  # [http://virl.com/ Virl] ^1^
- # [http://vl.am/ vl.am] ^`*`^
+ # [http://vl.am/ vl.am] `*`
  # [http://xrt.me/ XORTR (xrt.me)]
  # [http://xrl.in/ xrl.in]
- # [http://x.vu/ X.vu] ^`*`^
+ # [http://x.vu/ X.vu] `*`
  # [http://zipmyurl.com/ ZipMyURL]
 
 ^1^ uses frame<br>
 ^2^ uses preview<br>
 ^3^ for MP3 link only
-^`*`^ latest dev build only
+`*` latest dev build only
 
 You can [http://code.google.com/p/shortenurl/issues/entry?template=Request%20for%20more%20service request] for more service.
