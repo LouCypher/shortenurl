@@ -74,7 +74,7 @@
 
 ^1^ uses frame<br>
 ^2^ uses preview<br>
-^3^ for MP3 link only
+^3^ for MP3 link only<br>
 `*` latest dev build only
 
 You can [http://code.google.com/p/shortenurl/issues/entry?template=Request%20for%20more%20service request] for more service.
