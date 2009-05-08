@@ -70,6 +70,7 @@
  # [http://xrt.me/ XORTR (xrt.me)]
  # [http://xrl.in/ xrl.in]
  # [http://x.vu/ X.vu] `*`
+ # [http://z.pe/ Z.PE] `*`
  # [http://zipmyurl.com/ ZipMyURL]
 
 ^1^ uses frame<br>
