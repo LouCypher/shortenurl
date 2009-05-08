@@ -72,6 +72,7 @@ pref("extensions.shortenURL.name.64", "vl.am");
 pref("extensions.shortenURL.name.65", "bloat.me");
 pref("extensions.shortenURL.name.66", "pnt.me");
 pref("extensions.shortenURL.name.67", "X.vu");
+pref("extensions.shortenURL.name.68", "Z.PE");
 pref("extensions.shortenURL.0", "http://tinyurl.com/api-create.php?url=");
 pref("extensions.shortenURL.1", "http://bit.ly/api?url=");
 pref("extensions.shortenURL.2", "http://is.gd/api.php?longurl=");
@@ -140,4 +141,5 @@ pref("extensions.shortenURL.64", "http://vl.am/api/shorten/plain/");
 pref("extensions.shortenURL.65", "http://pipes.yahoo.com/pipes/pipe.run?_id=yF8xehY73hGJnsM36icw5g&_render=json&url=");
 pref("extensions.shortenURL.66", "http://pipes.yahoo.com/pipes/pipe.run?_id=_PKzqyI73hGbw4y0ZMag4A&_render=json&url=");
 pref("extensions.shortenURL.67", "http://pipes.yahoo.com/pipes/pipe.run?_id=nif3myw73hGydHrIZMag4A&_render=json&url=");
+pref("extensions.shortenURL.68", "http://api.z.pe/new.xml?href=");
 
