@@ -234,6 +234,11 @@ var ShortenURL = {
           shortURL = req.responseXML.getElementsByTagName("migre")[0]
                                     .textContent;
 
+        } else if (this.isURLof(baseURL, "z.pe")) {
+          shortURL = "http://z.pe/" +
+                     req.responseXML.getElementsByTagName("shorturl")[0]
+                                    .getAttribute("code");
+
         } else if (this.isURLof(baseURL, "arm.in")) {
           shortURL = req.responseXML.getElementsByTagName("arminized_url")[0]
                                     .textContent;
