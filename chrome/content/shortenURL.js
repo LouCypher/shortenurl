@@ -236,8 +236,7 @@ var ShortenURL = {
 
         } else if (this.isURLof(baseURL, "z.pe")) {
           shortURL = "http://z.pe/" +
-                     req.responseXML.getElementsByTagName("shorturl")[0]
-                                    .getAttribute("code");
+                     req.responseText.match(/\w+(?=\s)/).toString();
 
         } else if (this.isURLof(baseURL, "arm.in")) {
           shortURL = req.responseXML.getElementsByTagName("arminized_url")[0]
