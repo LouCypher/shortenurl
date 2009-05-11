@@ -12,7 +12,7 @@
    # [http://bloat.me/ bloat.me]
    # [http://pnt.me/ pnt.me]
    # [http://x.vu/ X.vu]
-   # [http://z.pe/ Z.PE] (r84)
+   # [http://z.pe/ Z.PE] (r87)
    # [http://2tu.us/ 2tu.us]
    # [http://fly2.ws/ Fly2.ws]
    # [http://shortn.me/ shortn.me]
