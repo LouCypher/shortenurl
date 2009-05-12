@@ -77,6 +77,8 @@ pref("extensions.shortenURL.name.69", "shortn.me");
 pref("extensions.shortenURL.name.70", "2tu.us");
 pref("extensions.shortenURL.name.71", "Fly2.ws");
 pref("extensions.shortenURL.name.72", "XR.com");
+pref("extensions.shortenURL.name.73", "to.vg");
+pref("extensions.shortenURL.name.74", "POPrl");
 pref("extensions.shortenURL.0", "http://tinyurl.com/api-create.php?url=");
 pref("extensions.shortenURL.1", "http://bit.ly/api?url=");
 pref("extensions.shortenURL.2", "http://is.gd/api.php?longurl=");
@@ -150,4 +152,6 @@ pref("extensions.shortenURL.69", "http://shortn.me/api.php?url=");
 pref("extensions.shortenURL.70", "http://pipes.yahoo.com/pipes/pipe.run?_id=1d8a3e65be7a5eb96c977f0b40cb8c59&_render=json&url=");
 pref("extensions.shortenURL.71", "http://pipes.yahoo.com/pipes/pipe.run?_id=ams1y_g83hGi6obZbbsjiw&_render=json&url=");
 pref("extensions.shortenURL.72", "http://pipes.yahoo.com/pipes/pipe.run?_id=BP0FyIE93hG0aePr1ZzWFw&_render=json&url=");
+pref("extensions.shortenURL.73", "http://to.vg/api.php?apiusr=ShortenURL&apikey=a4537a2d179665380d48cb2fc04af88e&urlquery=");
+pref("extensions.shortenURL.74", "http://poprl.com/api/bookmark.js?v=2&url=");
 

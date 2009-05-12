@@ -245,6 +245,9 @@ var ShortenURL = {
         } else if (this.isURLof(baseURL, "buk.me")) {
           shortURL = req.responseText.match(/^[^\<]+/).toString();
 
+        } else if (this.isURLof(baseURL, "poprl.com")) {
+          shortURL = req.responseText.match(/^[^\s]+/).toString();
+
         } else {
           shortURL = req.responseText;
         }
