@@ -17,6 +17,10 @@
    # [http://fly2.ws/ Fly2.ws]
    # [http://shortn.me/ shortn.me]
    # [http://xr.com/ XR.com]
+   # [http://to.vg/ to.vg] (r90)
+   # [http://poprl.com/ POPrl]
+   # [http://clop.in/ Clop.in] (r91)
+   # [http://zz.gd/ ZZ.GD] (r92)
 
  * 0.0.20090506.03
   # changed [http://code.google.com/p/shortenurl/source/browse/trunk/chrome/content/shortenURL.js?r=67#132 options dialog feature]
