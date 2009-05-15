@@ -3,6 +3,7 @@
 
 ^(In alphabetical order)^
 
+ # [http://2to.us/ 2to.us]
  # [http://2ze.us/ 2Zeus]
  # [http://9mp.com/ 9mp]
  # [http://a.gd/ a.gd]
@@ -17,6 +18,7 @@
  # [http://cli.gs/ cli.gs]
  # [http://clop.in/ Clop.in]
  # [http://digg.com/tools/diggbar DiggBar]
+ # [http://fly2.ws/ Fly2.ws]
  # [http://foxyurl.com/ Foxy URL]
  # [http://hex.io/ hex.io]
  # [http://idek.net/ idek.net]
@@ -48,6 +50,7 @@
  # [http://shorl.com/ shorl] ^2^
  # [http://short.ie/ Short.ie]
  # [http://short.to/ short.to]
+ # [http://shortn.me/ shortn.me]
  # [http://smallr.net/ Smallr.net]
  # [http://snipurl.com/ SnipURL (sn.im)]
  # [http://song.ly/ song.ly] ^3^
@@ -71,6 +74,7 @@
  # [http://virl.com/ Virl] ^1^
  # [http://vl.am/ vl.am]
  # [http://xrt.me/ XORTR (xrt.me)]
+ # [http://xr.com/ XR.com]
  # [http://xrl.in/ xrl.in]
  # [http://x.vu/ X.vu]
  # [http://z.pe/ Z.PE]
