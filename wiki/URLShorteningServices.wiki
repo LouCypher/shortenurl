@@ -8,13 +8,14 @@
  # [http://a.gd/ a.gd]
  # [http://abbr.com/ abbr]
  # [http://arm.in/ arm.in] ^1^
- # [http://a.nf/ a.nf] `*`
+ # [http://a.nf/ a.nf]
  # [http://bit.ly/ bit.ly]
- # [http://bloat.me/ bloat.me] `*`
- # [http://buk.me/ Buk.me] `*`
+ # [http://bloat.me/ bloat.me]
+ # [http://buk.me/ Buk.me]
  # [http://burnurl.com/ BurnURL] ^1^
  # [http://chilp.it/ Chilp.it]
  # [http://cli.gs/ cli.gs]
+ # [http://clop.in/ Clop.in]
  # [http://digg.com/tools/diggbar DiggBar]
  # [http://foxyurl.com/ Foxy URL]
  # [http://hex.io/ hex.io]
@@ -37,7 +38,8 @@
  # [http://pendek.in/ Pendek.in]
  # [http://piurl.com/ PiURL]
  # [http://plurl.me/ Plurl]
- # [http://pnt.me/ pnt.me] `*`
+ # [http://pnt.me/ pnt.me]
+ # [http://poprl.com/ POPrl]
  # [http://puke.it/ Puke.It]
  # [http://qurl.com/ Qurl]
  # [http://r.im/ r.im]
@@ -54,6 +56,7 @@
  # [http://tini.us/ tini.us]
  # [http://tiny.cc/ Tiny.cc]
  # [http://tinyurl.com/ TinyURL] (default)
+ # [http://to.vg/ to.vg]
  # [http://tr.im/ tr.im]
  # [http://tra.kz/ tra.kz] ^3^
  # [http://tweetburner.com/ Tweetburner (twurl.nl)]
@@ -66,12 +69,13 @@
  # [http://u.mavrev.com/ urlShort (u.mavrev.com)]
  # [http://urlzen.com/ urlzen]
  # [http://virl.com/ Virl] ^1^
- # [http://vl.am/ vl.am] `*`
+ # [http://vl.am/ vl.am]
  # [http://xrt.me/ XORTR (xrt.me)]
  # [http://xrl.in/ xrl.in]
- # [http://x.vu/ X.vu] `*`
- # [http://z.pe/ Z.PE] `*`
+ # [http://x.vu/ X.vu]
+ # [http://z.pe/ Z.PE]
  # [http://zipmyurl.com/ ZipMyURL]
+ # [http://zz.gd/ ZZ.GD]
 
 ^1^ uses frame<br>
 ^2^ uses preview<br>
