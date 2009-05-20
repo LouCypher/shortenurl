@@ -81,6 +81,7 @@ pref("extensions.shortenURL.name.73", "to.vg");
 pref("extensions.shortenURL.name.74", "POPrl");
 pref("extensions.shortenURL.name.75", "Clop.in");
 pref("extensions.shortenURL.name.76", "ZZ.GD");
+pref("extensions.shortenURL.name.77", "LinxFix");
 pref("extensions.shortenURL.0", "http://tinyurl.com/api-create.php?url=");
 pref("extensions.shortenURL.1", "http://bit.ly/api?url=");
 pref("extensions.shortenURL.2", "http://is.gd/api.php?longurl=");
@@ -158,4 +159,5 @@ pref("extensions.shortenURL.73", "http://to.vg/api.php?apiusr=ShortenURL&apikey=
 pref("extensions.shortenURL.74", "http://poprl.com/api/bookmark.js?v=2&url=");
 pref("extensions.shortenURL.75", "http://pipes.yahoo.com/pipes/pipe.run?_id=ioAEBfQ_3hGKvKbeBRNMsA&_render=json&url=");
 pref("extensions.shortenURL.76", "http://zz.gd/api-create.php?url=");
+pref("extensions.shortenURL.77", "http://linxfix.com/enterlink.php?link=");
 
