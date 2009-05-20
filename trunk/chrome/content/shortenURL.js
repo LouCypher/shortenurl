@@ -69,9 +69,9 @@ var ShortenURL = {
   },
 
   isMP3: function shortenURL_isMP3(aURL) {
-    var reg = new RegExp("^https?\:\/\/cdn.*\.projectplaylist\.com.*" +
+    var reg = new RegExp("^https?\\:\\/\\/cdn.*\\.projectplaylist\\.com.*" +
                          "|(?!rapidshare|rapidlibrary|mediafire" +
-                         "|4share|easy\-share).*\.mp3", "i");
+                         "|4share|easy\-share).*\\.mp3", "i");
     return reg.test(aURL) && this.prefService.getBoolPref("mp3");
   },
 
