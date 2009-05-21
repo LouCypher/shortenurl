@@ -30,6 +30,7 @@
  # [http://krz.ch/ krz.ch]
  # [http://kots.nu/ Kots.Nu]
  # [http://lin.cr/ Lincr]
+ # [http://linxfix.de/ LinxFix] `*`
  # [http://lnk.by/ LNK.by]
  # [http://metamark.net/ Metamark (xrl.us)]
  # [http://migre.me/ migre.me]
@@ -46,6 +47,7 @@
  # [http://qurl.com/ Qurl]
  # [http://r.im/ r.im]
  # [http://rde.me/ RDE.me]
+ # [http://rnk.me/ rnk.me] `*`
  # [http://rubyurl.com/ RubyURL]
  # [http://shorl.com/ shorl] ^2^
  # [http://short.ie/ Short.ie]
