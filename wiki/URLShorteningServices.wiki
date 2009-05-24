@@ -53,6 +53,7 @@
  # [http://short.ie/ Short.ie]
  # [http://short.to/ short.to]
  # [http://shortn.me/ shortn.me]
+ # [http://shrtn.com/ Shrtn] `*`
  # [http://smallr.net/ Smallr.net]
  # [http://snipurl.com/ SnipURL (sn.im)]
  # [http://song.ly/ song.ly] ^3^
