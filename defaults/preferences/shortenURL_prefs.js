@@ -99,7 +99,7 @@ pref("extensions.shortenURL.6", "http://a.gd/?module=ShortURL&file=Add&mode=API&
 pref("extensions.shortenURL.7", "http://piurl.com/api.php?url=");
 pref("extensions.shortenURL.8", "http://tr.im/api/trim_url.json?url=");
 pref("extensions.shortenURL.9", "http://kl.am/api/shorten?format=text&url=");
-pref("extensions.shortenURL.10", "http://cli.gs/api/v1/cligs/create?url=");
+pref("extensions.shortenURL.10", "http://cli.gs/api/v1/cligs/create?appid=ShortenURL&url=");
 pref("extensions.shortenURL.11", "http://urlborg.com/api/766109-66f2/create_or_reuse/");
 pref("extensions.shortenURL.12", "http://pipes.yahoo.com/pipes/pipe.run?_id=7bb411cbb7bd34aa30900dd089c19e8f&_render=json&url=");
 pref("extensions.shortenURL.13", "http://pipes.yahoo.com/pipes/pipe.run?_id=89935aab880ff4a92e5b05917da149b5&_render=json&url=");
