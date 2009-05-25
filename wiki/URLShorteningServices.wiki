@@ -20,6 +20,7 @@
  # [http://digg.com/tools/diggbar DiggBar]
  # [http://fly2.ws/ Fly2.ws]
  # [http://foxyurl.com/ Foxy URL]
+ # [http://gurl.es/ Gurl.es]
  # [http://hex.io/ hex.io]
  # [http://idek.net/ idek.net]
  # [http://is.gd/ is.gd]
@@ -30,7 +31,7 @@
  # [http://krz.ch/ krz.ch]
  # [http://kots.nu/ Kots.Nu]
  # [http://lin.cr/ Lincr]
- # [http://linxfix.de/ LinxFix] `*`
+ # [http://linxfix.de/ LinxFix]
  # [http://lnk.by/ LNK.by]
  # [http://metamark.net/ Metamark (xrl.us)]
  # [http://migre.me/ migre.me]
@@ -39,7 +40,7 @@
  # [http://moourl.com/ Moourl]
  # [http://myurl.in/ MyURL.in]
  # [http://pendek.in/ Pendek.in]
- # [http://pic.gd/ Pic.gd] `*`
+ # [http://pic.gd/ Pic.gd]
  # [http://piurl.com/ PiURL]
  # [http://plurl.me/ Plurl]
  # [http://pnt.me/ pnt.me]
@@ -48,14 +49,14 @@
  # [http://qurl.com/ Qurl]
  # [http://r.im/ r.im]
  # [http://rde.me/ RDE.me]
- # [http://rnk.me/ rnk.me] `*`
+ # [http://rnk.me/ rnk.me]
  # [http://rubyurl.com/ RubyURL]
- # [http://sai.ly/ Sai.ly] `*`
+ # [http://sai.ly/ Sai.ly]
  # [http://shorl.com/ shorl] ^2^
  # [http://short.ie/ Short.ie]
  # [http://short.to/ short.to]
  # [http://shortn.me/ shortn.me]
- # [http://shrtn.com/ Shrtn] `*`
+ # [http://shrtn.com/ Shrtn]
  # [http://smallr.net/ Smallr.net]
  # [http://snipurl.com/ SnipURL (sn.im)]
  # [http://song.ly/ song.ly] ^3^
@@ -73,13 +74,13 @@
  # [http://u.nu/ u.nu]
  # [http://ur.ly/ ur.ly]
  # [http://url.ie/ URL.ie]
- # [http://unfaker.it/ URL (un)faker] `*`
+ # [http://unfaker.it/ URL (un)faker]
  # [http://urlborg.com/ urlBorg]
  # [http://u.mavrev.com/ urlShort (u.mavrev.com)]
  # [http://urlzen.com/ urlzen]
  # [http://virl.com/ Virl] ^1^
  # [http://vl.am/ vl.am]
- # [http://vtc.es/ VTC] `*`
+ # [http://vtc.es/ VTC]
  # [http://xrt.me/ XORTR (xrt.me)]
  # [http://xr.com/ XR.com]
  # [http://xrl.in/ xrl.in]
