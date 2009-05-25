@@ -1,6 +1,19 @@
 #summary Version history
 #labels Featured
 
+ * 0.1 alpha 2
+  # fixed regexp for MP3 URLs
+  # fixed TightURL
+  # added more services:
+   # [http://linxfix.com/ LinxFix]
+   # [http://rnk.me/ rnk.me]
+   # [http://shrtn.com/ Shrtn]
+   # [http://vtc.es/ VTC]
+   # [http://pic.gd/ Pic.gd]
+   # [http://sai.ly Sai.ly]
+   # [http://unfaker.it URL (un)faker]
+
+
  * 0.1 alpha 1
   # added extension icon
   # added shorten image URL on context menu
