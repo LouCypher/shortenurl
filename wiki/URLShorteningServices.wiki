@@ -3,7 +3,6 @@
 
 ^(In alphabetical order)^
 
- # [http://2to.us/ 2to.us]
  # [http://2ze.us/ 2Zeus]
  # [http://9mp.com/ 9mp]
  # [http://a.gd/ a.gd]
@@ -20,6 +19,7 @@
  # [http://digg.com/tools/diggbar DiggBar]
  # [http://fly2.ws/ Fly2.ws]
  # [http://foxyurl.com/ Foxy URL]
+ # [http://good.ly/ Good.ly]
  # [http://gurl.es/ Gurl.es]
  # [http://hex.io/ hex.io]
  # [http://idek.net/ idek.net]
