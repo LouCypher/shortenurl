@@ -89,8 +89,9 @@ pref("extensions.shortenURL.name.81", "Pic.gd");
 pref("extensions.shortenURL.name.82", "Sai.ly");
 pref("extensions.shortenURL.name.83", "URL (un)faker");
 pref("extensions.shortenURL.name.84", "Gurl.es");
+pref("extensions.shortenURL.name.85", "min2.me");
 pref("extensions.shortenURL.0", "http://tinyurl.com/api-create.php?url=");
-pref("extensions.shortenURL.1", "http://bit.ly/api?url=");
+pref("extensions.shortenURL.1", "http://api.bit.ly/shorten?version=2.0.1&format=text&login=shortenurl&apiKey=R_9781b0da8391ffe5de4f63c4205ed372&longUrl=");
 pref("extensions.shortenURL.2", "http://is.gd/api.php?longurl=");
 pref("extensions.shortenURL.3", "http://metamark.net/api/rest/simple?long_url=");
 pref("extensions.shortenURL.4", "http://sn.im/site/snip?r=simple&link=");
@@ -174,3 +175,4 @@ pref("extensions.shortenURL.81", "http://pic.gd/?module=ShortURL&file=Add&mode=A
 pref("extensions.shortenURL.82", "http://sai.ly/new.txt?href=");
 pref("extensions.shortenURL.83", "http://unfake.it/?a=api&url=");
 pref("extensions.shortenURL.84", "http://pipes.yahoo.com/pipes/pipe.run?_id=ICiokjBJ3hGZ8XV01ZzWFw&_render=json&url=");
+pref("extensions.shortenURL.85", "http://min2.me/api_new.xml?url=");

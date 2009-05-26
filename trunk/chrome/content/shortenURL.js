@@ -177,7 +177,8 @@ var ShortenURL = {
       req.open("GET",
                baseURL + ((this.isURLof(baseURL, "arm.in") ||
                            this.isURLof(baseURL, "vl.am") ||
-                           this.isURLof(baseURL, "rde.me"))
+                           this.isURLof(baseURL, "rde.me") ||
+                           this.isURLof(baseURL, "min2.me"))
                           ? url : encodeURIComponent(url)),
                false);
       req.send(null);
@@ -230,7 +231,8 @@ var ShortenURL = {
         } else if (this.isURLof(baseURL, "ur.ly")) {
           shortURL = "http://ur.ly/" + JSON.decode(req.responseText).code;
 
-        } else if (this.isURLof(baseURL, "migre.me")) {
+        } else if (this.isURLof(baseURL, "migre.me") ||
+                   this.isURLof(baseURL, "min2.me")) {
           shortURL = req.responseXML.getElementsByTagName("migre")[0]
                                     .textContent;
 
