@@ -8,7 +8,7 @@
   # added more services:
    # [http://gurl.es/ Gurl.es]
    # [http://linxfix.com/ LinxFix]
-   # [http://min2.me/ min2.me]
+   # [http://min2.me/ min2me]
    # [http://pic.gd/ Pic.gd]
    # [http://rnk.me/ rnk.me]
    # [http://sai.ly Sai.ly]
