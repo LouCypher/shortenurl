@@ -36,6 +36,7 @@
  # [http://metamark.net/ Metamark (xrl.us)]
  # [http://migre.me/ migre.me]
  # [http://micurl.com micURL]
+ # [http://min2.me/ min2me]
  # [http://minurl.fr MinURL]
  # [http://moourl.com/ Moourl]
  # [http://myurl.in/ MyURL.in]
