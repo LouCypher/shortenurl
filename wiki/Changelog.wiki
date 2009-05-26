@@ -4,7 +4,8 @@
  * 0.1 alpha 2
   # fixed regexp for MP3 URLs
   # fixed TightURL
-  # added <tt>appid</tt> to cli.gs API
+  # added API keys for bit.ly, cli.gs, kl.am
+  # [http://2to.us/ 2to.us] isn't working anymore, replaced it with [http://good.ly/ Good.ly]
   # added more services:
    # [http://gurl.es/ Gurl.es]
    # [http://linxfix.com/ LinxFix]
