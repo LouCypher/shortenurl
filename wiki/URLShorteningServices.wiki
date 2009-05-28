@@ -4,6 +4,7 @@
 ^(In alphabetical order)^
 
  # [http://2ze.us/ 2Zeus]
+ # [http://3.ly/ 3.ly] `*`
  # [http://9mp.com/ 9mp]
  # [http://a.gd/ a.gd]
  # [http://abbr.com/ abbr]
@@ -19,6 +20,7 @@
  # [http://digg.com/tools/diggbar DiggBar]
  # [http://fly2.ws/ Fly2.ws]
  # [http://foxyurl.com/ Foxy URL]
+ # [http://fwd4.me/ FWD4.me] `*`
  # [http://good.ly/ Good.ly]
  # [http://gurl.es/ Gurl.es]
  # [http://hex.io/ hex.io]
