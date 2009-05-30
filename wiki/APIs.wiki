@@ -51,5 +51,6 @@ http://xrl.in/?r=key&xrl=
 == Don't Encode ==
 The long URL must not be encoded
 {{{
+http://srnk.net/create.php?url=
 http://vl.am/api/shorten/plain/
 }}}
