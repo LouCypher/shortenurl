@@ -116,7 +116,9 @@ var ShortenURL = {
       t.focus();
     } else {
       // open Twitter home in a new tab
-      gBrowser.loadOneTab("http://twitter.com/home/?status=" + aString,
+      gBrowser.loadOneTab("http://twitter.com/home/?status=" +
+                          encodeURIComponent(aString) +
+                          "&in_reply_to=shortenurl",
                           null, null, null, false);
     }
   },
@@ -141,6 +143,7 @@ var ShortenURL = {
       index++
     }
 
+    // show open location dialog if location bar is not available
     openDialog("chrome://shortenurl/content/options.xul",
                "shortenurl-options",
                "chrome, centerscreen");
@@ -162,7 +165,6 @@ var ShortenURL = {
       return;
     }
 
-    // show open location dialog if location bar is not available
     openDialog("chrome://browser/content/openLocation.xul",
                "_blank", "chrome, modal, titlebar",
                window, aURL);
@@ -188,6 +190,7 @@ var ShortenURL = {
       req.open("GET",
                baseURL + ((this.isURLof(baseURL, "arm.in") ||
                            this.isURLof(baseURL, "min2.me") ||
+                           this.isURLof(baseURL, "srnk.net") ||
                            this.isURLof(baseURL, "rde.me") ||
                            this.isURLof(baseURL, "vl.am"))
                           ? url : encodeURIComponent(url)),
@@ -240,6 +243,10 @@ var ShortenURL = {
         } else if (this.isURLof(baseURL, "migre.me") ||
                    this.isURLof(baseURL, "min2.me")) {
           shortURL = req.responseXML.getElementsByTagName("migre")[0]
+                                    .textContent;
+
+        } else if (this.isURLof(baseURL, "shw.me")) {
+          shortURL = req.responseXML.getElementsByTagName("shwme-url")[0]
                                     .textContent;
 
         // plain text output formats

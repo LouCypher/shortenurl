@@ -92,6 +92,9 @@ pref("extensions.shortenURL.name.84", "Gurl.es");
 pref("extensions.shortenURL.name.85", "min2.me");
 pref("extensions.shortenURL.name.86", "FWD4.me");
 pref("extensions.shortenURL.name.87", "3.ly");
+pref("extensions.shortenURL.name.88", "lurl.no");
+pref("extensions.shortenURL.name.89", "Shw.me");
+pref("extensions.shortenURL.name.90", "srnk.net");
 pref("extensions.shortenURL.0", "http://tinyurl.com/api-create.php?url=");
 pref("extensions.shortenURL.1", "http://api.bit.ly/shorten?version=2.0.1&format=text&login=shortenurl&apiKey=R_9781b0da8391ffe5de4f63c4205ed372&longUrl=");
 pref("extensions.shortenURL.2", "http://is.gd/api.php?longurl=");
@@ -180,3 +183,6 @@ pref("extensions.shortenURL.84", "http://pipes.yahoo.com/pipes/pipe.run?_id=ICio
 pref("extensions.shortenURL.85", "http://min2.me/api_new.xml?url=");
 pref("extensions.shortenURL.86", "http://api.fwd4.me/?url=");
 pref("extensions.shortenURL.87", "http://3.ly/?api=em5893833&u=");
+pref("extensions.shortenURL.88", "http://lurl.no/api/0.1/?url=");
+pref("extensions.shortenURL.89", "http://shw.me/redirects/api?url=");
+pref("extensions.shortenURL.90", "http://srnk.net/create.php?url=");
