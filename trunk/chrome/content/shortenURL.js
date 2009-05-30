@@ -63,6 +63,7 @@ var ShortenURL = {
               .alert(null, "Shorten URL", aString);
   },
 
+  // supported schemes, http and https only
   isValidScheme: function shortenURL_isValidScheme(aURL) {
     var reg = new RegExp("^https?", "i");
     return reg.test(aURL);
@@ -89,17 +90,22 @@ var ShortenURL = {
     }
   },
 
+  // copy to clipboard
   copy: function shortenURL_copy(aString) {
     Components.classes["@mozilla.org/widget/clipboardhelper;1"]
               .getService(Components.interfaces.nsIClipboardHelper)
               .copyString(aString);
   },
 
+  // post to Twitter
   tweet: function shortenURL_tweet(aString) {
     /*if (typeof TWITTERBAR == "object") {
       gURLBar.value = aString;
       TWITTERBAR.post(true);
-    } else*/ if ((typeof gTwitterNotifier == "object") &&
+    } else*/ 
+
+    // Open TwitterFox panel if it's installed
+    if ((typeof gTwitterNotifier == "object") &&
         (gTwitterNotifier._util.accounts) &&
         (gTwitterNotifier._util.pref().getBoolPref("login"))) {
       var t = gTwitterNotifier.$("twitternotifier-message-input");
@@ -109,6 +115,7 @@ var ShortenURL = {
       t.value = aString;
       t.focus();
     } else {
+      // open Twitter home in a new tab
       gBrowser.loadOneTab("http://twitter.com/home/?status=" + aString,
                           null, null, null, false);
     }
@@ -118,6 +125,7 @@ var ShortenURL = {
     return aURL.indexOf(aString) > -1;
   },
 
+  // open options dialog
   openPrefs: function shortenURL_openPrefs() {
     var wenum = Components.classes["@mozilla.org/embedcomp/window-watcher;1"]
                           .getService(Components.interfaces.nsIWindowWatcher)
@@ -138,6 +146,7 @@ var ShortenURL = {
                "chrome, centerscreen");
   },
 
+  // display result in location bar
   showShortURL: function shortenURL_showShortenURL(aURL) {
     if (window.fullScreen && ("mouseoverToggle" in FullScreen)) {
       FullScreen.mouseoverToggle(true);
@@ -153,11 +162,13 @@ var ShortenURL = {
       return;
     }
 
+    // show open location dialog if location bar is not available
     openDialog("chrome://browser/content/openLocation.xul",
                "_blank", "chrome, modal, titlebar",
                window, aURL);
   },
 
+  // shorten long URL
   shorten: function shortenURL_shorten(aURL, aBaseNum) {
     var url = aURL != undefined ? aURL : content.location.href;
     if (!this.isValidScheme(url)) {
@@ -176,9 +187,9 @@ var ShortenURL = {
       var req = new XMLHttpRequest();
       req.open("GET",
                baseURL + ((this.isURLof(baseURL, "arm.in") ||
-                           this.isURLof(baseURL, "vl.am") ||
+                           this.isURLof(baseURL, "min2.me") ||
                            this.isURLof(baseURL, "rde.me") ||
-                           this.isURLof(baseURL, "min2.me"))
+                           this.isURLof(baseURL, "vl.am"))
                           ? url : encodeURIComponent(url)),
                false);
       req.send(null);
@@ -187,39 +198,10 @@ var ShortenURL = {
                              .createInstance(Components.interfaces.nsIJSON);
 
         var shortURL = "";
+
+        // JSON output formats
         if (this.isURLof(baseURL, "pipes.yahoo.com")) {
           shortURL = JSON.decode(req.responseText).value.items[0].link;
-
-        } else if (this.isURLof(baseURL, "tr.im")) {
-          shortURL = JSON.decode(req.responseText).url;
-
-        } else if (this.isURLof(baseURL, "digg.com")) {
-          shortURL = JSON.decode(req.responseText).shorturls[0].short_url;
-
-        } else if (this.isURLof(baseURL, "zipmyurl.com")) {
-          shortURL = "http://zipmyurl.com/" +
-                     JSON.decode(req.responseText).zipURL;
-
-        } else if (this.isURLof(baseURL, "xrl.in")) {
-          shortURL = "http://xrl.in/" + req.responseText;
-
-        } else if (this.isURLof(baseURL, "lin.cr")) {
-          shortURL = "http://lin.cr/" + req.responseText;
-
-        } else if (this.isURLof(baseURL, "micurl.com")) {
-          shortURL = "http://micurl.com/" + req.responseText;
-
-        } else if (this.isURLof(baseURL, "r.im")) {
-          shortURL = req.responseText.match(/[^\s]+/).toString();
-
-        } else if (this.isURLof(baseURL, "lnk.by")) {
-          shortURL = "http://" + JSON.decode(req.responseText).ShortUrl;
-
-        } else if (this.isURLof(baseURL, "tra.kz")) {
-          shortURL = "http://tra.kz/" + JSON.decode(req.responseText).s;
-
-        } else if (this.isURLof(baseURL, "song.ly")) {
-          shortURL = JSON.decode(req.responseText).shortUrl;
 
         } else if (this.isURLof(baseURL, "2ze.us")) {
           var obj = JSON.decode(req.responseText);
@@ -228,27 +210,60 @@ var ShortenURL = {
             break;
           }
 
+        } else if (this.isURLof(baseURL, "digg.com")) {
+          shortURL = JSON.decode(req.responseText).shorturls[0].short_url;
+
+        } else if (this.isURLof(baseURL, "lnk.by")) {
+          shortURL = "http://" + JSON.decode(req.responseText).ShortUrl;
+
+        } else if (this.isURLof(baseURL, "song.ly")) {
+          shortURL = JSON.decode(req.responseText).shortUrl;
+
+        } else if (this.isURLof(baseURL, "tra.kz")) {
+          shortURL = "http://tra.kz/" + JSON.decode(req.responseText).s;
+
+        } else if (this.isURLof(baseURL, "tr.im")) {
+          shortURL = JSON.decode(req.responseText).url;
+
         } else if (this.isURLof(baseURL, "ur.ly")) {
           shortURL = "http://ur.ly/" + JSON.decode(req.responseText).code;
+
+        } else if (this.isURLof(baseURL, "zipmyurl.com")) {
+          shortURL = "http://zipmyurl.com/" +
+                     JSON.decode(req.responseText).zipURL;
+
+        // XML output formats
+        } else if (this.isURLof(baseURL, "arm.in")) {
+          shortURL = req.responseXML.getElementsByTagName("arminized_url")[0]
+                                    .textContent;
 
         } else if (this.isURLof(baseURL, "migre.me") ||
                    this.isURLof(baseURL, "min2.me")) {
           shortURL = req.responseXML.getElementsByTagName("migre")[0]
                                     .textContent;
 
-        } else if (this.isURLof(baseURL, "z.pe")) {
-          shortURL = "http://z.pe/" +
-                     req.responseText.match(/\w+(?=\s)/).toString();
-
-        } else if (this.isURLof(baseURL, "arm.in")) {
-          shortURL = req.responseXML.getElementsByTagName("arminized_url")[0]
-                                    .textContent;
-
+        // plain text output formats
         } else if (this.isURLof(baseURL, "buk.me")) {
           shortURL = req.responseText.match(/^[^\<]+/).toString();
 
+        } else if (this.isURLof(baseURL, "lin.cr")) {
+          shortURL = "http://lin.cr/" + req.responseText;
+
+        } else if (this.isURLof(baseURL, "micurl.com")) {
+          shortURL = "http://micurl.com/" + req.responseText;
+
         } else if (this.isURLof(baseURL, "poprl.com")) {
           shortURL = req.responseText.match(/^[^\s]+/).toString();
+
+        } else if (this.isURLof(baseURL, "r.im")) {
+          shortURL = req.responseText.match(/[^\s]+/).toString();
+
+        } else if (this.isURLof(baseURL, "xrl.in")) {
+          shortURL = "http://xrl.in/" + req.responseText;
+
+        } else if (this.isURLof(baseURL, "z.pe")) {
+          shortURL = "http://z.pe/" +
+                     req.responseText.match(/\w+(?=\s)/).toString();
 
         } else {
           shortURL = req.responseText;
@@ -263,10 +278,12 @@ var ShortenURL = {
             shortURL = shortURL.replace(/\/www\./, "/");
           }
 
+          // copy to clipboard
           if (this.prefService.getBoolPref("autocopy")) {
             this.copy(shortURL);
           }
 
+          // post to Twitter
           if (this.prefService.getBoolPref("autotweet")) {
             this.tweet(shortURL);
             return;
@@ -275,6 +292,7 @@ var ShortenURL = {
           this.showShortURL(shortURL);
           this.setStatus(shortURL);
 
+          // show message if the output is longer than the original URL
           if (shortURL.length > url.length) {
             this.alert(this.strings.getFormattedString("is_shorter",
                                                        [url, shortURL]));
@@ -286,6 +304,7 @@ var ShortenURL = {
     } catch(ex) {
       error = ex;
     }
+    // FAIL!
     this.alert(this.strings.getString("shorten_fail"));
     throw new Error(error);
   }
@@ -293,13 +312,16 @@ var ShortenURL = {
 }
 
 window.addEventListener("load", shortenURL_init = function(e) {
+  // context menu initalizations
   var cm = document.getElementById("contentAreaContextMenu");
   cm.addEventListener("popupshowing", contextInit = function(e) {
+    // "Shorten this link URL" menu, only shown if right click on a link
     gContextMenu.showItem("context-shorten-linkURL",
                           gContextMenu.onLink &&
                           ShortenURL.isValidScheme(gContextMenu.
                                                    linkProtocol));
 
+    // "Shorten this page URL"
     gContextMenu.showItem("context-shorten-pageURL",
                           !(gContextMenu.isContentSelected ||
                             gContextMenu.onTextInput ||
@@ -308,12 +330,14 @@ window.addEventListener("load", shortenURL_init = function(e) {
                           ShortenURL.isValidScheme(content.document.
                                                    location.protocol));
 
+    // "Shorten this frame URL", only shown if right click on a frame
     gContextMenu.showItem("context-shorten-frameURL",
                           gContextMenu.inFrame &&
                           ShortenURL.isValidScheme(gContextMenu.target.
                                                    ownerDocument.location
                                                                 .protocol));
 
+    // "Shorten this image URL", only shown if right click on an image
     gContextMenu.showItem("context-shorten-imageURL",
                           gContextMenu.onImage &&
                           ShortenURL.isValidScheme("mediaURL" in gContextMenu
