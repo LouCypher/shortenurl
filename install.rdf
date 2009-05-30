@@ -4,10 +4,11 @@
      xmlns:em="http://www.mozilla.org/2004/em-rdf#">
 
   <Description about="urn:mozilla:install-manifest">
+    <em:type>2</em:type>
     <em:id>ShortenURL@loucypher</em:id>
     <em:name>Shorten URL</em:name>
-    <em:version>0.1a3pre2</em:version>
-    <em:description>Shorten long URL from Firefox context menu with your selected URL shortening service and display the result in location bar.</em:description>
+    <em:version>0.1a3pre3</em:version>
+    <em:description>Shorten long URL from Firefox context menu or toolbar button with your selected URL shortening service and display the result in location bar.</em:description>
     <em:creator>LouCypher</em:creator>
     <em:contributor>Rt (Pipe for Tweetburner)</em:contributor>
     <em:optionsURL>chrome://shortenurl/content/options.xul</em:optionsURL>
@@ -28,7 +29,7 @@
       <Description>
         <em:id>{a463f10c-3994-11da-9945-000d60ca027b}</em:id>
         <em:minVersion>1.0</em:minVersion>
-        <em:maxVersion>2.*</em:maxVersion> <!-- gak janji -->
+        <em:maxVersion>2.*</em:maxVersion>
       </Description>
     </em:targetApplication>
 
