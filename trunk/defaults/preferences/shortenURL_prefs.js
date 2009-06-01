@@ -1,6 +1,8 @@
 pref("extensions.ShortenURL@loucypher.description", "chrome://shortenurl/locale/shortenurl.properties");
 pref("extensions.shortenURL.autocopy", false);
-pref("extensions.shortenURL.autotweet", false);
+pref("extensions.shortenURL.post", false);
+pref("extensions.shortenURL.post.server", 0);
+pref("extensions.shortenURL.post.server.laconica", "http://identi.ca/");
 pref("extensions.shortenURL.mp3", true);
 pref("extensions.shortenURL.mp3.baseURL", 46);
 pref("extensions.shortenURL.baseURL", 0);

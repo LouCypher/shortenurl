@@ -42,7 +42,8 @@
 <prefwindow
   xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
   id="shortenURL-config"
-  title="&options.title;">
+  title="&options.title;"
+  onload="sizeToContent();">
 
   <prefpane id="prefpane">
 
@@ -60,9 +61,17 @@
         name="extensions.shortenURL.autocopy"
         type="bool" />
       <preference
-        id="extensions.shortenURL.autotweet"
-        name="extensions.shortenURL.autotweet"
+        id="extensions.shortenURL.post"
+        name="extensions.shortenURL.post"
         type="bool" />
+      <preference
+        id="extensions.shortenURL.post.server"
+        name="extensions.shortenURL.post.server"
+        type="int" />
+      <preference
+        id="extensions.shortenURL.post.server.laconica"
+        name="extensions.shortenURL.post.server.laconica"
+        type="string" />
       <preference
         id="extensions.shortenURL.mp3"
         name="extensions.shortenURL.mp3"
@@ -78,10 +87,10 @@
                  control="menulist" />
           <menulist id="menulist" sizetopopup="pref"
                     preference="extensions.shortenURL.baseURL">
-            <menupopup id="menupopup"></menupopup>
+            <menupopup id="menupopup" />
           </menulist>
         </hbox>
-        <checkbox id="extensions.shortenURL.mp3"
+        <checkbox id="mp3"
                   label="&options.mp3.caption;"
                   preference="extensions.shortenURL.mp3" />
         <radiogroup id="mp3-shortener" orient="horizontal" align="center"
@@ -98,18 +107,35 @@
       <groupbox flex="1">
         <caption>&options.more.caption;</caption>
         <vbox>
-          <hbox>
+          <vbox>
             <checkbox
-              id="extensions.shortenURL.autocopy"
+              id="autocopy"
               label="&options.more.autocopy;"
               accesskey="&options.more.autocopy.key;"
               preference="extensions.shortenURL.autocopy" />
             <checkbox
-              id="extensions.shortenURL.autotweet"
-              label="&options.more.autotweet;"
-              accesskey="&options.more.autotweet.key;"
-              preference="extensions.shortenURL.autotweet" />
-          </hbox>
+              id="post"
+              label="&options.more.post;"
+              accesskey="&options.more.post.key;"
+              preference="extensions.shortenURL.post"
+              onclick="sizeToContent();" />
+            <hbox>
+              <radiogroup id="micro-blogs" orient="horizontal" align="center"
+                          preference="extensions.shortenURL.post.server">
+                <radio id="twitter"
+                       label="Twitter"
+                       value="0" />
+                <radio id="laconica"
+                       label="Laconica"
+                       value="1"
+                       onclick="" />
+                <textbox
+                  id="laconica-server"
+                  preference="extensions.shortenURL.post.server.laconica"
+                  type="autocomplete" sizetopopup="pref" flex="1" />
+              </radiogroup>
+            </hbox>
+          </vbox>
         </vbox>
       </groupbox>
 

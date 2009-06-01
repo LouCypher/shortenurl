@@ -1,16 +1,21 @@
-<!ENTITY context.page                   "Pendekkan URL halaman ini">
-<!ENTITY context.link                   "Pendekkan URL tautan ini">
-<!ENTITY context.frame                  "Pendekkan URL bingkai ini">
-<!ENTITY context.image                  "Pendekkan URL gambar ini">
+<!ENTITY context.page                         "Pendekkan URL halaman ini">
+<!ENTITY context.link                         "Pendekkan URL tautan ini">
+<!ENTITY context.frame                        "Pendekkan URL bingkai ini">
+<!ENTITY context.image                        "Pendekkan URL gambar ini">
 
-<!ENTITY options.title                  "Pengaturan Shorten URL">
-<!ENTITY options.shortener.caption      "Pemendek URL">
-<!ENTITY options.shortener.select       "Layanan pilihan">
-<!ENTITY options.shortener.select.key   "a">
-<!ENTITY options.mp3.caption            "Menggunakan pemendek yang berbeda untuk tautan MP3">
-<!ENTITY options.more.caption           "Pengaturan Tambahan">
-<!ENTITY options.more.autocopy          "Salin ke clipboard">
-<!ENTITY options.more.autocopy.key      "c">
-<!ENTITY options.more.autotweet         "Kirim ke Twitter">
-<!ENTITY options.more.autotweet.key     "T">
+<!ENTITY options.title                        "Pengaturan Shorten URL">
+<!ENTITY options.shortener.caption            "Pemendek URL">
+<!ENTITY options.shortener.select             "Layanan pilihan">
+<!ENTITY options.shortener.select.key         "a">
+<!ENTITY options.mp3.caption                  "Menggunakan pemendek yang berbeda untuk tautan MP3">
+<!ENTITY options.more.caption                 "Pengaturan Tambahan">
+<!ENTITY options.more.autocopy                "Salin ke clipboard">
+<!ENTITY options.more.autocopy.key            "c">
+<!ENTITY options.more.post                    "Layanan Micro-blogging">
+<!ENTITY options.more.post.key                "M">
+<!ENTITY options.more.post.twitter            "Kirim Twitter">
+<!ENTITY options.more.post.twitter.key        "T">
+<!ENTITY options.more.post.laconica           "Kirim Laconica">
+<!ENTITY options.more.post.laconica.key       "L">
+<!ENTITY options.more.post.laconica.server    "Server Laconica">
 
