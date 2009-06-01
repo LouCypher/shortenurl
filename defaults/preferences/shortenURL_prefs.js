@@ -183,7 +183,7 @@ pref("extensions.shortenURL.82", "http://sai.ly/new.txt?href=");
 pref("extensions.shortenURL.83", "http://unfake.it/?a=api&url=");
 pref("extensions.shortenURL.84", "http://pipes.yahoo.com/pipes/pipe.run?_id=ICiokjBJ3hGZ8XV01ZzWFw&_render=json&url=");
 pref("extensions.shortenURL.85", "http://min2.me/api_new.xml?url=");
-pref("extensions.shortenURL.86", "http://api.fwd4.me/?url=");
+pref("extensions.shortenURL.86", "http://api.fwd4.me/?key=7ed33883ebf0ae31be1d&url=");
 pref("extensions.shortenURL.87", "http://3.ly/?api=em5893833&u=");
 pref("extensions.shortenURL.88", "http://lurl.no/api/0.1/?url=");
 pref("extensions.shortenURL.89", "http://shw.me/redirects/api?url=");
