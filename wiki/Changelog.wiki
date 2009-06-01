@@ -1,6 +1,15 @@
 #summary Version history
 #labels Featured
 
+ * 0.1 alpha 3 pre 4
+  # added post to any [http://laconi.ca/ Laconica] server (default is [http://identi.ca/ identi.ca])
+  # added services:
+   # [http://3.ly/ 3.ly]
+   # [http://fwd4.me/ FWD4.me]
+   # [http://lurl.no/ lurl.no]
+   # [http://show.me/ Shw.me]
+   # [http://srnk.net/ srnk.net]
+
  * 0.1 alpha 2
   # fixed regexp for MP3 URLs
   # fixed TightURL
