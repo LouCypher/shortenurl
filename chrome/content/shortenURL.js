@@ -98,12 +98,7 @@ var ShortenURL = {
   },
 
   // post to Twitter
-  tweet: function shortenURL_tweet(aString) {
-    /*if (typeof TWITTERBAR == "object") {
-      gURLBar.value = aString;
-      TWITTERBAR.post(true);
-    } else*/ 
-
+  twitter: function shortenURL_twitter(aString) {
     // Open TwitterFox panel if it's installed
     if ((typeof gTwitterNotifier == "object") &&
         (gTwitterNotifier._util.accounts) &&
@@ -120,6 +115,22 @@ var ShortenURL = {
                           encodeURIComponent(aString) +
                           "&in_reply_to=shortenurl",
                           null, null, null, false);
+    }
+  },
+
+  // post to Laconica server
+  laconica: function shortenURL_laconica(aString) {
+    var server = this.prefService.getCharPref("post.server.laconica");
+    gBrowser.loadOneTab(server + "?action=newnotice&status_textarea=" +
+                        encodeURIComponent(aString),
+                        null, null, null, false);
+  },
+
+  // post to micro-blogging service
+  post: function shortenURL_post(aString) {
+    switch (this.prefService.getIntPref("post.server")) {
+      case 0: this.twitter(aString); break;
+      case 1: this.laconica(aString);
     }
   },
 
@@ -291,8 +302,8 @@ var ShortenURL = {
           }
 
           // post to Twitter
-          if (this.prefService.getBoolPref("autotweet")) {
-            this.tweet(shortURL);
+          if (this.prefService.getBoolPref("post")) {
+            this.post(shortURL);
             return;
           }
 

@@ -33,6 +33,10 @@
   the terms of any one of the MPL, the GPL or the LGPL.
 */
 
+function $(aID) {
+  return document.getElementById(aID);
+}
+
 ({
   get prefService() {
     return Components.classes["@mozilla.org/preferences-service;1"]
@@ -42,14 +46,6 @@
 
   get pref() {
     return this.prefService.getBranch("extensions.shortenURL.");
-  },
-
-  get menulist() {
-    return document.getElementById("menulist");
-  },
-
-  get menupopup() {
-    return document.getElementById("menupopup");
   },
 
   get services() {
@@ -80,17 +76,35 @@
     var mi = document.createElement("menuitem");
     mi.setAttribute("value", aObject.index);
     mi.setAttribute("label", aObject.name);
-    this.menupopup.appendChild(mi);
+    $("menupopup").appendChild(mi);
   },
 
   load: function config_onLoad() {
+    $("mp3-shortener").disabled = !$("mp3").checked;
+    $("micro-blogs").disabled = !$("post").checked;
+    $("laconica-server").disabled = !$("laconica").selected || !$("post").checked;
+
+    $("mp3").addEventListener("DOMAttrModified", function() {
+      $("mp3-shortener").disabled = !$("mp3").checked;
+    }, false);
+
+    $("post").addEventListener("DOMAttrModified", function() {
+      $("micro-blogs").disabled = !$("post").checked;
+      $("laconica-server").disabled = !$("laconica").selected || !$("post").checked;
+    }, false);
+
+    $("laconica").addEventListener("DOMAttrModified", function() {
+      $("laconica-server").disabled = !$("laconica").selected || !$("post").checked;
+      $("laconica-server").focus();
+    }, false);
+
     for (var i = 0; i < this.services.length; i++) {
       this.populate(this.services[i]);
       if (this.services[i].index == this.pref.getIntPref("baseURL")) {
         var selectedIndex = i;
       }
     }
-    this.menulist.selectedIndex = selectedIndex;
+    $("menulist").selectedIndex = selectedIndex;
   }
 
 }).load()
