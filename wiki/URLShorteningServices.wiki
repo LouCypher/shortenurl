@@ -35,6 +35,7 @@
  # [http://lin.cr/ Lincr]
  # [http://linxfix.de/ LinxFix]
  # [http://lnk.by/ LNK.by]
+ # [http://lurl.no/ lurl.no] `*`
  # [http://metamark.net/ Metamark (xrl.us)]
  # [http://migre.me/ migre.me]
  # [http://micurl.com micURL]
@@ -60,9 +61,11 @@
  # [http://short.to/ short.to]
  # [http://shortn.me/ shortn.me]
  # [http://shrtn.com/ Shrtn]
+ # [http://shw.me/ Shw.me] `*`
  # [http://smallr.net/ Smallr.net]
  # [http://snipurl.com/ SnipURL (sn.im)]
  # [http://song.ly/ song.ly] ^3^
+ # [http://srnk.net/ srnk.net] `*`
  # [http://tighturl.com/ TightURL]
  # [http://timesurl.at/ TimesURL]
  # [http://tini.us/ tini.us]
