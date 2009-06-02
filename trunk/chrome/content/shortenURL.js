@@ -121,6 +121,7 @@ var ShortenURL = {
   // post to Laconica server
   laconica: function shortenURL_laconica(aString) {
     var server = this.prefService.getCharPref("post.server.laconica");
+    if (!server) server = "http://identi.ca/";
     gBrowser.loadOneTab(server + "?action=newnotice&status_textarea=" +
                         encodeURIComponent(aString),
                         null, null, null, false);
@@ -333,6 +334,7 @@ window.addEventListener("load", shortenURL_init = function(e) {
   // context menu initalizations
   var cm = document.getElementById("contentAreaContextMenu");
   cm.addEventListener("popupshowing", contextInit = function(e) {
+
     // "Shorten this link URL" menu, only shown if right click on a link
     gContextMenu.showItem("context-shorten-linkURL",
                           gContextMenu.onLink &&
