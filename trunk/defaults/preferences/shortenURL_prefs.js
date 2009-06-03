@@ -1,5 +1,6 @@
 pref("extensions.ShortenURL@loucypher.description", "chrome://shortenurl/locale/shortenurl.properties");
 pref("extensions.shortenURL.autocopy", false);
+pref("extensions.shortenURL.logMessages", false);
 pref("extensions.shortenURL.post", false);
 pref("extensions.shortenURL.post.server", 0);
 pref("extensions.shortenURL.post.server.laconica", "http://identi.ca/");
