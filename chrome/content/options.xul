@@ -92,14 +92,17 @@
         </hbox>
         <checkbox id="mp3"
                   label="&options.mp3.caption;"
+                  accesskey="3"
                   preference="extensions.shortenURL.mp3" />
         <radiogroup id="mp3-shortener" orient="horizontal" align="center"
                     preference="extensions.shortenURL.mp3.baseURL">
           <radio id="songly"
                  label="song.ly"
+                 accesskey="y"
                  value="47" />
           <radio id="trakz"
                  label="tra.kz"
+                 accesskey="z"
                  value="46" />
         </radiogroup>
       </groupbox>
@@ -117,22 +120,25 @@
               id="post"
               label="&options.more.post;"
               accesskey="&options.more.post.key;"
-              preference="extensions.shortenURL.post"
-              onclick="sizeToContent();" />
+              preference="extensions.shortenURL.post" />
             <hbox>
               <radiogroup id="micro-blogs" orient="horizontal" align="center"
                           preference="extensions.shortenURL.post.server">
                 <radio id="twitter"
                        label="Twitter"
+                       accesskey="T"
                        value="0" />
                 <radio id="laconica"
                        label="Laconica"
-                       value="1"
-                       onclick="" />
+                       accesskey="L"
+                       value="1" />
                 <textbox
                   id="laconica-server"
                   preference="extensions.shortenURL.post.server.laconica"
-                  type="autocomplete" sizetopopup="pref" flex="1" />
+                  type="autocomplete"
+                  autocompletesearch="history"
+                  completeselectedindex="true"
+                  sizetopopup="pref" flex="1" />
               </radiogroup>
             </hbox>
           </vbox>

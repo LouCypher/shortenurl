@@ -12,10 +12,4 @@
 <!ENTITY options.more.autocopy                "Salin ke clipboard">
 <!ENTITY options.more.autocopy.key            "c">
 <!ENTITY options.more.post                    "Kirim ke layanan micro-blogging">
-<!ENTITY options.more.post.key                "M">
-<!ENTITY options.more.post.twitter            "Twitter">
-<!ENTITY options.more.post.twitter.key        "T">
-<!ENTITY options.more.post.laconica           "Laconica">
-<!ENTITY options.more.post.laconica.key       "L">
-<!ENTITY options.more.post.laconica.server    "Server Laconica">
-
+<!ENTITY options.more.post.key                "m">
