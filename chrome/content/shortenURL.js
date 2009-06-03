@@ -41,6 +41,7 @@ var ShortenURL = {
                      .getBranch("extensions.shortenURL.");
   },
 
+
   get strings() {
     return document.getElementById("shorten-url-strings");
   },
@@ -55,6 +56,12 @@ var ShortenURL = {
 
   setStatus: function shortenURL_setStatus(aString) {
     document.getElementById("statusbar-display").label = aString;
+  },
+
+  logMessage: function shortenURL_logMessage(aString) {
+    Components.classes["@mozilla.org/consoleservice;1"]
+              .getService(Components.interfaces.nsIConsoleService)
+              .logStringMessage(aString);
   },
 
   alert: function shortenURL_alert(aString) {
@@ -316,6 +323,12 @@ var ShortenURL = {
             this.alert(this.strings.getFormattedString("is_shorter",
                                                        [url, shortURL]));
           }
+          
+          // log message
+          if (this.prevService.getBoolPref("logMessages")) {
+            this.logMessage("Shorten URL: " + shortUrl + " --> " + url);
+          }
+
           return;
         }
       }
@@ -363,9 +376,20 @@ window.addEventListener("load", shortenURL_init = function(e) {
                           ShortenURL.isValidScheme("mediaURL" in gContextMenu
                                                     ? gContextMenu.mediaURL
                                                     : gContextMenu.imageURL));
-
   }, false);
   cm.removeEventListener("popuphiding", contextInit, false);
+
+  // Bookmarks context menu initializations
+  var popup = document.getElementById("placesContext");
+  popup.addEventListener("popupshowing", placesInit = function() {
+    // "Shorten this bookmark URL",
+    // only shown if right click on a bookmark item, not bookmark folder
+    var item = document.getElementById("placesContext_shortenURL");
+    item.hidden = !ShortenURL.isValidScheme(document.popupNode.node.uri);
+
+  }, false);
+  popup.removeEventListener("popuphiding", placesInit, false);
+
 }, false);
 
 window.removeEventListener("unload", shortenURL_init, false);

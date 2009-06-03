@@ -51,34 +51,46 @@
   </stringbundleset>
 
   <popup id="contentAreaContextMenu">
-    <menuitem id="context-shorten-pageURL"
-              insertafter="context-bookmarkpage"
-              label="&context.page;"
-              onmouseover="ShortenURL.setStatus(content.location.href);"
-              onmouseout="ShortenURL.setStatus('');"
-              onclick="if (event.button == 1) { ShortenURL.openPrefs(); closeMenus(this); }"
-              oncommand="ShortenURL.shorten(content.location.href);" />
-    <menuitem id="context-shorten-linkURL"
-              insertafter="context-bookmarklink"
-              label="&context.link;"
-              onmouseover="ShortenURL.setStatus(gContextMenu.linkURL);"
-              onmouseout="ShortenURL.setStatus('');"
-              onclick="if (event.button == 1) { ShortenURL.openPrefs(); closeMenus(this); }"
-              oncommand="ShortenURL.shorten(gContextMenu.linkURL);" />
-    <menuitem id="context-shorten-frameURL"
-              insertafter="frame"
-              label="&context.frame;"
-              onmouseover="ShortenURL.setStatus(gContextMenu.target.ownerDocument.location.href);"
-              onmouseout="ShortenURL.setStatus('');"
-              onclick="if (event.button == 1) { ShortenURL.openPrefs(); closeMenus(this); }"
-              oncommand="ShortenURL.shorten(gContextMenu.target.ownerDocument.location.href);" />
-    <menuitem id="context-shorten-imageURL"
-              insertafter="context-copyimage"
-              label="&context.image;"
-              onmouseover="ShortenURL.setStatus('mediaURL' in gContextMenu ? gContextMenu.mediaURL : gContextMenu.imageURL);"
-              onmouseout="ShortenURL.setStatus('');"
-              onclick="if (event.button == 1) { ShortenURL.openPrefs(); closeMenus(this); }"
-              oncommand="ShortenURL.shorten('mediaURL' in gContextMenu ? gContextMenu.mediaURL : gContextMenu.imageURL);" />
+    <menuitem
+      id="context-shorten-pageURL"
+      insertafter="context-bookmarkpage"
+      label="&context.page;"
+      onmouseover="ShortenURL.setStatus(content.location.href);"
+      onmouseout="ShortenURL.setStatus('');"
+      onclick="if (event.button == 1) { ShortenURL.openPrefs(); closeMenus(this); }"
+      oncommand="ShortenURL.shorten(content.location.href);" />
+    <menuitem
+      id="context-shorten-linkURL"
+      insertafter="context-bookmarklink"
+      label="&context.link;"
+      onmouseover="ShortenURL.setStatus(gContextMenu.linkURL);"
+      onmouseout="ShortenURL.setStatus('');"
+      onclick="if (event.button == 1) { ShortenURL.openPrefs(); closeMenus(this); }"
+      oncommand="ShortenURL.shorten(gContextMenu.linkURL);" />
+    <menuitem
+      id="context-shorten-frameURL"
+      insertafter="frame"
+      label="&context.frame;"
+      onmouseover="ShortenURL.setStatus(gContextMenu.target.ownerDocument.location.href);"
+      onmouseout="ShortenURL.setStatus('');"
+      onclick="if (event.button == 1) { ShortenURL.openPrefs(); closeMenus(this); }"
+      oncommand="ShortenURL.shorten(gContextMenu.target.ownerDocument.location.href);" />
+    <menuitem
+      id="context-shorten-imageURL"
+      insertafter="context-copyimage"
+      label="&context.image;"
+      onmouseover="ShortenURL.setStatus('mediaURL' in gContextMenu ? gContextMenu.mediaURL : gContextMenu.imageURL);"
+      onmouseout="ShortenURL.setStatus('');"
+      onclick="if (event.button == 1) { ShortenURL.openPrefs(); closeMenus(this); }"
+      oncommand="ShortenURL.shorten('mediaURL' in gContextMenu ? gContextMenu.mediaURL : gContextMenu.imageURL);" />
+  </popup>
+
+  <popup id="placesContext">
+    <menuitem
+      id="placesContext_shortenURL"
+      insertafter="placesContext_openLinks:tabs"
+      label="Shorten this bookmark URL"
+      oncommand="ShortenURL.shorten(document.popupNode.node.uri);" />
   </popup>
 
   <menupopup id="menu_ToolsPopup">
@@ -94,8 +106,7 @@
       class="toolbarbutton-1"
       label="Shorten URL"
       tooltiptext="&context.page;"
-      oncommand="if (event.shiftKey) ShortenURL.openPrefs();
- else ShortenURL.shorten(content.document.documentURI);"
+      oncommand="if (event.shiftKey) ShortenURL.openPrefs(); else ShortenURL.shorten(content.document.documentURI);"
       onclick="if (event.button == 1) ShortenURL.openPrefs();"
       onmouseover="ShortenURL.setStatus(content.document.documentURI);"
       onmouseout="ShortenURL.setStatus('');"
