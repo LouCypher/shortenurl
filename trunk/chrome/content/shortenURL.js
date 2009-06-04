@@ -325,8 +325,8 @@ var ShortenURL = {
           }
           
           // log message
-          if (this.prevService.getBoolPref("logMessages")) {
-            this.logMessage("Shorten URL: " + shortUrl + " --> " + url);
+          if (this.prefService.getBoolPref("logMessages")) {
+            this.logMessage("Shorten URL: " + shortURL + " <-- " + url);
           }
 
           return;
