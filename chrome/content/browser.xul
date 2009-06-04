@@ -89,7 +89,7 @@
     <menuitem
       id="placesContext_shortenURL"
       insertafter="placesContext_openLinks:tabs"
-      label="Shorten this bookmark URL"
+      label="&context.bookmark;"
       oncommand="ShortenURL.shorten(document.popupNode.node.uri);" />
   </popup>
 
