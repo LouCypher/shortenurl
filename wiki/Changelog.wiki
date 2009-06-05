@@ -1,6 +1,14 @@
 #summary Version history
 #labels Featured
 
+ * 0.1 beta 2 pre 5
+  # made [http://identi.ca/ identi.ca] the default Laconica server if laconica server field in options dialog is empty
+  # added right click on bookmark to shorten bookmark URL
+  # added message logging
+  # dropped support for Firefox 2
+  # added URL shortener service:
+   # [http://ndurl.com/ nd url]
+
  * 0.1 beta 1
   # added post to any [http://laconi.ca/ Laconica] server (default is [http://identi.ca/ identi.ca])
   # added services:
