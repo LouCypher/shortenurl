@@ -164,7 +164,7 @@ var ShortenURL = {
     // show open location dialog if location bar is not available
     openDialog("chrome://shortenurl/content/options.xul",
                "shortenurl-options",
-               "chrome, centerscreen");
+               "chrome, dialog, close, titlebar, centerscreen");
   },
 
   // display result in location bar
