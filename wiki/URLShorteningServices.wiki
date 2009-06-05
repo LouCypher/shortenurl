@@ -43,6 +43,7 @@
  # [http://minurl.fr MinURL]
  # [http://moourl.com/ Moourl]
  # [http://myurl.in/ MyURL.in]
+ # [http://ndurl.com/ nd url] ^2^ ^3^ `*`
  # [http://pendek.in/ Pendek.in]
  # [http://pic.gd/ Pic.gd]
  # [http://piurl.com/ PiURL]
@@ -97,7 +98,7 @@
 
 ^1^ uses frame<br>
 ^2^ uses preview<br>
-^3^ for MP3 link only<br>
+^3^ for MP3 URL<br>
 `*` latest dev build only
 
 You can [http://code.google.com/p/shortenurl/issues/entry?template=Request%20for%20more%20service request] for more service.
