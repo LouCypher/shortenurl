@@ -41,7 +41,6 @@ var ShortenURL = {
                      .getBranch("extensions.shortenURL.");
   },
 
-
   get strings() {
     return document.getElementById("shorten-url-strings");
   },
@@ -198,22 +197,24 @@ var ShortenURL = {
     }
 
     var baseNum = (aBaseNum != undefined) ?
-                   aBaseNum : this.isMP3(aURL) ?
+                   aBaseNum : this.isMP3(url) ?
                               this.baseMP3Num : this.baseNum;
 
     var baseURL =  this.getBaseURL(baseNum);
 
+    var api = baseURL + ((this.isURLof(baseURL, "arm.in") ||
+                          this.isURLof(baseURL, "min2.me") ||
+                          this.isURLof(baseURL, "srnk.net") ||
+                          this.isURLof(baseURL, "rde.me") ||
+                          this.isURLof(baseURL, "vl.am"))
+                         ? url : encodeURIComponent(url))
+                      + ((baseNum == 91) ? this.isMP3(url) ? "&type=aud"
+                                                           : "&type=web"
+                                         : "");
     var error = null;
     try {
       var req = new XMLHttpRequest();
-      req.open("GET",
-               baseURL + ((this.isURLof(baseURL, "arm.in") ||
-                           this.isURLof(baseURL, "min2.me") ||
-                           this.isURLof(baseURL, "srnk.net") ||
-                           this.isURLof(baseURL, "rde.me") ||
-                           this.isURLof(baseURL, "vl.am"))
-                          ? url : encodeURIComponent(url)),
-               false);
+      req.open("GET", api, false);
       req.send(null);
       if (req.status == 200) {
         var JSON = Components.classes["@mozilla.org/dom/json;1"]
@@ -253,6 +254,9 @@ var ShortenURL = {
         } else if (this.isURLof(baseURL, "zipmyurl.com")) {
           shortURL = "http://zipmyurl.com/" +
                      JSON.decode(req.responseText).zipURL;
+
+        } else if (this.isURLof(baseURL, "ndurl.com")) {
+          shortURL = JSON.decode(req.responseText).data.shortURL;
 
         // XML output formats
         } else if (this.isURLof(baseURL, "arm.in")) {
@@ -326,6 +330,7 @@ var ShortenURL = {
           
           // log message
           if (this.prefService.getBoolPref("logMessages")) {
+            this.logMessage(api);
             this.logMessage("Shorten URL: " + shortURL + " <-- " + url);
           }
 
