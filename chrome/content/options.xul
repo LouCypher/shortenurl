@@ -104,6 +104,10 @@
                  label="tra.kz"
                  accesskey="z"
                  value="46" />
+          <radio id="ndurl"
+                 label="nd url"
+                 accesskey="n"
+                 value="91" />
         </radiogroup>
       </groupbox>
 
