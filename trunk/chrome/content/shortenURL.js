@@ -60,7 +60,7 @@ var ShortenURL = {
   logMessage: function shortenURL_logMessage(aString) {
     Components.classes["@mozilla.org/consoleservice;1"]
               .getService(Components.interfaces.nsIConsoleService)
-              .logStringMessage(aString);
+              .logStringMessage("Shorten URL: " + aString);
   },
 
   alert: function shortenURL_alert(aString) {
@@ -211,11 +211,18 @@ var ShortenURL = {
                       + ((baseNum == 91) ? this.isMP3(url) ? "&type=aud"
                                                            : "&type=web"
                                          : "");
+
     var error = null;
     try {
       var req = new XMLHttpRequest();
       req.open("GET", api, false);
       req.send(null);
+
+      // log message
+      if (this.prefService.getBoolPref("logMessages")) {
+        this.logMessage(api);
+      }
+
       if (req.status == 200) {
         var JSON = Components.classes["@mozilla.org/dom/json;1"]
                              .createInstance(Components.interfaces.nsIJSON);
@@ -239,13 +246,17 @@ var ShortenURL = {
         } else if (this.isURLof(baseURL, "lnk.by")) {
           shortURL = "http://" + JSON.decode(req.responseText).ShortUrl;
 
+        } else if (this.isURLof(baseURL, "ndurl.com")) {
+          shortURL = JSON.decode(req.responseText).data.shortURL;
+
         } else if (this.isURLof(baseURL, "song.ly")) {
           shortURL = JSON.decode(req.responseText).shortUrl;
 
         } else if (this.isURLof(baseURL, "tra.kz")) {
           shortURL = "http://tra.kz/" + JSON.decode(req.responseText).s;
 
-        } else if (this.isURLof(baseURL, "tr.im")) {
+        } else if (this.isURLof(baseURL, "tr.im") ||
+                   this.isURLof(baseURL, "safe.mn")) {
           shortURL = JSON.decode(req.responseText).url;
 
         } else if (this.isURLof(baseURL, "ur.ly")) {
@@ -254,9 +265,6 @@ var ShortenURL = {
         } else if (this.isURLof(baseURL, "zipmyurl.com")) {
           shortURL = "http://zipmyurl.com/" +
                      JSON.decode(req.responseText).zipURL;
-
-        } else if (this.isURLof(baseURL, "ndurl.com")) {
-          shortURL = JSON.decode(req.responseText).data.shortURL;
 
         // XML output formats
         } else if (this.isURLof(baseURL, "arm.in")) {
@@ -284,6 +292,9 @@ var ShortenURL = {
 
         } else if (this.isURLof(baseURL, "poprl.com")) {
           shortURL = req.responseText.match(/^[^\s]+/).toString();
+
+        } else if (this.isURLof(baseURL, "pt2.me")) {
+          shortURL = "http://pt2.me/" + req.responseText;
 
         } else if (this.isURLof(baseURL, "r.im")) {
           shortURL = req.responseText.match(/[^\s]+/).toString();
@@ -327,11 +338,10 @@ var ShortenURL = {
             this.alert(this.strings.getFormattedString("is_shorter",
                                                        [url, shortURL]));
           }
-          
+
           // log message
           if (this.prefService.getBoolPref("logMessages")) {
-            this.logMessage(api);
-            this.logMessage("Shorten URL: " + shortURL + " <-- " + url);
+            this.logMessage(shortURL + " <-- " + url);
           }
 
           return;
@@ -390,7 +400,8 @@ window.addEventListener("load", shortenURL_init = function(e) {
     // "Shorten this bookmark URL",
     // only shown if right click on a bookmark item, not bookmark folder
     var item = document.getElementById("placesContext_shortenURL");
-    item.hidden = !ShortenURL.isValidScheme(document.popupNode.node.uri);
+    item.hidden = !(document.popupNode.node &&
+                    ShortenURL.isValidScheme(document.popupNode.node.uri));
 
   }, false);
   popup.removeEventListener("popuphiding", placesInit, false);
