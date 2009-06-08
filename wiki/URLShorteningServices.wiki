@@ -50,12 +50,15 @@
  # [http://plurl.me/ Plurl]
  # [http://pnt.me/ pnt.me]
  # [http://poprl.com/ POPrl]
+ # [http://pt2.me/ pt2.me] `*`
  # [http://puke.it/ Puke.It]
  # [http://qurl.com/ Qurl]
  # [http://r.im/ r.im]
  # [http://rde.me/ RDE.me]
+ # [http://redir.ec/ redir.ec]`*`
  # [http://rnk.me/ rnk.me]
  # [http://rubyurl.com/ RubyURL]
+ # [http://safe.mn/ Safe.mn] ^2^ `*`
  # [http://sai.ly/ Sai.ly]
  # [http://shorl.com/ shorl] ^2^
  # [http://short.ie/ Short.ie]
@@ -64,6 +67,7 @@
  # [http://shrtn.com/ Shrtn]
  # [http://shw.me/ Shw.me]
  # [http://smallr.net/ Smallr.net]
+ # [http://smfu.in/ SMFU] `*`
  # [http://snipurl.com/ SnipURL (sn.im)]
  # [http://song.ly/ song.ly] ^3^
  # [http://srnk.net/ srnk.net]
@@ -79,6 +83,7 @@
  # [http://twip.us/ Twip.us]
  # [http://twirl.at/ Twirl.at]
  # [http://u.nu/ u.nu]
+ # [http://uiop.me/ UiopMe] `*`
  # [http://ur.ly/ ur.ly]
  # [http://url.ie/ URL.ie]
  # [http://unfaker.it/ URL (un)faker]
@@ -96,8 +101,8 @@
  # [http://zipmyurl.com/ ZipMyURL]
  # [http://zz.gd/ ZZ.GD]
 
-^1^ uses frame<br>
-^2^ uses preview<br>
+^1^ using frame<br>
+^2^ using preview<br>
 ^3^ for MP3 URL<br>
 `*` latest dev build only
 
