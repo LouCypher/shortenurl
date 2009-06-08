@@ -8,6 +8,11 @@
   # dropped support for Firefox 2
   # added URL shortener service:
    # [http://ndurl.com/ nd url]
+   # [http://pt2.me/ pt2.me]
+   # [http://redir.ec/ redir.ec]
+   # [http://safe.mn/ Safe.mn]
+   # [http://smfu.in/ SMFU]
+   # [http://uiop.me/ UiopME]
 
  * 0.1 beta 1
   # added post to any [http://laconi.ca/ Laconica] server (default is [http://identi.ca/ identi.ca])
