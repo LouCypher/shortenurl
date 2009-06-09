@@ -1,7 +1,7 @@
 #summary Version history
 #labels Featured
 
- * 0.1 beta 2 pre-release
+ * 0.1 beta 2
   # made [http://identi.ca/ identi.ca] the default Laconica server if laconica server field in options dialog is empty
   # added right click on bookmark to shorten bookmark URL
   # added message logging
