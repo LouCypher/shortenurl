@@ -7,6 +7,9 @@
   # added message logging
   # dropped support for Firefox 2
   # added URL shortener service:
+   # [http://fon.gs/ fon.gs]
+   # [http://g4.ms/ g4.ms]
+   # [http://kore.us/ Kore.us]
    # [http://ndurl.com/ nd url]
    # [http://pt2.me/ pt2.me]
    # [http://redir.ec/ redir.ec]
