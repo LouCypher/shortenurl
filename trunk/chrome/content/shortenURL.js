@@ -284,6 +284,9 @@ var ShortenURL = {
         } else if (this.isURLof(baseURL, "buk.me")) {
           shortURL = req.responseText.match(/^[^\<]+/).toString();
 
+        } else if (this.isURLof(baseURL, "fon.gs")) {
+          shortURL = req.responseText.match(/http\:.+/).toString();
+
         } else if (this.isURLof(baseURL, "lin.cr")) {
           shortURL = "http://lin.cr/" + req.responseText;
 
