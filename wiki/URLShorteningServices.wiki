@@ -19,10 +19,10 @@
  # [http://clop.in/ Clop.in]
  # [http://digg.com/tools/diggbar DiggBar]
  # [http://fly2.ws/ Fly2.ws]
- # [http://fon.gs/ fon.gs] `*`
+ # [http://fon.gs/ fon.gs]
  # [http://foxyurl.com/ Foxy URL]
  # [http://fwd4.me/ FWD4.me]
- # [http://g4.ms/ g4.ms] `*`
+ # [http://g4.ms/ g4.ms]
  # [http://good.ly/ Good.ly]
  # [http://gurl.es/ Gurl.es]
  # [http://hex.io/ hex.io]
@@ -33,7 +33,7 @@
  # [http://kisa.ch/ Kisa.Ch] ^2^
  # [http://kl.am/ kl.am]
  # [http://krz.ch/ krz.ch]
- # [http://kore.us/ Kore.us] `*`
+ # [http://kore.us/ Kore.us]
  # [http://kots.nu/ Kots.Nu]
  # [http://lin.cr/ Lincr]
  # [http://linxfix.de/ LinxFix]
@@ -46,14 +46,14 @@
  # [http://minurl.fr MinURL]
  # [http://moourl.com/ Moourl]
  # [http://myurl.in/ MyURL.in]
- # [http://ndurl.com/ nd url] ^2^ ^3^ `*`
+ # [http://ndurl.com/ nd url] ^2^ ^3^
  # [http://pendek.in/ Pendek.in]
  # [http://pic.gd/ Pic.gd]
  # [http://piurl.com/ PiURL]
  # [http://plurl.me/ Plurl]
  # [http://pnt.me/ pnt.me]
  # [http://poprl.com/ POPrl]
- # [http://pt2.me/ pt2.me] `*`
+ # [http://pt2.me/ pt2.me]
  # [http://puke.it/ Puke.It]
  # [http://qurl.com/ Qurl]
  # [http://r.im/ r.im]
@@ -61,7 +61,7 @@
  # [http://redir.ec/ redir.ec]`*`
  # [http://rnk.me/ rnk.me]
  # [http://rubyurl.com/ RubyURL]
- # [http://safe.mn/ Safe.mn] ^2^ `*`
+ # [http://safe.mn/ Safe.mn] ^2^
  # [http://sai.ly/ Sai.ly]
  # [http://shorl.com/ shorl] ^2^
  # [http://short.ie/ Short.ie]
@@ -70,7 +70,7 @@
  # [http://shrtn.com/ Shrtn]
  # [http://shw.me/ Shw.me]
  # [http://smallr.net/ Smallr.net]
- # [http://smfu.in/ SMFU] `*`
+ # [http://smfu.in/ SMFU]
  # [http://snipurl.com/ SnipURL (sn.im)]
  # [http://song.ly/ song.ly] ^3^
  # [http://srnk.net/ srnk.net]
@@ -86,7 +86,7 @@
  # [http://twip.us/ Twip.us]
  # [http://twirl.at/ Twirl.at]
  # [http://u.nu/ u.nu]
- # [http://uiop.me/ UiopMe] `*`
+ # [http://uiop.me/ UiopMe]
  # [http://ur.ly/ ur.ly]
  # [http://url.ie/ URL.ie]
  # [http://unfaker.it/ URL (un)faker]
