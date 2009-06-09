@@ -19,8 +19,10 @@
  # [http://clop.in/ Clop.in]
  # [http://digg.com/tools/diggbar DiggBar]
  # [http://fly2.ws/ Fly2.ws]
+ # [http://fon.gs/ fon.gs]
  # [http://foxyurl.com/ Foxy URL]
  # [http://fwd4.me/ FWD4.me]
+ # [http://g4.ms/ g4.ms]
  # [http://good.ly/ Good.ly]
  # [http://gurl.es/ Gurl.es]
  # [http://hex.io/ hex.io]
@@ -31,6 +33,7 @@
  # [http://kisa.ch/ Kisa.Ch] ^2^
  # [http://kl.am/ kl.am]
  # [http://krz.ch/ krz.ch]
+ # [http://kore.us/ Kore.us]
  # [http://kots.nu/ Kots.Nu]
  # [http://lin.cr/ Lincr]
  # [http://linxfix.de/ LinxFix]
