@@ -98,7 +98,7 @@ pref("extensions.shortenURL.name.87", "3.ly");
 pref("extensions.shortenURL.name.88", "lurl.no");
 pref("extensions.shortenURL.name.89", "Shw.me");
 pref("extensions.shortenURL.name.90", "srnk.net");
-pref("extensions.shortenURL.name.91", "nd url");
+pref("extensions.shortenURL.name.91", "ndurl");
 pref("extensions.shortenURL.name.92", "UiopMe");
 pref("extensions.shortenURL.name.93", "SMFU");
 pref("extensions.shortenURL.name.94", "redir.ec");
