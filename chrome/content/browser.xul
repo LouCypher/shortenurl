@@ -54,7 +54,7 @@
     <menuitem
       id="context-shorten-pageURL"
       insertafter="context-bookmarkpage"
-      label="&context.page;"
+      label="&context.page; (name)"
       onmouseover="ShortenURL.setStatus(content.location.href);"
       onmouseout="ShortenURL.setStatus('');"
       onclick="if (event.button == 1) { ShortenURL.openPrefs(); closeMenus(this); }"
@@ -62,7 +62,7 @@
     <menuitem
       id="context-shorten-linkURL"
       insertafter="context-bookmarklink"
-      label="&context.link;"
+      label="&context.link; (name)"
       onmouseover="ShortenURL.setStatus(gContextMenu.linkURL);"
       onmouseout="ShortenURL.setStatus('');"
       onclick="if (event.button == 1) { ShortenURL.openPrefs(); closeMenus(this); }"
@@ -70,7 +70,7 @@
     <menuitem
       id="context-shorten-frameURL"
       insertafter="frame"
-      label="&context.frame;"
+      label="&context.frame; (name)"
       onmouseover="ShortenURL.setStatus(gContextMenu.target.ownerDocument.location.href);"
       onmouseout="ShortenURL.setStatus('');"
       onclick="if (event.button == 1) { ShortenURL.openPrefs(); closeMenus(this); }"
@@ -78,7 +78,7 @@
     <menuitem
       id="context-shorten-imageURL"
       insertafter="context-copyimage"
-      label="&context.image;"
+      label="&context.image; (name)"
       onmouseover="ShortenURL.setStatus('mediaURL' in gContextMenu ? gContextMenu.mediaURL : gContextMenu.imageURL);"
       onmouseout="ShortenURL.setStatus('');"
       onclick="if (event.button == 1) { ShortenURL.openPrefs(); closeMenus(this); }"
@@ -89,7 +89,7 @@
     <menuitem
       id="placesContext_shortenURL"
       insertafter="placesContext_openLinks:tabs"
-      label="&context.bookmark;"
+      label="&context.bookmark; (name)"
       oncommand="ShortenURL.shorten(document.popupNode.node.uri);" />
   </popup>
 
@@ -105,10 +105,10 @@
       id="shortenurl-button"
       class="toolbarbutton-1"
       label="Shorten URL"
-      tooltiptext="&context.page;"
+      tooltiptext="&context.page; (name)"
       oncommand="if (event.shiftKey) ShortenURL.openPrefs(); else ShortenURL.shorten(content.document.documentURI);"
       onclick="if (event.button == 1) ShortenURL.openPrefs();"
-      onmouseover="ShortenURL.setStatus(content.document.documentURI);"
+      onmouseover="ShortenURL.changeLabelOrTooltip(this.id); ShortenURL.setStatus(content.document.documentURI);"
       onmouseout="ShortenURL.setStatus('');"
       ondragover="nsDragAndDrop.dragOver(event, ShortenURL.dndObserver);"
       ondragdrop="nsDragAndDrop.drop(event, ShortenURL.dndObserver);"

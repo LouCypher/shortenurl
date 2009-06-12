@@ -327,7 +327,7 @@ var ShortenURL = {
             this.copy(shortURL);
           }
 
-          // post to Twitter
+          // post to micro-blogging service
           if (this.prefService.getBoolPref("post")) {
             this.post(shortURL);
             return;
@@ -357,6 +357,15 @@ var ShortenURL = {
     // FAIL!
     this.alert(this.strings.getString("shorten_fail"));
     throw new Error(error);
+  },
+
+  changeLabelOrTooltip: function shortenURL_changeLabelOrTooltip(aNodeId) {
+    var name = "(" + ShortenURL.prefService.
+                     getCharPref("name." + ShortenURL.baseNum) + ")";
+    var node = document.getElementById(aNodeId);
+    var attrName = node.hasAttribute("tooltiptext") ? "tooltiptext" : "label";
+    var attrValue = node.getAttribute(attrName);
+    node.setAttribute(attrName, attrValue.replace(/\(.+\)$/, name));
   }
 
 }
@@ -365,6 +374,14 @@ window.addEventListener("load", shortenURL_init = function(e) {
   // context menu initalizations
   var cm = document.getElementById("contentAreaContextMenu");
   cm.addEventListener("popupshowing", contextInit = function(e) {
+
+    // context menuitem IDs
+    var itemIDs = ["context-shorten-linkURL", "context-shorten-pageURL",
+                   "context-shorten-frameURL", "context-shorten-imageURL"];
+    // change/add menuitems label to selected URL shortening service name
+    for (var i in itemIDs) {
+      ShortenURL.changeLabelOrTooltip(itemIDs[i]);
+    }
 
     // "Shorten this link URL" menu, only shown if right click on a link
     gContextMenu.showItem("context-shorten-linkURL",
@@ -406,6 +423,8 @@ window.addEventListener("load", shortenURL_init = function(e) {
     item.hidden = !(document.popupNode.node &&
                     ShortenURL.isValidScheme(document.popupNode.node.uri));
 
+    // change/add menuitems label to selected URL shortening service name
+    ShortenURL.changeLabelOrTooltip("placesContext_shortenURL");
   }, false);
   popup.removeEventListener("popuphiding", placesInit, false);
 

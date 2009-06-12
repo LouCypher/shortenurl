@@ -105,7 +105,7 @@
                  accesskey="z"
                  value="46" />
           <radio id="ndurl"
-                 label="nd url"
+                 label="ndurl"
                  accesskey="n"
                  value="91" />
         </radiogroup>
