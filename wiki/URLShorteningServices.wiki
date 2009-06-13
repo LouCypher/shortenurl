@@ -58,7 +58,7 @@
  # [http://qurl.com/ Qurl]
  # [http://r.im/ r.im]
  # [http://rde.me/ RDE.me]
- # [http://redir.ec/ redir.ec]`*`
+ # [http://redir.ec/ redir.ec]
  # [http://rnk.me/ rnk.me]
  # [http://rubyurl.com/ RubyURL]
  # [http://safe.mn/ Safe.mn] ^2^
