@@ -1,5 +1,4 @@
 #summary Articles about this extension and URL shortening
-#labels Featured
 
 == Shorten URL reviews ==
  * [http://www.firefoxfacts.com/2009/04/15/better-way-to-make-tiny-shareable-urls/ Better Way to Make Tiny Shareable URLs] - Firefox Facts
