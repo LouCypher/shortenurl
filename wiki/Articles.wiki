@@ -8,6 +8,7 @@
  * [http://www.killertechtips.com/2009/03/25/shorten-url-firefox/ Shorten URLs using Multiple Services in Firefox] - Killer Tech Tips
  * [http://www.metral.info/web2_outils/shorturl Réducteurs d'URL]
  * [http://www.webwork-tools.de/2009/04/darfs-noch-ein-bisschen-kuerzer-seinurls-mit-firefox-addon-kuerzen/ Darfs noch ein bißchen kürzer sein? URLs mit Firefox-Addon kürzen]
+ * [http://www.sordyl.info/2009/05/31/links4/ Shorten URL Firefox Extension] - Brent Sordyl's blog
 
 
 == About URL shortening ==
