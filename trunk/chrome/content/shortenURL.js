@@ -322,6 +322,11 @@ var ShortenURL = {
             shortURL = shortURL.replace(/\/www\./, "/");
           }
 
+          // log message
+          if (this.prefService.getBoolPref("logMessages")) {
+            this.logMessage(shortURL + " <-- " + url);
+          }
+
           // copy to clipboard
           if (this.prefService.getBoolPref("autocopy")) {
             this.copy(shortURL);
@@ -342,11 +347,6 @@ var ShortenURL = {
                                                        [url, shortURL]));
           }
 
-          // log message
-          if (this.prefService.getBoolPref("logMessages")) {
-            this.logMessage(shortURL + " <-- " + url);
-          }
-
           return;
         }
       }
@@ -359,9 +359,13 @@ var ShortenURL = {
     throw new Error(error);
   },
 
-  changeLabelOrTooltip: function shortenURL_changeLabelOrTooltip(aNodeId) {
-    var name = "(" + ShortenURL.prefService.
-                     getCharPref("name." + ShortenURL.baseNum) + ")";
+  changeLabelOrTooltip:
+  function shortenURL_changeLabelOrTooltip(aNodeId, aURL) {
+    var name = "(" + this.prefService.getCharPref("name." +
+               (this.isMP3(aURL) ? this.baseMP3Num : this.baseNum)) + ")";
+    if ((/\)(?=\)$)/).test(name)) {
+      name = name.match(/\([^\s\)]+\)/).toString();
+    }
     var node = document.getElementById(aNodeId);
     var attrName = node.hasAttribute("tooltiptext") ? "tooltiptext" : "label";
     var attrValue = node.getAttribute(attrName);
@@ -380,7 +384,7 @@ window.addEventListener("load", shortenURL_init = function(e) {
                    "context-shorten-frameURL", "context-shorten-imageURL"];
     // change/add menuitems label to selected URL shortening service name
     for (var i in itemIDs) {
-      ShortenURL.changeLabelOrTooltip(itemIDs[i]);
+      ShortenURL.changeLabelOrTooltip(itemIDs[i], gContextMenu.linkURL);
     }
 
     // "Shorten this link URL" menu, only shown if right click on a link
@@ -424,7 +428,8 @@ window.addEventListener("load", shortenURL_init = function(e) {
                     ShortenURL.isValidScheme(document.popupNode.node.uri));
 
     // change/add menuitems label to selected URL shortening service name
-    ShortenURL.changeLabelOrTooltip("placesContext_shortenURL");
+    ShortenURL.changeLabelOrTooltip("placesContext_shortenURL",
+                                    document.popupNode.node.uri);
   }, false);
   popup.removeEventListener("popuphiding", placesInit, false);
 
