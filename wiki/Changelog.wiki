@@ -3,7 +3,9 @@
 
  * 0.1 beta 3
   # added current selected URL shortening service name to context menuitems' labels and toolbarbutton's tooltip
+  # fixed message logging
   # added 'buttons' attribute in options dialog
+  # shorter extension description
 
  * 0.1 beta 2
   # made [http://identi.ca/ identi.ca] the default Laconica server if laconica server field in options dialog is empty
