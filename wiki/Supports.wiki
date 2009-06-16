@@ -1,4 +1,5 @@
 #summary Where to get help
+#labels Phase-Support,Featured
 
  * [http://code.google.com/p/shortenurl/issues/entry Report bugs/issues]
 
