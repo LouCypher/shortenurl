@@ -1,6 +1,10 @@
 #summary Version history
 #labels Featured
 
+ * 0.1 beta 3
+  # added current selected URL shortening service name to context menuitems' labels and toolbarbutton's tooltip
+  # added 'buttons' attribute in options dialog
+
  * 0.1 beta 2
   # made [http://identi.ca/ identi.ca] the default Laconica server if laconica server field in options dialog is empty
   # added right click on bookmark to shorten bookmark URL
