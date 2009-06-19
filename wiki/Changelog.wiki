@@ -1,6 +1,16 @@
 #summary Version history
 #labels Featured
 
+ * 0.1 beta 4 pre
+  * added
+   # [http://2su.de/ 2 Short.Url (2su.de)]
+   # [http://qr.cx/ qr.cx]
+   # [http://sfu.ca/ SFU.ca]
+   # [http://su.pr/ StumbleUpon (su.pr)]
+   # [http://twtr.us/ twtr.us (tw6.us)]
+   # [http://zi.pe/ Zi.pe]
+
+
  * 0.1 beta 3
   # added current selected URL shortening service name to context menuitems' labels and toolbarbutton's tooltip
   # fixed message logging
