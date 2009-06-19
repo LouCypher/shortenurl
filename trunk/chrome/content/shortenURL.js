@@ -60,7 +60,7 @@ var ShortenURL = {
   logMessage: function shortenURL_logMessage(aString) {
     Components.classes["@mozilla.org/consoleservice;1"]
               .getService(Components.interfaces.nsIConsoleService)
-              .logStringMessage("Shorten URL: " + aString);
+              .logStringMessage("Shorten URL:\n" + aString);
   },
 
   alert: function shortenURL_alert(aString) {
@@ -204,8 +204,9 @@ var ShortenURL = {
 
     var api = baseURL + ((this.isURLof(baseURL, "arm.in") ||
                           this.isURLof(baseURL, "min2.me") ||
-                          this.isURLof(baseURL, "srnk.net") ||
+                          this.isURLof(baseURL, "qr.cx") ||
                           this.isURLof(baseURL, "rde.me") ||
+                          this.isURLof(baseURL, "srnk.net") ||
                           this.isURLof(baseURL, "vl.am"))
                          ? url : encodeURIComponent(url))
                       + ((baseNum == 91) ? this.isMP3(url) ? "&type=aud"
@@ -249,8 +250,19 @@ var ShortenURL = {
         } else if (this.isURLof(baseURL, "ndurl.com")) {
           shortURL = JSON.decode(req.responseText).data.shortURL;
 
+        } else if (this.isURLof(baseURL, "sfu.ca")) {
+          shortURL = "http://get.sfu.ca/" +
+                     JSON.decode(req.responseText).shorturl;
+
         } else if (this.isURLof(baseURL, "song.ly")) {
           shortURL = JSON.decode(req.responseText).shortUrl;
+
+        } else if (this.isURLof(baseURL, "su.pr")) {
+          var obj = JSON.decode(req.responseText);
+          for (var i in obj.results) {
+            shortURL = obj.results[i].shortUrl;
+            break;
+          }
 
         } else if (this.isURLof(baseURL, "tra.kz")) {
           shortURL = "http://tra.kz/" + JSON.decode(req.responseText).s;
