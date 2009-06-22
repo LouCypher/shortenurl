@@ -77,7 +77,7 @@
  # [http://snipurl.com/ SnipURL (sn.im)]
  # [http://song.ly/ song.ly] ^3^
  # [http://srnk.net/ srnk.net]
- # [http://su.pr/ StumbleUpon (su.pr)]
+ # [http://su.pr/ StumbleUpon (su.pr)] ^1^
  # [http://tighturl.com/ TightURL]
  # [http://timesurl.at/ TimesURL]
  # [http://tini.us/ tini.us]
@@ -89,7 +89,7 @@
  # [http://tweetburner.com/ Tweetburner (twurl.nl)]
  # [http://twip.us/ Twip.us]
  # [http://twirl.at/ Twirl.at]
- # [http://twtr.us/ twtr.us (tw6.us)]
+ # [http://twtr.us/ twtr.us (tw6.us)] ^2^
  # [http://u.nu/ u.nu]
  # [http://uiop.me/ UiopMe]
  # [http://ur.ly/ ur.ly]
@@ -110,8 +110,8 @@
  # [http://zipmyurl.com/ ZipMyURL]
  # [http://zz.gd/ ZZ.GD]
 
-^1^ using frame<br>
-^2^ using preview<br>
+^1^ uses frame/toolbar<br>
+^2^ uses preview/delay<br>
 ^3^ for MP3 URL<br>
 `*` latest dev build only
 
