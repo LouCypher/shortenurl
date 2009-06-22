@@ -1,7 +1,7 @@
 #summary Version history
 #labels Featured
 
- * 0.1 beta 4 pre
+ * 0.1 beta 4
   * added
    # [http://2su.de/ 2 Short.Url (2su.de)]
    # [http://qr.cx/ qr.cx]
