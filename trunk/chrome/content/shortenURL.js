@@ -321,6 +321,9 @@ var ShortenURL = {
           shortURL = "http://z.pe/" +
                      req.responseText.match(/\w+(?=\s)/).toString();
 
+        } else if (this.isURLof(baseURL, "zi.pe")) {
+          shortURL = req.responseText.match(/[^\<]+/).toString();
+
         } else {
           shortURL = req.responseText;
         }
