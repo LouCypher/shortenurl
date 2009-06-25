@@ -53,6 +53,49 @@ var ShortenURL = {
     return this.prefService.getIntPref("mp3.baseURL");
   },
 
+  populatePopup: function shortenURL_populatePopup() {
+    var rv = [];
+    var prefArray = this.prefService.getChildList("name", rv);
+    var n = prefArray.length;
+    if (n <= 0) return;
+
+    var shorteners = [];
+    for (var i = 0; i < n; i++) {
+      shorteners[i] = {
+        index: i,
+        name: this.prefService.getCharPref("name." + i)
+      }
+    }
+
+    shorteners.sort(function(a, b) {
+      a = a.name.toLowerCase();
+      b = b.name.toLowerCase();
+      if (a < b) return -1;
+      if (a > b) return 1;
+      return 0;
+    })
+
+    var popup = document.getElementById("shortenurl-toolbarbutton-popup");
+    var mi = null;
+    for (var i = 0; i < shorteners.length; i++) {
+      mi = document.createElement("menuitem");
+      mi.setAttribute("value", shorteners[i].index);
+      mi.setAttribute("label", shorteners[i].name);
+      mi.setAttribute("type", "radio");
+      popup.appendChild(mi);
+      if (shorteners[i].index == this.baseNum) {
+        var selectedIndex = i;
+      }
+    }
+
+    popup.childNodes[selectedIndex].setAttribute("checked", "true");
+
+  },
+
+  selectShortener: function shortenURL_selectShortener(aNum) {
+    this.prefService.setIntPref("baseURL", parseInt(aNum));
+  },
+
   setStatus: function shortenURL_setStatus(aString) {
     document.getElementById("statusbar-display").label = aString;
   },
@@ -292,6 +335,10 @@ var ShortenURL = {
           shortURL = req.responseXML.getElementsByTagName("shwme-url")[0]
                                     .textContent;
 
+        } else if (this.isURLof(baseURL, "xxsurl.de")) {
+          shortURL = req.responseXML.getElementsByTagName("shortlink")[0]
+                                    .textContent;
+
         // plain text output formats
         } else if (this.isURLof(baseURL, "buk.me")) {
           shortURL = req.responseText.match(/^[^\<]+/).toString();
@@ -447,6 +494,8 @@ window.addEventListener("load", shortenURL_init = function(e) {
                                     document.popupNode.node.uri);
   }, false);
   popup.removeEventListener("popuphiding", placesInit, false);
+
+  ShortenURL.populatePopup();
 
 }, false);
 
