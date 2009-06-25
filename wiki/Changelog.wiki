@@ -1,6 +1,12 @@
 #summary Version history
 #labels Featured
 
+ * 0.1 release candidate
+  # new icons
+  # added context menu to toolbarbutton to quick select a shortener
+  # added [http://to.ly/ to.ly] and [http://xxsurl.de/ xxsurl.de]
+
+
  * 0.1 beta 4
   * added
    # [http://2su.de/ 2 Short.Url (2su.de)]
