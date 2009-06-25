@@ -83,6 +83,7 @@
  # [http://tini.us/ tini.us]
  # [http://tiny.cc/ Tiny.cc]
  # [http://tinyurl.com/ TinyURL] (default)
+ # [http://to.ly/ to.ly]
  # [http://to.vg/ to.vg]
  # [http://tr.im/ tr.im]
  # [http://tra.kz/ tra.kz] ^3^
@@ -105,6 +106,7 @@
  # [http://xr.com/ XR.com]
  # [http://xrl.in/ xrl.in]
  # [http://x.vu/ X.vu]
+ # [http://xxsurl.de/ xxsURL]
  # [http://z.pe/ Z.PE]
  # [http://zi.pe/ Zi.pe]
  # [http://zipmyurl.com/ ZipMyURL]
@@ -113,6 +115,5 @@
 ^1^ uses frame/toolbar<br>
 ^2^ uses preview/delay<br>
 ^3^ for MP3 URL<br>
-`*` latest dev build only
 
 You can [http://code.google.com/p/shortenurl/issues/entry?template=Request%20for%20more%20service request] for more service.
