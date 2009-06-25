@@ -11,7 +11,7 @@
     <em:description>Shorten long URL from Firefox context menu or toolbar button with your selected URL shortener and display the result in location bar.</em:description>
     <em:creator>LouCypher</em:creator>
     <em:contributor>Rt (Pipe for Tweetburner)</em:contributor>
-    <em:contributor>Free Icons Web &gt;http://www.freeiconsweb.com/&lt; (icon)</em:contributor>
+    <em:contributor>Free Icons Web &lt;http://www.freeiconsweb.com/&lt; (icon)</em:contributor>
     <em:optionsURL>chrome://shortenurl/content/options.xul</em:optionsURL>
     <em:iconURL>chrome://shortenurl/skin/shortenURL.png</em:iconURL>
     <em:homepageURL>http://shortenurl.googlecode.com/</em:homepageURL>
