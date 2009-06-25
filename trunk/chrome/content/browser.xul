@@ -50,6 +50,12 @@
       src="chrome://shortenurl/locale/shortenURL.properties" />
   </stringbundleset>
 
+  <popupset id="mainPopupSet">
+    <menupopup
+      id="shortenurl-toolbarbutton-popup"
+      oncommand="ShortenURL.selectShortener(event.target.value);" />
+  </popupset>
+
   <popup id="contentAreaContextMenu">
     <menuitem
       id="context-shorten-pageURL"
@@ -103,6 +109,7 @@
   <toolbarpalette id="BrowserToolbarPalette">
     <toolbarbutton
       id="shortenurl-button"
+      context="shortenurl-toolbarbutton-popup"
       class="toolbarbutton-1"
       label="Shorten URL"
       tooltiptext="&context.page; (name)"
