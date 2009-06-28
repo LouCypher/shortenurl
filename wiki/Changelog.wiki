@@ -3,8 +3,20 @@
 
  * 0.1 release candidate
   # new icons
-  # added context menu to toolbarbutton to quick select a shortener
-  # added [http://to.ly/ to.ly] and [http://xxsurl.de/ xxsurl.de]
+  # added tab context menu to shorten tab URL
+  # Adblock Plus integration
+  # more shorteners: lt.tl, snipie.com, gl.am, snkr.me, ktzros, ooqx.com, ri.ms
+  # added menu to toolbarbutton to quick select a shortener
+  # added more shorteners:
+   # [http://to.ly/ to.ly]
+   # [http://xxsurl.de/ xxsurl.de]
+   # [http://lt.tl/ lt.tl]
+   # [http://snipie.com Snipie]
+   # [http://gl.am/ gl.am]
+   # [http://snkr.me/ snkr.me]
+   # [http://kztr.us/ ktzros]
+   # [http://ooqx.com/ urlShort (ooqx.com)]
+   # [http://ri.ms/ RIMS]
 
 
  * 0.1 beta 4
