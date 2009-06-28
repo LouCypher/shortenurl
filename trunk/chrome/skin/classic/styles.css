@@ -20,3 +20,7 @@ toolbar[iconsize="small"] #shortenurl-button {
   -moz-image-region: rect(0px, 40px, 16px, 24px);
 }
 
+#shortenurl-toolbarbutton-popup menuitem[checked] {
+  font-weight: bold;
+}
+

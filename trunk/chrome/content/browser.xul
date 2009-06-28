@@ -50,12 +50,6 @@
       src="chrome://shortenurl/locale/shortenURL.properties" />
   </stringbundleset>
 
-  <popupset id="mainPopupSet">
-    <menupopup
-      id="shortenurl-toolbarbutton-popup"
-      oncommand="ShortenURL.selectShortener(event.target.value);" />
-  </popupset>
-
   <popup id="contentAreaContextMenu">
     <menuitem
       id="context-shorten-pageURL"
@@ -101,16 +95,21 @@
 
   <menupopup id="menu_ToolsPopup">
     <menuitem
+      id="shortenurl-options"
       label="&options.title;"
       insertbefore="menu_preferences"
       oncommand="ShortenURL.openPrefs();" />
+    <menuitem
+      id="context-shortenTab"
+      label="&context.tab; (name)"
+      oncommand="var tab = document.popupNode.localName == 'tabs' ? getBrowser().mCurrentTab : getBrowser().mContextTab; ShortenURL.shorten(tab.linkedBrowser.currentURI.spec)" />
   </menupopup>
 
   <toolbarpalette id="BrowserToolbarPalette">
     <toolbarbutton
       id="shortenurl-button"
-      context="shortenurl-toolbarbutton-popup"
       class="toolbarbutton-1"
+      type="menu-button"
       label="Shorten URL"
       tooltiptext="&context.page; (name)"
       oncommand="if (event.shiftKey) ShortenURL.openPrefs(); else ShortenURL.shorten(content.document.documentURI);"
@@ -119,7 +118,19 @@
       onmouseout="ShortenURL.setStatus('');"
       ondragover="nsDragAndDrop.dragOver(event, ShortenURL.dndObserver);"
       ondragdrop="nsDragAndDrop.drop(event, ShortenURL.dndObserver);"
-      ondragexit="nsDragAndDrop.dragExit(event, ShortenURL.dndObserver);" />
+      ondragexit="nsDragAndDrop.dragExit(event, ShortenURL.dndObserver);">
+      <menupopup
+        id="shortenurl-toolbarbutton-popup"
+        onpopupshowing="ShortenURL.selectMenuitem(this);"
+        oncommand="event.stopPropagation(); ShortenURL.selectShortener(event.target.value);">
+        <menuitem
+          id="shortenurl-toolbarbutton-menu-options"
+          label="&options.title;"
+          oncommand="event.stopPropagation(); ShortenURL.openPrefs();" />
+        <menuseparator id="shortenurl-toolbarbutton-menu-separator" />
+      </menupopup>
+    </toolbarbutton>
+
   </toolbarpalette>
 
 </overlay>
