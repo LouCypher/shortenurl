@@ -1,8 +1,10 @@
-<!ENTITY context.page                         "Shorten this page URL">
-<!ENTITY context.link                         "Shorten this link URL">
-<!ENTITY context.frame                        "Shorten this frame URL">
-<!ENTITY context.image                        "Shorten this image URL">
-<!ENTITY context.bookmark                     "Shorten this bookmark URL">
+<!ENTITY context.page                         "Shorten This Page URL">
+<!ENTITY context.link                         "Shorten This Link URL">
+<!ENTITY context.frame                        "Shorten This Frame URL">
+<!ENTITY context.bookmark                     "Shorten This Bookmark URL">
+<!ENTITY context.tab                          "Shorten This Tab URL">
+<!ENTITY context.image                        "Shorten Image Location">
+<!ENTITY context.adblock                      "Shorten item's address">
 
 <!ENTITY options.title                        "Shorten URL Options">
 <!ENTITY options.shortener.caption            "URL Shorteners">

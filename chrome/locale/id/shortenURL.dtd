@@ -1,8 +1,10 @@
-<!ENTITY context.page                         "Pendekkan URL halaman ini">
-<!ENTITY context.link                         "Pendekkan URL tautan ini">
-<!ENTITY context.frame                        "Pendekkan URL bingkai ini">
-<!ENTITY context.image                        "Pendekkan URL gambar ini">
-<!ENTITY context.bookmark                     "Pendekkan URL bookmark ini">
+<!ENTITY context.page                         "Pendekkan URL Halaman Ini">
+<!ENTITY context.link                         "Pendekkan URL Tautan Ini">
+<!ENTITY context.frame                        "Pendekkan URL Bingkai Ini">
+<!ENTITY context.bookmark                     "Pendekkan URL Bookmark Ini">
+<!ENTITY context.tab                          "Pendekkan URL Tab Ini">
+<!ENTITY context.image                        "Pendekkan Lokasi Gambar Ini">
+<!ENTITY context.adblock                      "Shorten item's address">
 
 <!ENTITY options.title                        "Pengaturan Shorten URL">
 <!ENTITY options.shortener.caption            "Pemendek URL">
