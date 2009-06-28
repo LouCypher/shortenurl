@@ -24,6 +24,7 @@
  # [http://foxyurl.com/ Foxy URL]
  # [http://fwd4.me/ FWD4.me]
  # [http://g4.ms/ g4.ms]
+ # [http://gl.am/ gl.am] `*`
  # [http://good.ly/ Good.ly]
  # [http://gurl.es/ Gurl.es]
  # [http://hex.io/ hex.io]
@@ -33,12 +34,14 @@
  # [http://kissa.be/ kissa.be!]
  # [http://kisa.ch/ Kisa.Ch] ^2^
  # [http://kl.am/ kl.am]
- # [http://krz.ch/ krz.ch]
  # [http://kore.us/ Kore.us]
  # [http://kots.nu/ Kots.Nu]
+ # [http://krz.ch/ krz.ch]
+ # [http://ktzr.us/ ktzros]
  # [http://lin.cr/ Lincr]
  # [http://linxfix.de/ LinxFix]
  # [http://lnk.by/ LNK.by]
+ # [http://lt.tl/ lt.tl]
  # [http://lurl.no/ lurl.no]
  # [http://metamark.net/ Metamark (xrl.us)]
  # [http://migre.me/ migre.me]
@@ -61,6 +64,7 @@
  # [http://r.im/ r.im]
  # [http://rde.me/ RDE.me]
  # [http://redir.ec/ redir.ec]
+ # [http://ri.ms/ RIMS]
  # [http://rnk.me/ rnk.me]
  # [http://rubyurl.com/ RubyURL]
  # [http://safe.mn/ Safe.mn] ^2^
@@ -74,7 +78,9 @@
  # [http://shw.me/ Shw.me]
  # [http://smallr.net/ Smallr.net]
  # [http://smfu.in/ SMFU]
+ # [http://snipie.com/ Snipie]
  # [http://snipurl.com/ SnipURL (sn.im)]
+ # [http://snkr.me/ snkr.me]
  # [http://song.ly/ song.ly] ^3^
  # [http://srnk.net/ srnk.net]
  # [http://su.pr/ StumbleUpon (su.pr)] ^1^
@@ -97,6 +103,7 @@
  # [http://url.ie/ URL.ie]
  # [http://unfaker.it/ URL (un)faker]
  # [http://urlborg.com/ urlBorg]
+ # [http://ooqx.com/ urlShort (ooqx.com)]
  # [http://u.mavrev.com/ urlShort (u.mavrev.com)]
  # [http://urlzen.com/ urlzen]
  # [http://virl.com/ Virl] ^1^
