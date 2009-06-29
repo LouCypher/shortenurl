@@ -24,7 +24,7 @@
  # [http://foxyurl.com/ Foxy URL]
  # [http://fwd4.me/ FWD4.me]
  # [http://g4.ms/ g4.ms]
- # [http://gl.am/ gl.am] `*`
+ # [http://gl.am/ gl.am] `1`
  # [http://good.ly/ Good.ly]
  # [http://gurl.es/ Gurl.es]
  # [http://hex.io/ hex.io]
