@@ -50,7 +50,7 @@
  # [http://minurl.fr MinURL]
  # [http://moourl.com/ Moourl]
  # [http://myurl.in/ MyURL.in]
- # [http://ndurl.com/ nd url] ^2^ ^3^
+ # [http://ndurl.com/ ndurl] ^2^ ^3^
  # [http://pendek.in/ Pendek.in]
  # [http://pic.gd/ Pic.gd]
  # [http://piurl.com/ PiURL]
