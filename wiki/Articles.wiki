@@ -1,4 +1,5 @@
 #summary Articles about this extension
+#labels Featured
 
  * [http://www.firefoxfacts.com/2009/04/15/better-way-to-make-tiny-shareable-urls/ Better Way to Make Tiny Shareable URLs] - Firefox Facts
  * [http://www.trackback.it/articolo/shorten-url-una-sola-estensione-per-restringere-url/9893/ Shorten URL: una sola estensione per restringere URL] ([http://translate.google.com/translate?u=http://www.trackback.it/articolo/shorten-url-una-sola-estensione-per-restringere-url/9893/&hl=en&langpair=it|en&tbb=1&ie=UTF-8 translate])
@@ -10,3 +11,14 @@
  * [http://www.sordyl.info/2009/05/31/links4/ Shorten URL Firefox Extension] - Brent Sordyl's blog
  * [http://timmyjohnboy.com/2009/05/15/firefox-friday-4-tools-to-help-shorten-those-urls/ Firefox Friday – 4 Tools To Help Shorten Those URLs] - timmyjohnboy.com
  * [http://www.binterest.com/firefox/10-best-twitter-firefox-add-ons-for-better-tweating/ 10 Best Twitter Firefox Add-ons for Better Tweating] -  BInterest
+
+== About URL shortening ==
+ * [http://www.inquisitr.com/22264/url-shorteners-the-herpes-of-the-web/ URL Shorteners – the herpes of the web]
+ * [http://searchengineland.com/analysis-which-url-shortening-service-should-you-use-17204 Analysis: Which URL Shortening Service Should You Use?]
+ * [http://joshua.schachter.org/2009/04/on-url-shorteners.html joshua schachter's blog on url shorteners]
+ * [http://www.webmonkey.com/blog/Why_URL_Shortening_is_a_Threat_to_the_Web Why URL Shortening is a Threat to the Web]
+ * [http://mashable.com/2009/04/05/url-shorteners/ 5 Reasons Why URL Shorteners Are Useful]
+ * [http://www.navinot.com/2009/04/10/ada-apa-di-balik-url-shrinker/ Di Balik URL Shrinker, Apa?]
+ * [http://www.techcrunch.com/2009/04/06/are-url-shorteners-a-necessary-evil-or-just-evil/ Are URL Shorteners A Necessary Evil, Or Just Evil?]
+ * [http://mavrev.com/site/story/short_urls_and_the_future_of_the_web 
+Short URLs and the Future of the Web]
