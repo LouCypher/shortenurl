@@ -17,7 +17,7 @@
  # [http://burnurl.com/ BurnURL] ^1^
  # [http://chilp.it/ Chilp.it]
  # [http://cli.gs/ cli.gs]
- # [http://clop.in/ Clop.in]
+ # [http://clop.in/ Clop.in] ^1^
  # [http://digg.com/tools/diggbar DiggBar]
  # [http://fly2.ws/ Fly2.ws]
  # [http://fon.gs/ fon.gs]
