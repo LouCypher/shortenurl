@@ -5,6 +5,6 @@
 
  * [http://code.google.com/p/shortenurl/issues/entry?template=Request%20for%20more%20service Request for more URL shortening service]
 
- * [http://twitter.com/home/?status=%40ShortenURL%20&in_reply_to=ShortenURL send message] to [http://twitter.com/ShortenURL @ShortenURL] on [http://twitter.com/ Twitter]
+ * [http://twitter.com/home/?status=%40ShortenURL%20&in_reply_to=ShortenURL post message to @ShortenURL] on [http://twitter.com/ShortenURL Twitter]
 
- * [http://mozillaca.com/?action=newnotice&status_textarea=%40shortenurl send message] to [http://mozillaca.com/shortenurl @shortenurl] on [http://mozillaca.com/ Mozillaca]
+ * [http://mozillaca.com/?action=newnotice&status_textarea=%40shortenurl post message to @shortenurl] on [http://mozillaca.com/shortenurl Mozillaca]
