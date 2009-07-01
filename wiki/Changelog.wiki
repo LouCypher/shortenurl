@@ -1,8 +1,9 @@
 #summary Version history
 #labels Featured
 
- * 0.1 release candidate
-  # new icons
+ * 0.2 release candidate
+  # Changed version number from 0.1 to 0.2 (see r189)
+  # new icon
   # added tab context menu to shorten tab URL
   # Adblock Plus integration
   # more shorteners: lt.tl, snipie.com, gl.am, snkr.me, ktzros, ooqx.com, ri.ms
@@ -17,6 +18,9 @@
    # [http://kztr.us/ ktzros]
    # [http://ooqx.com/ urlShort (ooqx.com)]
    # [http://ri.ms/ RIMS]
+   # [http://tiny.pl/ Tiny.pl] as [http://plurl.me/ Plurl] replacement
+   # [http://hurl.no/ Hurl]
+   # [http://qux.in/ qux.in]
 
 
  * 0.1 beta 4
