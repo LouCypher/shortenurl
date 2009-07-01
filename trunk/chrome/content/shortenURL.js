@@ -53,7 +53,11 @@ var ShortenURL = {
     return this.prefService.getIntPref("mp3.baseURL");
   },
 
-  populatePopup: function shortenURL_populatePopup() {
+  populatePopup: function shortenURL_populatePopup(aNode) {
+    if (!aNode || (aNode.lastChild.localName != "menuseparator")) {
+      return;
+    }
+
     var rv = [];
     var prefArray = this.prefService.getChildList("name", rv);
     var n = prefArray.length;
@@ -75,20 +79,19 @@ var ShortenURL = {
       return 0;
     })
 
-    var popup = document.getElementById("shortenurl-toolbarbutton-popup");
     var mi = null;
     for (var i = 0; i < shorteners.length; i++) {
       mi = document.createElement("menuitem");
       mi.setAttribute("value", shorteners[i].index);
       mi.setAttribute("label", shorteners[i].name);
       mi.setAttribute("type", "radio");
-      popup.appendChild(mi);
+      aNode.appendChild(mi);
       if (shorteners[i].index == this.baseNum) {
         var selectedIndex = i;
       }
     }
 
-    popup.childNodes[selectedIndex].setAttribute("checked", "true");
+    aNode.childNodes[selectedIndex].setAttribute("checked", "true");
 
   },
 
@@ -444,15 +447,10 @@ var ShortenURL = {
     var attrName = node.hasAttribute("tooltiptext") ? "tooltiptext" : "label";
     var attrValue = node.getAttribute(attrName);
     node.setAttribute(attrName, attrValue.replace(/\(.+\)$/, name));
-  }
+  },
 
-}
-
-window.addEventListener("load", shortenURL_init = function(e) {
-  // main context menu initalizations
-  var cm = document.getElementById("contentAreaContextMenu");
-  cm.addEventListener("popupshowing", shortenURL_contextInit = function(e) {
-
+  // initiate main context menu
+  initMainPopup: function shortenURL_initMainPopup() {
     // context menuitem IDs
     var itemIDs = ["context-shorten-linkURL", "context-shorten-pageURL",
                    "context-shorten-frameURL", "context-shorten-imageURL"];
@@ -489,44 +487,71 @@ window.addEventListener("load", shortenURL_init = function(e) {
                           ShortenURL.isValidScheme("mediaURL" in gContextMenu
                                                     ? gContextMenu.mediaURL
                                                     : gContextMenu.imageURL));
-  }, false);
-  cm.removeEventListener("popuphiding", shortenURL_contextInit, false);
+  },
 
-  // Bookmarks context menu initializations
-  var popup = document.getElementById("placesContext");
-  popup.addEventListener("popupshowing", shortenURL_placesInit = function() {
+  // initiate bookmarks context menu
+  initBookmarksPopup: function shortenURL_initBookmarksPopup() {
     // "Shorten this bookmark URL",
     // only shown if right click on a bookmark item, not bookmark folder
+    var isOnBookmark = (document.popupNode.node != undefined);
+    
     var item = document.getElementById("placesContext_shortenURL");
-    item.hidden = !ShortenURL.isValidScheme(document.popupNode.node.uri);
+    item.hidden = !isOnBookmark ||
+                  !ShortenURL.isValidScheme(document.popupNode.node.uri);
 
     // change/add menuitems label to selected URL shortening service name
-    ShortenURL.changeLabelOrTooltip("placesContext_shortenURL",
-                                    document.popupNode.node.uri);
-  }, false);
-  popup.removeEventListener("popuphiding", shortenURL_placesInit, false);
+    if (isOnBookmark) {
+      ShortenURL.changeLabelOrTooltip("placesContext_shortenURL",
+                                      document.popupNode.node.uri);
+    }
 
-  // tab context menu initializations
-  var shortenTab = document.getElementById("context-shortenTab");
-  var bookmarkTab = document.getElementById("context_bookmarkTab");
-  var tabContext = bookmarkTab.parentNode;
-  tabContext.insertBefore(shortenTab, bookmarkTab);
-  tabContext.addEventListener("popupshowing", shortenURL_initTab = function() {
+    // test
+    /*ShortenURL.logMessage("hidden: " + item.hidden + "\n" +
+                          "on bookmark: " + isOnBookmark);*/
+
+  },
+
+  // initiate tab context menu
+  initTabPopup: function shotenURL_initTabPopup() {
     var tab = document.popupNode.localName == "tabs"
               ? getBrowser().mCurrentTab : getBrowser().mContextTab;
     var shortenTab = document.getElementById("context-shortenTab");
-    shortenTab.hidden = !ShortenURL.
-                         isValidScheme(tab.linkedBrowser.currentURI.scheme);
+    shortenTab.hidden = !ShortenURL.isValidScheme(tab.linkedBrowser.
+                                                  currentURI.scheme);
 
     // change/add menuitems label to selected URL shortening service name
     ShortenURL.changeLabelOrTooltip("context-shortenTab", null);
-  }, false);
-  tabContext.removeEventListener("popuphiding", shortenURL_initTab, false);
+  },
 
-  // populate toolbarbutton context menu
-  ShortenURL.populatePopup();
+  init: function shortenURL_init() {
+    // main context menu initalizations
+    var cm = document.getElementById("contentAreaContextMenu");
+    cm.addEventListener("popupshowing", ShortenURL.initMainPopup, false);
+    cm.removeEventListener("popuphiding", ShortenURL.initMainPopup, false);
 
-}, false);
+    // Bookmarks context menu initializations
+    var popup = document.getElementById("placesContext");
+    popup.addEventListener("popupshowing",
+                           ShortenURL.initBookmarksPopup, false);
+    popup.removeEventListener("popuphiding",
+                              ShortenURL.initBookmarksPopup, false);
 
-window.removeEventListener("unload", shortenURL_init, false);
+    // tab context menu initializations
+    var shortenTab = document.getElementById("context-shortenTab");
+    var bookmarkTab = document.getElementById("context_bookmarkTab");
+    var tabContext = bookmarkTab.parentNode;
+    tabContext.insertBefore(shortenTab, bookmarkTab);
+    tabContext.addEventListener("popupshowing",
+                                ShortenURL.initTabPopup, false);
+    tabContext.removeEventListener("popuphiding",
+                                   ShortenURL.initTabPopup, false);
+
+    // populate toolbarbutton context menu
+    var popup = document.getElementById("shortenurl-toolbarbutton-popup");
+    ShortenURL.populatePopup(popup);
+  }
+}
+
+window.addEventListener("load", ShortenURL.init, false);
+window.removeEventListener("unload", ShortenURL.init, false);
 

@@ -107,7 +107,7 @@
 
   <toolbarpalette id="BrowserToolbarPalette">
     <toolbarbutton
-      id="shortenurl-button"
+      id="shortenurl-toolbarbutton"
       class="toolbarbutton-1"
       type="menu-button"
       label="Shorten URL"
@@ -121,13 +121,13 @@
       ondragexit="nsDragAndDrop.dragExit(event, ShortenURL.dndObserver);">
       <menupopup
         id="shortenurl-toolbarbutton-popup"
-        onpopupshowing="ShortenURL.selectMenuitem(this);"
+        onpopupshowing="ShortenURL.populatePopup(this); ShortenURL.selectMenuitem(this);"
         oncommand="event.stopPropagation(); ShortenURL.selectShortener(event.target.value);">
         <menuitem
-          id="shortenurl-toolbarbutton-menu-options"
+          id="shortenurl-toolbarbutton-popup-options"
           label="&options.title;"
           oncommand="event.stopPropagation(); ShortenURL.openPrefs();" />
-        <menuseparator id="shortenurl-toolbarbutton-menu-separator" />
+        <menuseparator id="shortenurl-toolbarbutton-popup-separator" />
       </menupopup>
     </toolbarbutton>
 
