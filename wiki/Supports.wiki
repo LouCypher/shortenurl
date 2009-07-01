@@ -5,4 +5,6 @@
 
  * [http://code.google.com/p/shortenurl/issues/entry?template=Request%20for%20more%20service Request for more URL shortening service]
 
- * [http://twitter.com/shortenurl @shortenurl] on Twitter
+ * send message to [http://twitter.com/shortenurl @shortenurl] on [http://twitter.com/ Twitter]
+
+ * send message to [http://mozillaca.com/shortenurl @shortenurl] on [http://mozillaca.com/ Mozillaca]
