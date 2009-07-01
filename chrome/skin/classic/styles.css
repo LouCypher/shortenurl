@@ -11,12 +11,12 @@
   display: none;
 }
 
-#shortenurl-button {
+#shortenurl-toolbarbutton {
   list-style-image: url("toolbarbutton.png");
   -moz-image-region: rect(0px, 24px, 24px, 0px);
 }
 
-toolbar[iconsize="small"] #shortenurl-button {
+toolbar[iconsize="small"] #shortenurl-toolbarbutton {
   -moz-image-region: rect(0px, 40px, 16px, 24px);
 }
 
