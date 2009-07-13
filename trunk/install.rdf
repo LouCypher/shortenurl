@@ -7,7 +7,7 @@
     <em:type>2</em:type>
     <em:id>ShortenURL@loucypher</em:id>
     <em:name>Shorten URL</em:name>
-    <em:version>0.2rc3</em:version>
+    <em:version>0.2</em:version>
     <em:description>Shorten long URL from Firefox context menu or toolbar button with your selected URL shortener and display the result in location bar.</em:description>
     <em:creator>LouCypher</em:creator>
     <em:contributor>Rt (Pipe for Tweetburner)</em:contributor>
