@@ -1,7 +1,7 @@
 #summary Version history
 #labels Featured
 
- * 0.2 release candidate
+ * 0.2
   # Changed version number from 0.1 to 0.2 (see r189)
   # new icon
   # added tab context menu to shorten tab URL
@@ -20,6 +20,7 @@
    # [http://tiny.pl/ Tiny.pl] as [http://plurl.me/ Plurl] replacement
    # [http://hurl.no/ Hurl]
    # [http://qux.in/ qux.in]
+   # [http://l.pr/ LinksPreadeR (l.pr)]
 
  * 0.1 beta 4
   * added
