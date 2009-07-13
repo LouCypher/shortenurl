@@ -40,6 +40,7 @@
  # [http://krz.ch/ krz.ch]
  # [http://ktzr.us/ ktzros]
  # [http://lin.cr/ Lincr]
+ # [http://l.pr/ LinksPreadeR (l.pr)]
  # [http://linxfix.de/ LinxFix]
  # [http://lnk.by/ LNK.by]
  # [http://lt.tl/ lt.tl]
