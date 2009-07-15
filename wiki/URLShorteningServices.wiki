@@ -8,9 +8,9 @@
  # [http://3.ly/ 3.ly]
  # [http://9mp.com/ 9mp]
  # [http://a.gd/ a.gd]
+ # [http://a.nf/ a.nf]
  # [http://abbr.com/ abbr]
  # [http://arm.in/ arm.in] ^1^
- # [http://a.nf/ a.nf]
  # [http://bit.ly/ bit.ly]
  # [http://bloat.me/ bloat.me]
  # [http://buk.me/ Buk.me]
