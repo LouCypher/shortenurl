@@ -13,6 +13,7 @@
  * [http://www.binterest.com/firefox/10-best-twitter-firefox-add-ons-for-better-tweating/ 10 Best Twitter Firefox Add-ons for Better Tweating] -  BInterest
 
 == About URL shortening ==
+ * [http://en.wikipedia.org/wiki/URL_shortening URL shortening on Wikipedia]
  * [http://www.inquisitr.com/22264/url-shorteners-the-herpes-of-the-web/ URL Shorteners – the herpes of the web]
  * [http://searchengineland.com/analysis-which-url-shortening-service-should-you-use-17204 Analysis: Which URL Shortening Service Should You Use?]
  * [http://joshua.schachter.org/2009/04/on-url-shorteners.html joshua schachter's blog on url shorteners]
