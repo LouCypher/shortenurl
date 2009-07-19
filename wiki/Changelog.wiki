@@ -1,6 +1,10 @@
 #summary Version history
 #labels Featured
 
+ * 0.2.1
+  # hid URL shorteners for mp3 in toolbarbutton menu
+  # added [http://clk.my clk.my]
+
  * 0.2
   # Changed version number from 0.1 to 0.2 (see r189)
   # new icon
