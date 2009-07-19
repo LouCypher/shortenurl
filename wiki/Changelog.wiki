@@ -3,7 +3,11 @@
 
  * 0.2.1
   # hid URL shorteners for mp3 in toolbarbutton menu
-  # added [http://clk.my clk.my]
+  # added more shorteners:
+   # [http://clk.my clk.my]
+   # [http://irt.met/ irt.me]
+   # [http://tsort.us/ tsort]
+   # [http://tweet.me/ tweet.me]
 
  * 0.2
   # Changed version number from 0.1 to 0.2 (see r189)
