@@ -127,6 +127,7 @@ pref("extensions.shortenURL.name.114", "RIMS");
 pref("extensions.shortenURL.name.115", "Hurl");
 pref("extensions.shortenURL.name.116", "qux.in");
 pref("extensions.shortenURL.name.117", "LinksPreadeR (l.pr)");
+pref("extensions.shortenURL.name.118", "clk.my");
 
 pref("extensions.shortenURL.0", "http://tinyurl.com/api-create.php?url=");
 pref("extensions.shortenURL.1", "http://api.bit.ly/shorten?version=2.0.1&format=text&login=shortenurl&apiKey=R_9781b0da8391ffe5de4f63c4205ed372&longUrl=");
@@ -247,3 +248,4 @@ pref("extensions.shortenURL.114", "http://ri.ms/api-create.php?url=");
 pref("extensions.shortenURL.115", "http://pipes.yahoo.com/pipes/pipe.run?_id=ajzNiMNk3hGzV60xKGzbRw&_render=json&url=");
 pref("extensions.shortenURL.116", "http://qux.in/api/shorten?apiKey=rvfhf4l4pj9k3g1t&longUrl=");
 pref("extensions.shortenURL.117", "http://pipes.yahoo.com/pipes/pipe.run?_id=dgzmtWZt3hGAcZ11cTQUrg&_render=json&url=");
+pref("extensions.shortenURL.118", "http://pipes.yahoo.com/pipes/pipe.run?_id=gH_PbURx3hGqwCDYe5O5Hw&_render=json&url=");
