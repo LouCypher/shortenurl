@@ -131,6 +131,7 @@ pref("extensions.shortenURL.name.118", "clk.my");
 pref("extensions.shortenURL.name.119", "tweet.ms");
 pref("extensions.shortenURL.name.120", "tsort");
 pref("extensions.shortenURL.name.121", "irt.me");
+pref("extensions.shortenURL.name.122", "url.ag");
 
 pref("extensions.shortenURL.0", "http://tinyurl.com/api-create.php?url=");
 pref("extensions.shortenURL.1", "http://api.bit.ly/shorten?version=2.0.1&format=text&login=shortenurl&apiKey=R_9781b0da8391ffe5de4f63c4205ed372&longUrl=");
@@ -255,3 +256,4 @@ pref("extensions.shortenURL.118", "http://pipes.yahoo.com/pipes/pipe.run?_id=gH_
 pref("extensions.shortenURL.119", "http://tweet.ms/apiCreateUrl.php?url=");
 pref("extensions.shortenURL.120", "http://tsort.us/api.php?url=");
 pref("extensions.shortenURL.121", "http://irt.me/api-set?via=ff&long=");
+pref("extensions.shortenURL.122", "http://url.ag/api.php?create=");
