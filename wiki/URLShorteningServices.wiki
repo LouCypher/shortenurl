@@ -17,6 +17,7 @@
  # [http://burnurl.com/ BurnURL] ^1^
  # [http://chilp.it/ Chilp.it]
  # [http://cli.gs/ cli.gs]
+ # [http://clk.my/ clk.my]
  # [http://clop.in/ Clop.in] ^1^
  # [http://digg.com/tools/diggbar DiggBar]
  # [http://fly2.ws/ Fly2.ws]
@@ -31,6 +32,7 @@
  # [http://hurl.no/ hurl.no]
  # [http://idek.net/ idek.net]
  # [http://is.gd/ is.gd]
+ # [http://irt.me/ irt.me]
  # [http://j2j.de/ J2j.de]
  # [http://kissa.be/ kissa.be!]
  # [http://kisa.ch/ Kisa.Ch] ^2^
@@ -96,6 +98,8 @@
  # [http://to.vg/ to.vg]
  # [http://tr.im/ tr.im]
  # [http://tra.kz/ tra.kz] ^3^
+ # [http://tsort.us/ tsort.us]
+ # [http://tweet.me/ tweet.me]
  # [http://tweetburner.com/ Tweetburner (twurl.nl)]
  # [http://twip.us/ Twip.us]
  # [http://twirl.at/ Twirl.at]
