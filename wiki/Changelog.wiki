@@ -1,5 +1,11 @@
 #summary Version history
 #labels Featured
+ # 0.2.2
+  # fixed Adblock Plus integration for Adblock Plus 1.1
+  # updated clk.my, it's now using its API instead of pipe
+
+ * 0.2.1.1
+  # added [http://url.ag/ url.ag]
 
  * 0.2.1
   # hid URL shorteners for mp3 in toolbarbutton menu
