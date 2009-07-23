@@ -107,6 +107,7 @@
  # [http://u.nu/ u.nu]
  # [http://uiop.me/ UiopMe]
  # [http://ur.ly/ ur.ly]
+ # [http://url.ag/ URL.AG]
  # [http://url.ie/ URL.ie]
  # [http://unfaker.it/ URL (un)faker]
  # [http://urlborg.com/ urlBorg]
