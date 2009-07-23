@@ -252,7 +252,7 @@ pref("extensions.shortenURL.114", "http://ri.ms/api-create.php?url=");
 pref("extensions.shortenURL.115", "http://pipes.yahoo.com/pipes/pipe.run?_id=ajzNiMNk3hGzV60xKGzbRw&_render=json&url=");
 pref("extensions.shortenURL.116", "http://qux.in/api/shorten?apiKey=rvfhf4l4pj9k3g1t&longUrl=");
 pref("extensions.shortenURL.117", "http://pipes.yahoo.com/pipes/pipe.run?_id=dgzmtWZt3hGAcZ11cTQUrg&_render=json&url=");
-pref("extensions.shortenURL.118", "http://pipes.yahoo.com/pipes/pipe.run?_id=gH_PbURx3hGqwCDYe5O5Hw&_render=json&url=");
+pref("extensions.shortenURL.118", "http://clk.my/api?url=");
 pref("extensions.shortenURL.119", "http://tweet.ms/apiCreateUrl.php?url=");
 pref("extensions.shortenURL.120", "http://tsort.us/api.php?url=");
 pref("extensions.shortenURL.121", "http://irt.me/api-set?via=ff&long=");

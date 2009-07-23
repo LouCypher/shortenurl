@@ -6,6 +6,7 @@ locale    shortenurl     id                             chrome/locale/id/
 overlay   chrome://browser/content/browser.xul          chrome://shortenurl/content/browser.xul
 overlay   chrome://browser/content/openLocation.xul     chrome://shortenurl/content/openLocation.xul
 overlay   chrome://adblockplus/content/sidebar.xul      chrome://shortenurl/content/abp-sidebar.xul
+overlay   chrome://adblockplus/content/ui/sidebar.xul   chrome://shortenurl/content/abp-sidebar.xul
 
 style     chrome://global/content/customizeToolbar.xul  chrome://shortenurl/skin/styles.css
 
