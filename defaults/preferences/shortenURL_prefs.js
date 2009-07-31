@@ -7,6 +7,7 @@ pref("extensions.shortenURL.post.server.laconica", "http://identi.ca/");
 pref("extensions.shortenURL.mp3", true);
 pref("extensions.shortenURL.mp3.baseURL", 46);
 pref("extensions.shortenURL.baseURL", 0);
+pref("extensions.shortenURL.showMenuIcons", true);
 
 pref("extensions.shortenURL.name.0", "TinyURL");
 pref("extensions.shortenURL.name.1", "bit.ly");
