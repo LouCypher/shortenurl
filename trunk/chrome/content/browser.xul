@@ -54,6 +54,7 @@
     <menuitem
       id="context-shorten-pageURL"
       insertafter="context-bookmarkpage"
+      class="menuitem-iconic shortenURL-context"
       label="&context.page; (name)"
       onmouseover="ShortenURL.setStatus(content.location.href);"
       onmouseout="ShortenURL.setStatus('');"
@@ -62,6 +63,7 @@
     <menuitem
       id="context-shorten-linkURL"
       insertafter="context-bookmarklink"
+      class="menuitem-iconic shortenURL-context"
       label="&context.link; (name)"
       onmouseover="ShortenURL.setStatus(gContextMenu.linkURL);"
       onmouseout="ShortenURL.setStatus('');"
@@ -70,6 +72,7 @@
     <menuitem
       id="context-shorten-frameURL"
       insertafter="frame"
+      class="menuitem-iconic shortenURL-context"
       label="&context.frame; (name)"
       onmouseover="ShortenURL.setStatus(gContextMenu.target.ownerDocument.location.href);"
       onmouseout="ShortenURL.setStatus('');"
@@ -78,6 +81,7 @@
     <menuitem
       id="context-shorten-imageURL"
       insertafter="context-copyimage"
+      class="menuitem-iconic shortenURL-context"
       label="&context.image; (name)"
       onmouseover="ShortenURL.setStatus('mediaURL' in gContextMenu ? gContextMenu.mediaURL : gContextMenu.imageURL);"
       onmouseout="ShortenURL.setStatus('');"
@@ -89,6 +93,7 @@
     <menuitem
       id="placesContext_shortenURL"
       insertafter="placesContext_openLinks:tabs"
+      class="menuitem-iconic shortenURL-context"
       label="&context.bookmark; (name)"
       oncommand="ShortenURL.shorten(document.popupNode.node.uri);" />
   </popup>
@@ -98,9 +103,11 @@
       id="shortenurl-options"
       label="&options.title;"
       insertbefore="menu_preferences"
+      class="menuitem-iconic shortenURL-menuitem"
       oncommand="ShortenURL.openPrefs();" />
     <menuitem
       id="context-shortenTab"
+      class="menuitem-iconic shortenURL-context"
       label="&context.tab; (name)"
       oncommand="var tab = document.popupNode.localName == 'tabs' ? getBrowser().mCurrentTab : getBrowser().mContextTab; ShortenURL.shorten(tab.linkedBrowser.currentURI.spec)" />
   </menupopup>
@@ -125,6 +132,7 @@
         oncommand="event.stopPropagation(); ShortenURL.selectShortener(event.target.value);">
         <menuitem
           id="shortenurl-toolbarbutton-popup-options"
+          class="menuitem-iconic shortenURL-menuitem"
           label="&options.title;"
           oncommand="event.stopPropagation(); ShortenURL.openPrefs();" />
         <menuseparator id="shortenurl-toolbarbutton-popup-separator" />

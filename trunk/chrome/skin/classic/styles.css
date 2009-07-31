@@ -44,11 +44,19 @@
   display: none;
 }
 
+.shortenURL-context,
+.shortenURL-menuitem,
 #shortenurl-toolbarbutton {
   list-style-image: url("toolbarbutton.png");
+}
+
+
+#shortenurl-toolbarbutton {
   -moz-image-region: rect(0px, 24px, 24px, 0px);
 }
 
+.shortenURL-context,
+.shortenURL-menuitem,
 toolbar[iconsize="small"] #shortenurl-toolbarbutton {
   -moz-image-region: rect(0px, 40px, 16px, 24px);
 }

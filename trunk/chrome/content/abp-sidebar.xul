@@ -54,6 +54,7 @@
     <menuitem
       id="contextShortenURL"
       insertafter="contextCopy"
+      class="menuitem-iconic shortenURL-menuitem"
       label="&context.adblock; (name)"
       onmouseover="ShortenURL.setStatus(treeView.getSelectedItem().location);"
       onmouseout="ShortenURL.setStatus('');"

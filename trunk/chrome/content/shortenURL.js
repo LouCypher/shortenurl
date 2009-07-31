@@ -449,8 +449,19 @@ var ShortenURL = {
     node.setAttribute(attrName, attrValue.replace(/\(.+\)$/, name));
   },
 
+  toggleMenuIcons: function shortenURL_toggleMenuIcons(aEvent) {
+    var sh = this.prefService.getBoolPref("showMenuIcons");
+    var si = aEvent.target.getElementsByClassName("shortenURL-context");
+    for (var i = 0; i < si.length; i++) {
+      si[i].className = sh ? "menuitem-iconic shortenURL-context"
+                           : "shortenURL-context";
+    }
+  },
+
   // initiate main context menu
-  initMainPopup: function shortenURL_initMainPopup() {
+  initMainPopup: function shortenURL_initMainPopup(aEvent) {
+    ShortenURL.toggleMenuIcons(aEvent);
+
     // context menuitem IDs
     var itemIDs = ["context-shorten-linkURL", "context-shorten-pageURL",
                    "context-shorten-frameURL", "context-shorten-imageURL"];
@@ -490,7 +501,9 @@ var ShortenURL = {
   },
 
   // initiate bookmarks context menu
-  initBookmarksPopup: function shortenURL_initBookmarksPopup() {
+  initBookmarksPopup: function shortenURL_initBookmarksPopup(aEvent) {
+    ShortenURL.toggleMenuIcons(aEvent);
+
     // "Shorten this bookmark URL",
     // only shown if right click on a bookmark item, not bookmark folder
     var isOnBookmark = (document.popupNode.node != undefined);
@@ -512,7 +525,9 @@ var ShortenURL = {
   },
 
   // initiate tab context menu
-  initTabPopup: function shotenURL_initTabPopup() {
+  initTabPopup: function shotenURL_initTabPopup(aEvent) {
+    ShortenURL.toggleMenuIcons(aEvent);
+
     var tab = document.popupNode.localName == "tabs"
               ? getBrowser().mCurrentTab : getBrowser().mContextTab;
     var shortenTab = document.getElementById("context-shortenTab");
