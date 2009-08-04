@@ -16,3 +16,5 @@
 <!ENTITY options.more.autocopy.key            "c">
 <!ENTITY options.more.post                    "Kirim ke layanan micro-blogging">
 <!ENTITY options.more.post.key                "m">
+<!ENTITY options.more.showicons               "Tampilkan icon pada konteks menu">
+<!ENTITY options.more.showicons.key           "i">

@@ -271,26 +271,31 @@ var ShortenURL = {
                                                            : "&type=web"
                                          : "");
 
+    // log message
+    if (this.prefService.getBoolPref("logMessages")) {
+      this.logMessage(api);
+    }
+
     var error = null;
     try {
       var req = new XMLHttpRequest();
       req.open("GET", api, false);
       req.send(null);
 
-      // log message
-      if (this.prefService.getBoolPref("logMessages")) {
-        this.logMessage(api);
-      }
-
       if (req.status == 200) {
-        var JSON = Components.classes["@mozilla.org/dom/json;1"]
-                             .createInstance(Components.interfaces.nsIJSON);
+        if (typeof JSON != "object") {
+          var JSON = Components.classes["@mozilla.org/dom/json;1"]
+                               .createInstance(Components.interfaces.nsIJSON);
+        }
 
         var shortURL = "";
 
         // JSON output formats
         if (this.isURLof(baseURL, "pipes.yahoo.com")) {
           shortURL = JSON.decode(req.responseText).value.items[0].link;
+
+        } else if (this.isURLof(baseURL, "2.ly")) {
+          shortURL = JSON.decode(req.responseText).url;
 
         } else if (this.isURLof(baseURL, "2ze.us")) {
           var obj = JSON.decode(req.responseText);
