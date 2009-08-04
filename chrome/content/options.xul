@@ -77,6 +77,10 @@
         id="extensions.shortenURL.mp3"
         name="extensions.shortenURL.mp3"
         type="bool" />
+      <preference
+        id="extensions.shortenURL.showMenuIcons"
+        name="extensions.shortenURL.showMenuIcons"
+        type="bool" />
     </preferences>
 
     <vbox>
@@ -116,6 +120,11 @@
         <caption>&options.more.caption;</caption>
         <vbox>
           <vbox>
+            <checkbox
+              id="showicon"
+              label="&options.more.showicons;"
+              accesskey="&options.more.showicons.key;"
+              preference="extensions.shortenURL.showMenuIcons" />
             <checkbox
               id="autocopy"
               label="&options.more.autocopy;"

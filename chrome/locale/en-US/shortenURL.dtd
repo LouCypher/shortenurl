@@ -16,3 +16,5 @@
 <!ENTITY options.more.autocopy.key            "c">
 <!ENTITY options.more.post                    "Post to micro-blogging service">
 <!ENTITY options.more.post.key                "m">
+<!ENTITY options.more.showicons               "Show icons on context menus">
+<!ENTITY options.more.showicons.key           "i">
