@@ -1,6 +1,11 @@
 #summary Version history
 #labels Featured
- # 0.2.2
+
+ # 0.2.3pre
+  # added menu icons
+  # added [http://2.ly/ 2.ly]
+
+ # 0.2.2.1
   # fixed Adblock Plus integration for Adblock Plus 1.1
   # updated clk.my, it's now using its API instead of pipe
 
