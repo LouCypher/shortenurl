@@ -20,6 +20,7 @@
  # [http://cli.gs/ cli.gs]
  # [http://clk.my/ clk.my] ^2^
  # [http://clop.in/ Clop.in] ^1^
+ # [http://coge.la/ COGE.LA]
  # [http://digg.com/tools/diggbar DiggBar]
  # [http://fly2.ws/ Fly2.ws]
  # [http://fon.gs/ fon.gs]
@@ -29,7 +30,9 @@
  # [http://gl.am/ gl.am] `1`
  # [http://good.ly/ Good.ly]
  # [http://gurl.es/ Gurl.es]
+ # [http://hao.jp/ hao.jp]
  # [http://hex.io/ hex.io]
+ # [http://hop.im/ Hop.im]
  # [http://hurl.no/ hurl.no]
  # [http://idek.net/ idek.net]
  # [http://is.gd/ is.gd]
