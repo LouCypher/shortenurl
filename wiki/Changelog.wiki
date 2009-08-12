@@ -1,9 +1,14 @@
 #summary Version history
 #labels Featured
 
- # 0.2.3pre
+ # 0.3 alpha
   # added menu icons
-  # added [http://2.ly/ 2.ly]
+  # replace [http://tinyurl.com/ TinyURL] with [http://fwd4.me/ FWD4.me] as default shortener
+  # added shorteners:
+   # [http://2.ly/ 2.ly]
+   # [http://coge.la/ COGE.LA]
+   # [http://hao.jp/ hao.jp]
+   # [http://hop.im/ Hop.im]
 
  # 0.2.2.1
   # fixed Adblock Plus integration for Adblock Plus 1.1
