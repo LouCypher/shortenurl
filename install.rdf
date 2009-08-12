@@ -7,11 +7,10 @@
     <em:type>2</em:type>
     <em:id>ShortenURL@loucypher</em:id>
     <em:name>Shorten URL</em:name>
-    <em:version>0.2.3pre2</em:version>
+    <em:version>0.3a1</em:version>
     <em:description>Shorten long URL from Firefox context menu or toolbar button with your selected URL shortener and display the result in location bar.</em:description>
     <em:creator>LouCypher</em:creator>
-    <em:contributor>Rt (Pipe for Tweetburner)</em:contributor>
-    <em:contributor>Free Icons Web &lt;http://www.freeiconsweb.com/&gt; (icon)</em:contributor>
+    <em:contributor>Icon by Free Icons Web http://www.freeiconsweb.com/</em:contributor>
     <em:optionsURL>chrome://shortenurl/content/options.xul</em:optionsURL>
     <em:iconURL>chrome://shortenurl/skin/shortenURL.png</em:iconURL>
     <em:homepageURL>http://shortenurl.googlecode.com/</em:homepageURL>
@@ -21,7 +20,7 @@
       <Description>
         <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
         <em:minVersion>3.0</em:minVersion>
-        <em:maxVersion>3.5.*</em:maxVersion>
+        <em:maxVersion>3.6a1</em:maxVersion>
       </Description>
     </em:targetApplication>
 

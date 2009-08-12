@@ -6,7 +6,7 @@ pref("extensions.shortenURL.post.server", 0);
 pref("extensions.shortenURL.post.server.laconica", "http://identi.ca/");
 pref("extensions.shortenURL.mp3", true);
 pref("extensions.shortenURL.mp3.baseURL", 46);
-pref("extensions.shortenURL.baseURL", 0);
+pref("extensions.shortenURL.baseURL", 86);
 pref("extensions.shortenURL.showMenuIcons", true);
 
 pref("extensions.shortenURL.name.0", "TinyURL");
@@ -134,6 +134,9 @@ pref("extensions.shortenURL.name.120", "tsort");
 pref("extensions.shortenURL.name.121", "irt.me");
 pref("extensions.shortenURL.name.122", "url.ag");
 pref("extensions.shortenURL.name.123", "2.ly");
+pref("extensions.shortenURL.name.124", "hao.jp");
+pref("extensions.shortenURL.name.125", "COGE.LA");
+pref("extensions.shortenURL.name.126", "Hop.im");
 
 pref("extensions.shortenURL.0", "http://tinyurl.com/api-create.php?url=");
 pref("extensions.shortenURL.1", "http://api.bit.ly/shorten?version=2.0.1&format=text&login=shortenurl&apiKey=R_9781b0da8391ffe5de4f63c4205ed372&longUrl=");
@@ -260,3 +263,6 @@ pref("extensions.shortenURL.120", "http://tsort.us/api.php?url=");
 pref("extensions.shortenURL.121", "http://irt.me/api-set?via=ff&long=");
 pref("extensions.shortenURL.122", "http://url.ag/api.php?create=");
 pref("extensions.shortenURL.123", "http://2.ly/api/short?longurl=");
+pref("extensions.shortenURL.124", "http://pipes.yahoo.com/pipes/pipe.run?_id=5e45bce5fbd95f477e71851d3f3d7fc3&_render=json&url=");
+pref("extensions.shortenURL.125", "http://coge.la/api.php?url=");
+pref("extensions.shortenURL.126", "http://hop.im/api.php?url=");

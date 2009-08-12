@@ -61,7 +61,16 @@ toolbar[iconsize="small"] #shortenurl-toolbarbutton {
   -moz-image-region: rect(0px, 40px, 16px, 24px);
 }
 
+#shortenURL-config #menupopup menuitem[selected],
 #shortenurl-toolbarbutton-popup menuitem[checked] {
   font-weight: bold;
+}
+
+#shortenURL-config #menupopup menuitem[selected] {
+  color: highlight;
+}
+
+#shortenURL-config #menupopup menuitem[selected][_moz-menuactive] {
+  color: highlighttext;
 }
 
