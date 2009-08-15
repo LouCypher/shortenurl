@@ -294,9 +294,6 @@ var ShortenURL = {
         if (this.isURLof(baseURL, "pipes.yahoo.com")) {
           shortURL = JSON.decode(req.responseText).value.items[0].link;
 
-        } else if (this.isURLof(baseURL, "2.ly")) {
-          shortURL = JSON.decode(req.responseText).url;
-
         } else if (this.isURLof(baseURL, "2ze.us")) {
           var obj = JSON.decode(req.responseText);
           for (var i in obj.urls) {
@@ -306,6 +303,9 @@ var ShortenURL = {
 
         } else if (this.isURLof(baseURL, "digg.com")) {
           shortURL = JSON.decode(req.responseText).shorturls[0].short_url;
+
+        } else if (this.isURLof(baseURL, "linkee.com")) {
+          shortURL = JSON.decode(req.responseText).result;
 
         } else if (this.isURLof(baseURL, "lnk.by")) {
           shortURL = "http://" + JSON.decode(req.responseText).ShortUrl;
@@ -330,8 +330,9 @@ var ShortenURL = {
         } else if (this.isURLof(baseURL, "tra.kz")) {
           shortURL = "http://tra.kz/" + JSON.decode(req.responseText).s;
 
-        } else if (this.isURLof(baseURL, "tr.im") ||
-                   this.isURLof(baseURL, "safe.mn")) {
+        } else if (this.isURLof(baseURL, "2.ly") ||
+                   this.isURLof(baseURL, "safe.mn") ||
+                   this.isURLof(baseURL, "tr.im")) {
           shortURL = JSON.decode(req.responseText).url;
 
         } else if (this.isURLof(baseURL, "ur.ly")) {
