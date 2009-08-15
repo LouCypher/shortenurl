@@ -9,6 +9,8 @@
    # [http://coge.la/ COGE.LA]
    # [http://hao.jp/ hao.jp]
    # [http://hop.im/ Hop.im]
+   # [http://linkee.com/ Linkee]
+   # [http://lnk.ly/ lnk.ly]
 
  # 0.2.2.1
   # fixed Adblock Plus integration for Adblock Plus 1.1
