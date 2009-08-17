@@ -1,7 +1,7 @@
 #summary Version history
 #labels Featured
 
- # 0.3 alpha
+ # 0.3
   # added menu icons
   # replace [http://tinyurl.com/ TinyURL] with [http://fwd4.me/ FWD4.me] as default shortener
   # added shorteners:
@@ -11,6 +11,7 @@
    # [http://hop.im/ Hop.im]
    # [http://linkee.com/ Linkee]
    # [http://lnk.ly/ lnk.ly]
+   # [http://urlg.info/ urlG]
 
  # 0.2.2.1
   # fixed Adblock Plus integration for Adblock Plus 1.1
