@@ -117,6 +117,7 @@
  # [http://url.ie/ URL.ie]
  # [http://unfaker.it/ URL (un)faker]
  # [http://urlborg.com/ urlBorg]
+ # [http://urlg.info/ urlG]
  # [http://ooqx.com/ urlShort (ooqx.com)]
  # [http://u.mavrev.com/ urlShort (u.mavrev.com)]
  # [http://urlzen.com/ urlzen]
@@ -135,6 +136,6 @@
 
 ^1^ uses frame/toolbar<br>
 ^2^ uses preview/delay<br>
-^3^ for MP3 URL<br>
+^3^ for MP3 URL only<br>
 
 You can [http://code.google.com/p/shortenurl/issues/entry?template=Request%20for%20more%20service request] for more service.
