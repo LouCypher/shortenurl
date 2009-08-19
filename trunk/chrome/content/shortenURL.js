@@ -35,10 +35,25 @@
 
 var ShortenURL = {
 
+  _DEFAULT: 86, // default shortener, depends on who wants to collaborate ;)
+
   get prefService() {
     return Components.classes["@mozilla.org/preferences-service;1"]
                      .getService(Components.interfaces.nsIPrefBranch)
                      .getBranch("extensions.shortenURL.");
+  },
+
+  // set default shortener
+  setDefault: function shortenURL_getDefault() {
+    try {
+      if (this.prefService.getIntPref("default") != this._DEFAULT) {
+        this.prefService.setIntPref("default", this._DEFAULT);
+        this.prefService.clearUserPref("baseURL");
+      }
+    } catch(ex) {
+      this.prefService.setIntPref("default", this._DEFAULT);
+      this.prefService.clearUserPref("baseURL");
+    }
   },
 
   get strings() {
@@ -546,6 +561,9 @@ var ShortenURL = {
   },
 
   init: function shortenURL_init() {
+    // set default shortener
+    ShortenURL.setDefault();
+
     // main context menu initalizations
     var cm = document.getElementById("contentAreaContextMenu");
     cm.addEventListener("popupshowing", ShortenURL.initMainPopup, false);
