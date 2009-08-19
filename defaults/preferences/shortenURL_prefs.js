@@ -140,6 +140,8 @@ pref("extensions.shortenURL.name.126", "Hop.im");
 pref("extensions.shortenURL.name.127", "Linkee");
 pref("extensions.shortenURL.name.128", "lnk.ly");
 pref("extensions.shortenURL.name.129", "urlG");
+pref("extensions.shortenURL.name.130", "2.gp");
+pref("extensions.shortenURL.name.131", "siteous");
 
 pref("extensions.shortenURL.0", "http://tinyurl.com/api-create.php?url=");
 pref("extensions.shortenURL.1", "http://api.bit.ly/shorten?version=2.0.1&format=text&login=shortenurl&apiKey=R_9781b0da8391ffe5de4f63c4205ed372&longUrl=");
@@ -272,3 +274,5 @@ pref("extensions.shortenURL.126", "http://hop.im/api.php?url=");
 pref("extensions.shortenURL.127", "http://api.linkee.com/1.0/shorten?input=");
 pref("extensions.shortenURL.128", "http://pipes.yahoo.com/pipes/pipe.run?_id=e25d701d81f7ebf192b1e1567748ff89&_render=json&url=");
 pref("extensions.shortenURL.129", "http://urlg.info/yourls-api.php?action=shorturl&output=simple&url=");
+pref("extensions.shortenURL.130", "http://2.gp/api/short?longurl=");
+pref("extensions.shortenURL.131", "http://siteo.us/core.api/?url=");

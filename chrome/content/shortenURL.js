@@ -330,7 +330,8 @@ var ShortenURL = {
         } else if (this.isURLof(baseURL, "tra.kz")) {
           shortURL = "http://tra.kz/" + JSON.decode(req.responseText).s;
 
-        } else if (this.isURLof(baseURL, "2.ly") ||
+        } else if (this.isURLof(baseURL, "2.gp") ||
+                   this.isURLof(baseURL, "2.ly") ||
                    this.isURLof(baseURL, "safe.mn") ||
                    this.isURLof(baseURL, "tr.im")) {
           shortURL = JSON.decode(req.responseText).url;
