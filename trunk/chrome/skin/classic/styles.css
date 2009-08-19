@@ -67,10 +67,12 @@ toolbar[iconsize="small"] #shortenurl-toolbarbutton {
 }
 
 #shortenURL-config #menupopup menuitem[selected] {
-  color: highlight;
+  color: -moz-menuhover;
+  background-color: -moz-menuhovertext;
 }
 
 #shortenURL-config #menupopup menuitem[selected][_moz-menuactive] {
-  color: highlighttext;
+  color: -moz-menuhovertext;
+  background-color: -moz-menuhover;
 }
 
