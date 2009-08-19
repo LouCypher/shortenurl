@@ -33,8 +33,9 @@
   the terms of any one of the MPL, the GPL or the LGPL.
 */
 
+#shortenurl-toolbarbutton-popup,
 #shortenURL-config #menupopup {
-  max-height: 300px;
+  max-height: 400px;
 }
 
 #shortenURL-config #menupopup menuitem[value="46"],
