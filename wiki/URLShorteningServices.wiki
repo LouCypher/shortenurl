@@ -4,6 +4,7 @@
 ^(In alphabetical order)^
 
  # [http://2su.de/ 2 Short.Url (2su.de)]
+ # [http://2.gp/ 2.gp]
  # [http://2.ly/ 2.ly]
  # [http://2ze.us/ 2Zeus]
  # [http://3.ly/ 3.ly]
@@ -86,6 +87,7 @@
  # [http://shortn.me/ shortn.me]
  # [http://shrtn.com/ Shrtn]
  # [http://shw.me/ Shw.me]
+ # [http://siteo.us/ siteous]
  # [http://smallr.net/ Smallr.net]
  # [http://smfu.in/ SMFU]
  # [http://snipie.com/ Snipie]
