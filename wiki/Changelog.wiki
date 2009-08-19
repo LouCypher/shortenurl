@@ -2,15 +2,19 @@
 #labels Featured
 
  # 0.3
-  # added menu icons
-  # replace [http://tinyurl.com/ TinyURL] with [http://fwd4.me/ FWD4.me] as default shortener
+  # added icons on context menu
+  # added option to toggle icons on context menu
+  # replaced [http://tinyurl.com/ TinyURL] with [http://fwd4.me/ FWD4.me] as default shortener
+  # added default shortener checker
   # added shorteners:
+   # [http://2.gp/ 2.gp]
    # [http://2.ly/ 2.ly]
    # [http://coge.la/ COGE.LA]
    # [http://hao.jp/ hao.jp]
    # [http://hop.im/ Hop.im]
    # [http://linkee.com/ Linkee]
    # [http://lnk.ly/ lnk.ly]
+   # [http://siteo.us/ siteous]
    # [http://urlg.info/ urlG]
 
  # 0.2.2.1
