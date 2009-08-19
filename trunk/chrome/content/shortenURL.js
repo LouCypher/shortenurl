@@ -48,11 +48,15 @@ var ShortenURL = {
     try {
       if (this.prefService.getIntPref("default") != this._DEFAULT) {
         this.prefService.setIntPref("default", this._DEFAULT);
-        this.prefService.clearUserPref("baseURL");
+        if (this.prefService.prefHasUserValue("baseURL")) {
+          this.prefService.clearUserPref("baseURL");
+        }
       }
     } catch(ex) {
       this.prefService.setIntPref("default", this._DEFAULT);
-      this.prefService.clearUserPref("baseURL");
+      if (this.prefService.prefHasUserValue("baseURL")) {
+        this.prefService.clearUserPref("baseURL");
+      }
     }
   },
 
