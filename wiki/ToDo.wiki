@@ -1,6 +1,6 @@
 #summary To-Do List
 #labels Phase-Support
 
- * Icon + toolbar button
+ * <s>Icon + toolbar button</s> (r75)
  * User authentifications
  * Shorten URL customizations
