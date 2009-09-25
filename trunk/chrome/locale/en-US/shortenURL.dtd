@@ -9,7 +9,7 @@
 <!ENTITY options.title                        "Shorten URL Options">
 <!ENTITY options.shortener.caption            "URL Shorteners">
 <!ENTITY options.shortener.select             "Selected service">
-<!ENTITY options.shortener.select.key         "s">
+<!ENTITY options.shortener.select.key         "e">
 <!ENTITY options.mp3.caption                  "Use different shortener for MP3 URL">
 <!ENTITY options.more.caption                 "More Options">
 <!ENTITY options.more.autocopy                "Copy to clipboard">

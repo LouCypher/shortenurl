@@ -142,6 +142,8 @@ pref("extensions.shortenURL.name.128", "lnk.ly");
 pref("extensions.shortenURL.name.129", "urlG");
 pref("extensions.shortenURL.name.130", "2.gp");
 pref("extensions.shortenURL.name.131", "siteous");
+pref("extensions.shortenURL.name.132", "Shorten4Charity (s4c.in)");
+pref("extensions.shortenURL.name.133", "vb.ly");
 
 pref("extensions.shortenURL.0", "http://tinyurl.com/api-create.php?url=");
 pref("extensions.shortenURL.1", "http://api.bit.ly/shorten?version=2.0.1&format=text&login=shortenurl&apiKey=R_9781b0da8391ffe5de4f63c4205ed372&longUrl=");
@@ -276,3 +278,5 @@ pref("extensions.shortenURL.128", "http://pipes.yahoo.com/pipes/pipe.run?_id=e25
 pref("extensions.shortenURL.129", "http://urlg.info/yourls-api.php?action=shorturl&output=simple&url=");
 pref("extensions.shortenURL.130", "http://2.gp/api/short?longurl=");
 pref("extensions.shortenURL.131", "http://siteo.us/core.api/?url=");
+pref("extensions.shortenURL.132", "http://s4c.in/api.php?username=apiconnect&password=nohash&action=shorturl&adtype=2&url=");
+pref("extensions.shortenURL.133", "http://vb.ly/api/?action=shorturl&format=json&url=");
