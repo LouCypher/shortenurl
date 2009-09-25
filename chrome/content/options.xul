@@ -95,6 +95,7 @@
             <menupopup id="menupopup" />
           </menulist>
         </hbox>
+          <label>Options</label>
         <checkbox id="mp3"
                   label="&options.mp3.caption;"
                   accesskey="3"
@@ -143,8 +144,8 @@
                        accesskey="T"
                        value="0" />
                 <radio id="laconica"
-                       label="Laconica"
-                       accesskey="L"
+                       label="StatusNet"
+                       accesskey="S"
                        value="1" />
                 <textbox
                   id="laconica-server"

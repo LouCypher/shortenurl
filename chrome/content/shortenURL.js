@@ -200,7 +200,7 @@ var ShortenURL = {
     }
   },
 
-  // post to Laconica server
+  // post to StatusNet server
   laconica: function shortenURL_laconica(aString) {
     var server = this.prefService.getCharPref("post.server.laconica");
     if (!server) server = "http://identi.ca/";
@@ -358,6 +358,9 @@ var ShortenURL = {
         } else if (this.isURLof(baseURL, "ur.ly")) {
           shortURL = "http://ur.ly/" + JSON.decode(req.responseText).code;
 
+        } else if (this.isURLof(baseURL, "vb.ly")) {
+          shortURL = JSON.decode(req.responseText).shorturl;
+
         } else if (this.isURLof(baseURL, "zipmyurl.com")) {
           shortURL = "http://zipmyurl.com/" +
                      JSON.decode(req.responseText).zipURL;
@@ -433,6 +436,12 @@ var ShortenURL = {
           // copy to clipboard
           if (this.prefService.getBoolPref("autocopy")) {
             this.copy(shortURL);
+          }
+
+          // load mp3 shorturl
+          if (this.isMP3(url)) {
+            gBrowser.loadOneTab(shortURL, null, null, null, false);
+            return;
           }
 
           // post to micro-blogging service
