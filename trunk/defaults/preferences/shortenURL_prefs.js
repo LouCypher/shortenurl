@@ -246,7 +246,7 @@ pref("extensions.shortenURL.93", "http://www.smfu.in/?api=");
 pref("extensions.shortenURL.94", "http://redir.ec/_api/rest/redirec/create?appid=http%3A%2F%2Fshortenurl.googlecode.com%2F&url=");
 pref("extensions.shortenURL.95", "http://pt2.me/api/shorten.php?v=");
 pref("extensions.shortenURL.96", "http://safe.mn/api/?format=json&url=");
-pref("extensions.shortenURL.97", "http://api.bit.ly/shorten?version=2.0.1&format=text&login=shortenurl&apiKey=R_9781b0da8391ffe5de4f63c4205ed372&longUrl=");
+pref("extensions.shortenURL.97", "http://api.j.mp/shorten?version=2.0.1&format=text&login=shortenurl&apiKey=R_9781b0da8391ffe5de4f63c4205ed372&longUrl=");
 pref("extensions.shortenURL.98", "http://pipes.yahoo.com/pipes/pipe.run?_id=HK_EEadU3hGzH2in1JzWFw&_render=json&url=");
 pref("extensions.shortenURL.99", "http://fon.gs/create.php?url=");
 pref("extensions.shortenURL.100", "http://qr.cx/api/?longurl=");
