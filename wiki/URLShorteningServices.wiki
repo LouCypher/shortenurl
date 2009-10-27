@@ -19,7 +19,7 @@
  # [http://burnurl.com/ BurnURL] ^1^
  # [http://chilp.it/ Chilp.it]
  # [http://cli.gs/ cli.gs]
- # [http://clk.my/ clk.my] ^2^
+ # [http://clk.my/ clk.my]
  # [http://clop.in/ Clop.in] ^1^
  # [http://coge.la/ COGE.LA]
  # [http://digg.com/tools/diggbar DiggBar]
@@ -27,8 +27,8 @@
  # [http://fon.gs/ fon.gs]
  # [http://foxyurl.com/ Foxy URL]
  # [http://fwd4.me/ FWD4.me]
- # [http://g4.ms/ g4.ms]
- # [http://gl.am/ gl.am] `1`
+ # <strike>[http://g4.ms/ g4.ms]</strike> ^4^
+ # [http://gl.am/ gl.am] ^1^
  # [http://good.ly/ Good.ly]
  # [http://gurl.es/ Gurl.es]
  # [http://hao.jp/ hao.jp]
@@ -139,5 +139,6 @@
 ^1^ uses frame/toolbar<br>
 ^2^ uses preview/delay<br>
 ^3^ for MP3 URL only<br>
+^4^ the service has been shutdown and will be removed on the next build
 
 You can [http://code.google.com/p/shortenurl/issues/entry?template=Request%20for%20more%20service request] for more service.
