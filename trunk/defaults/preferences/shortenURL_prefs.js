@@ -147,6 +147,7 @@ pref("extensions.shortenURL.name.133", "vb.ly");
 pref("extensions.shortenURL.name.134", "nbx.ch");
 pref("extensions.shortenURL.name.135", "ir.pe");
 pref("extensions.shortenURL.name.136", "Piko.me");
+pref("extensions.shortenURL.name.137", "LNK.sk");
 
 pref("extensions.shortenURL.0", "http://tinyurl.com/api-create.php?url=");
 pref("extensions.shortenURL.1", "http://api.bit.ly/shorten?version=2.0.1&format=text&login=shortenurl&apiKey=R_9781b0da8391ffe5de4f63c4205ed372&longUrl=");
@@ -286,3 +287,4 @@ pref("extensions.shortenURL.133", "http://vb.ly/api/?action=shorturl&format=json
 pref("extensions.shortenURL.134", "http://nbx.ch/_exec/create.php?service=firefox_shortenurl&uri=");
 pref("extensions.shortenURL.135", "http://ir.pe/?api=1&url=");
 pref("extensions.shortenURL.136", "http://piko.me/?url_API=");
+pref("extensions.shortenURL.137", "http://lnk.sk/serve.php?getShortAddress=");
