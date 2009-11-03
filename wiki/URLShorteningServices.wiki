@@ -8,6 +8,7 @@
  # [http://2.ly/ 2.ly]
  # [http://2ze.us/ 2Zeus]
  # [http://3.ly/ 3.ly]
+ # [http://301.to/ 301.to]
  # [http://9mp.com/ 9mp]
  # [http://a.gd/ a.gd]
  # [http://a.nf/ a.nf]
@@ -27,7 +28,6 @@
  # [http://fon.gs/ fon.gs]
  # [http://foxyurl.com/ Foxy URL]
  # [http://fwd4.me/ FWD4.me]
- # <strike>[http://g4.ms/ g4.ms]</strike> ^4^
  # [http://gl.am/ gl.am] ^1^
  # [http://good.ly/ Good.ly]
  # [http://gurl.es/ Gurl.es]
@@ -37,7 +37,9 @@
  # [http://hurl.no/ hurl.no]
  # [http://idek.net/ idek.net]
  # [http://is.gd/ is.gd]
+ # [http://ir.pe/ ir.pe]
  # [http://irt.me/ irt.me]
+ # [http://j.mp/ j.mp]
  # [http://j2j.de/ J2j.de]
  # [http://kissa.be/ kissa.be!]
  # [http://kisa.ch/ Kisa.Ch] ^2^
@@ -52,6 +54,7 @@
  # [http://linkee.com/ Linkee]
  # [http://lnk.by/ LNK.by]
  # [http://lnk.ly/ lnk.ly]
+ # [http://lnk.sk/ LNK.sk]
  # [http://lt.tl/ lt.tl]
  # [http://lurl.no/ lurl.no]
  # [http://metamark.net/ Metamark (xrl.us)]
@@ -61,9 +64,11 @@
  # [http://minurl.fr MinURL]
  # [http://moourl.com/ Moourl]
  # [http://myurl.in/ MyURL.in]
+ # [http://nbx.ch/ nbx.ch]
  # [http://ndurl.com/ ndurl] ^2^ ^3^
  # [http://pendek.in/ Pendek.in]
  # [http://pic.gd/ Pic.gd]
+ # [http://piko.me/ Piko.me]
  # [http://piurl.com/ PiURL]
  # [http://pnt.me/ pnt.me]
  # [http://poprl.com/ POPrl]
@@ -84,6 +89,7 @@
  # [http://shorl.com/ shorl] ^2^
  # [http://short.ie/ Short.ie]
  # [http://short.to/ short.to]
+ # [http://s4c.in/ shorten4charity] ^2^
  # [http://shortn.me/ shortn.me]
  # [http://shrtn.com/ Shrtn]
  # [http://shw.me/ Shw.me]
@@ -122,7 +128,9 @@
  # [http://urlg.info/ urlG]
  # [http://ooqx.com/ urlShort (ooqx.com)]
  # [http://u.mavrev.com/ urlShort (u.mavrev.com)]
+ # [http://urlu.ms/ urlu.ms]
  # [http://urlzen.com/ urlzen]
+ # [http://vb.ly/ vb.ly]
  # [http://virl.com/ Virl] ^1^
  # [http://vl.am/ vl.am]
  # [http://vtc.es/ VTC]
