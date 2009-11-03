@@ -1,6 +1,20 @@
 #summary Version history
 #labels Featured
 
+ # 0.3.1
+  # changed [http://laconi.ca/ Laconica] name to [http://status.net/ StatusNet] (issue 22)
+  # added shorteners:
+   # [http://301.to/ 301.to/]
+   # [http://j.mp/ j.mp]
+   # [http://ir.pe/ ir.pe]
+   # [http://lnk.sk/ LNK.sk]
+   # [http://nbx.ch/ nbx.ch]
+   # [http://piko.me/ Piko.me]
+   # [http://s4c.in/ Shorten4Charity]
+   # [http://urlu.ms/ urlu.ms]
+   # [http://vb.ly/ vb.ly]
+  # removed [http://g4.ms/ g4.ms]
+
  # 0.3
   # added icons on context menu
   # added option to toggle icons on context menu
