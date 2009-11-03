@@ -4,7 +4,7 @@
  # 0.3.1
   # changed [http://laconi.ca/ Laconica] name to [http://status.net/ StatusNet] (issue 22)
   # added shorteners:
-   # [http://301.to/ 301.to/]
+   # [http://301.to/ 301.to]
    # [http://j.mp/ j.mp]
    # [http://ir.pe/ ir.pe]
    # [http://lnk.sk/ LNK.sk]
