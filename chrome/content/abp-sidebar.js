@@ -33,10 +33,10 @@
   the terms of any one of the MPL, the GPL or the LGPL.
 */
 
-ShortenURL = mainWin.ShortenURL;
-closeMenus = mainWin.closeMenus;
-
 window.addEventListener("load", shortenInit = function() {
+  ShortenURL = mainWin.ShortenURL;
+  closeMenus = mainWin.closeMenus;
+
   E("context").addEventListener("popupshowing", sPopupInit = function() {
     var name = "(" + ShortenURL.prefService.getCharPref("name." +
                (ShortenURL.isMP3(treeView.getSelectedItem().location)
