@@ -1,6 +1,9 @@
 #summary Version history
 #labels Featured
 
+ # 0.3.2
+  # fixed error on Adblock Plus if blockable items window was detached
+
  # 0.3.1
   # changed [http://laconi.ca/ Laconica] name to [http://status.net/ StatusNet] (issue 22)
   # added shorteners:
