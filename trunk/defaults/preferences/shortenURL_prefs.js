@@ -150,6 +150,7 @@ pref("extensions.shortenURL.name.136", "Piko.me");
 pref("extensions.shortenURL.name.137", "LNK.sk");
 pref("extensions.shortenURL.name.138", "301.to");
 pref("extensions.shortenURL.name.139", "urlu.ms");
+pref("extensions.shortenURL.name.140", "rnm.me");
 
 pref("extensions.shortenURL.0", "http://tinyurl.com/api-create.php?url=");
 pref("extensions.shortenURL.1", "http://api.bit.ly/shorten?version=2.0.1&format=text&login=shortenurl&apiKey=R_9781b0da8391ffe5de4f63c4205ed372&longUrl=");
@@ -292,3 +293,4 @@ pref("extensions.shortenURL.136", "http://piko.me/?url_API=");
 pref("extensions.shortenURL.137", "http://lnk.sk/serve.php?getShortAddress=");
 pref("extensions.shortenURL.138", "http://pipes.yahoo.com/pipes/pipe.run?_id=ad8046e773b1ad716f448d115f3c9175&_render=json&url=");
 pref("extensions.shortenURL.139", "http://pipes.yahoo.com/pipes/pipe.run?_id=ec3eead2883a2637d3ec481aeacd8616&_render=json&url=");
+pref("extensions.shortenURL.140", "http://rnm.me/api.php?app=http%3A%2F%2Fshortenurl.googlecode.com%2F&url=");
