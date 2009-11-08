@@ -1,6 +1,9 @@
 #summary Version history
 #labels Featured
 
+ * 0.3.3
+  * added [http://rnm.me/ rnm.me]
+
  * 0.3.2
   * fixed error on Adblock Plus if blockable items window was detached
 
