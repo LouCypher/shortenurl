@@ -23,6 +23,7 @@
  # [http://clk.my/ clk.my]
  # [http://clop.in/ Clop.in] ^1^
  # [http://coge.la/ COGE.LA]
+ # [http://durl.me/ durl]
  # [http://digg.com/tools/diggbar DiggBar]
  # [http://fly2.ws/ Fly2.ws]
  # [http://fon.gs/ fon.gs]
@@ -61,6 +62,7 @@
  # [http://migre.me/ migre.me]
  # [http://micurl.com micURL]
  # [http://min2.me/ min2me]
+ # [http://minilink.org/ minilink.org] ([http://lnk.nu/ lnk.nu])
  # [http://minurl.fr MinURL]
  # [http://moourl.com/ Moourl]
  # [http://myurl.in/ MyURL.in]
@@ -79,12 +81,14 @@
  # [http://qux.in/ qux.in]
  # [http://r.im/ r.im]
  # [http://rde.me/ RDE.me]
+ # [http://p.ly/ re.p.ly (p.ly)]
  # [http://redir.ec/ redir.ec]
  # [http://ri.ms/ RIMS]
  # [http://rnk.me/ rnk.me]
  # [http://rubyurl.com/ RubyURL]
  # [http://safe.mn/ Safe.mn] ^2^
  # [http://sai.ly/ Sai.ly]
+ # [http://sl.ly/ Sexy URL (sl.ly)]
  # [http://sfu.ca/ SFU.ca]
  # [http://shorl.com/ shorl] ^2^
  # [http://short.ie/ Short.ie]
@@ -134,6 +138,7 @@
  # [http://virl.com/ Virl] ^1^
  # [http://vl.am/ vl.am]
  # [http://vtc.es/ VTC]
+ # [http://w3t.org/ W3T.org] ^1^
  # [http://xrt.me/ XORTR (xrt.me)]
  # [http://xr.com/ XR.com]
  # [http://xrl.in/ xrl.in]
