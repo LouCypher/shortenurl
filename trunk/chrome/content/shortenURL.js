@@ -323,6 +323,9 @@ var ShortenURL = {
         } else if (this.isURLof(baseURL, "digg.com")) {
           shortURL = JSON.decode(req.responseText).shorturls[0].short_url;
 
+        } else if (this.isURLof(baseURL, "durl.me")) {
+          shortURL = JSON.decode(req.responseText).shortUrl;
+
         } else if (this.isURLof(baseURL, "linkee.com")) {
           shortURL = JSON.decode(req.responseText).result;
 
@@ -331,6 +334,9 @@ var ShortenURL = {
 
         } else if (this.isURLof(baseURL, "ndurl.com")) {
           shortURL = JSON.decode(req.responseText).data.shortURL;
+
+        } else if (this.isURLof(baseURL, "p.ly")) {
+          shortURL = JSON.decode(req.responseText).success;
 
         } else if (this.isURLof(baseURL, "sfu.ca")) {
           shortURL = "http://get.sfu.ca/" +
@@ -368,6 +374,10 @@ var ShortenURL = {
         // XML output formats
         } else if (this.isURLof(baseURL, "arm.in")) {
           shortURL = req.responseXML.getElementsByTagName("arminized_url")[0]
+                                    .textContent;
+
+        } else if (this.isURLof(baseURL, "lnk.nu")) {
+          shortURL = req.responseXML.getElementsByTagName("minilink")[0]
                                     .textContent;
 
         } else if (this.isURLof(baseURL, "migre.me") ||
