@@ -1,6 +1,14 @@
 #summary Version history
 #labels Featured
 
+ * 0.3.4
+  * added shorteners:
+   # [http://sl.ly/ sl.ly]
+   # [http://p.ly/ p.ly]
+   # [http://durl.me/ durl]
+   # [http://lnk.nu/ lnk.nu]
+   # [http://w3t.org/ w3t.org]
+
  * 0.3.3
   * added [http://rnm.me/ rnm.me]
 
