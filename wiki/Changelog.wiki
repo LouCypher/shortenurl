@@ -1,252 +1,250 @@
 #summary Version history
 #labels Featured
 
- * 0.3.5 alpha
-  # better error messages in console
-  # added user agent and referer header
-  # added more URL shorteners:
-   # [http://hurl.ws/ Hurl.ws]
-   # [http://jdem.cz/ Jdem.cz]
-   # [http://mysp.in/ My SharePoint URL (mysp.in)]
-   # [http://qik.li/ qik.lu]
-   # [http://urloo.com/ URLoo]
-   # [http://vi.ly/ Vi.ly]
-   # [http://voizle.com/ Voizle]
-   # [http://zip.li/ Zip.li]
+== 0.3.5 alpha ==
+ # better error messages in console
+ # added user agent and referer header
+ # added more URL shorteners:
+  # [http://hurl.ws/ Hurl.ws]
+  # [http://jdem.cz/ Jdem.cz]
+  # [http://mysp.in/ My SharePoint URL (mysp.in)]
+  # [http://qik.li/ qik.lu]
+  # [http://urloo.com/ URLoo]
+  # [http://vi.ly/ Vi.ly]
+  # [http://voizle.com/ Voizle]
+  # [http://zip.li/ Zip.li]
 
- * 0.3.4
-  * added shorteners:
-   # [http://sl.ly/ sl.ly]
-   # [http://p.ly/ p.ly]
-   # [http://durl.me/ durl]
-   # [http://lnk.nu/ lnk.nu]
-   # [http://w3t.org/ w3t.org]
+== 0.3.4 ==
+ * added shorteners:
+  # [http://sl.ly/ sl.ly]
+  # [http://p.ly/ p.ly]
+  # [http://durl.me/ durl]
+  # [http://lnk.nu/ lnk.nu]
+  # [http://w3t.org/ w3t.org]
 
- * 0.3.3
-  * added [http://rnm.me/ rnm.me]
+== 0.3.3 ==
+ * added [http://rnm.me/ rnm.me]
 
- * 0.3.2
-  * fixed error on Adblock Plus if blockable items window was detached
+== 0.3.2 ==
+ * fixed error on Adblock Plus if blockable items window was detached
 
- * 0.3.1
-  # changed [http://laconi.ca/ Laconica] name to [http://status.net/ StatusNet] (issue 22)
-  # added shorteners:
-   # [http://301.to/ 301.to]
-   # [http://j.mp/ j.mp]
-   # [http://ir.pe/ ir.pe]
-   # [http://lnk.sk/ LNK.sk]
-   # [http://nbx.ch/ nbx.ch]
-   # [http://piko.me/ Piko.me]
-   # [http://s4c.in/ Shorten4Charity]
-   # [http://urlu.ms/ urlu.ms]
-   # [http://vb.ly/ vb.ly]
-  # removed [http://g4.ms/ g4.ms]
+== 0.3.1 ==
+ # changed [http://laconi.ca/ Laconica] name to [http://status.net/ StatusNet] (issue 22)
+ # added shorteners:
+  # [http://301.to/ 301.to]
+  # [http://j.mp/ j.mp]
+  # [http://ir.pe/ ir.pe]
+  # [http://lnk.sk/ LNK.sk]
+  # [http://nbx.ch/ nbx.ch]
+  # [http://piko.me/ Piko.me]
+  # [http://s4c.in/ Shorten4Charity]
+  # [http://urlu.ms/ urlu.ms]
+  # [http://vb.ly/ vb.ly]
+ # removed [http://g4.ms/ g4.ms]
 
- * 0.3
-  # added icons on context menu
-  # added option to toggle icons on context menu
-  # replaced [http://tinyurl.com/ TinyURL] with [http://fwd4.me/ FWD4.me] as default shortener
-  # added default shortener checker
-  # added shorteners:
-   # [http://2.gp/ 2.gp]
-   # [http://2.ly/ 2.ly]
-   # [http://coge.la/ COGE.LA]
-   # [http://hao.jp/ hao.jp]
-   # [http://hop.im/ Hop.im]
-   # [http://linkee.com/ Linkee]
-   # [http://lnk.ly/ lnk.ly]
-   # [http://siteo.us/ siteous]
-   # [http://urlg.info/ urlG]
+== 0.3 ==
+ # added icons on context menu
+ # added option to toggle icons on context menu
+ # replaced [http://tinyurl.com/ TinyURL] with [http://fwd4.me/ FWD4.me] as default shortener
+ # added default shortener checker
+ # added shorteners:
+  # [http://2.gp/ 2.gp]
+  # [http://2.ly/ 2.ly]
+  # [http://coge.la/ COGE.LA]
+  # [http://hao.jp/ hao.jp]
+  # [http://hop.im/ Hop.im]
+  # [http://linkee.com/ Linkee]
+  # [http://lnk.ly/ lnk.ly]
+  # [http://siteo.us/ siteous]
+  # [http://urlg.info/ urlG]
 
- * 0.2.2.1
-  # fixed Adblock Plus integration for Adblock Plus 1.1
-  # updated clk.my, it's now using its API instead of pipe
+== 0.2.2.1 ==
+ # fixed Adblock Plus integration for Adblock Plus 1.1
+ # updated clk.my, it's now using its API instead of pipe
 
- * 0.2.1.1
-  # added [http://url.ag/ url.ag]
+== 0.2.1.1 ==
+ * added [http://url.ag/ url.ag]
 
- * 0.2.1
-  # hid URL shorteners for mp3 in toolbarbutton menu
-  # added more shorteners:
-   # [http://clk.my clk.my]
-   # [http://irt.met/ irt.me]
-   # [http://tsort.us/ tsort]
-   # [http://tweet.me/ tweet.me]
+== 0.2.1 ==
+ # hid URL shorteners for mp3 in toolbarbutton menu
+ # added more shorteners:
+  # [http://clk.my clk.my]
+  # [http://irt.met/ irt.me]
+  # [http://tsort.us/ tsort]
+  # [http://tweet.me/ tweet.me]
 
- * 0.2
-  # Changed version number from 0.1 to 0.2 (see r189)
-  # new icon
-  # added tab context menu to shorten tab URL
-  # Adblock Plus integration
-  # added menu to toolbarbutton to quick select a shortener
-  # added more shorteners:
-   # [http://to.ly/ to.ly]
-   # [http://xxsurl.de/ xxsurl.de]
-   # [http://lt.tl/ lt.tl]
-   # [http://snipie.com Snipie]
-   # [http://gl.am/ gl.am]
-   # [http://snkr.me/ snkr.me]
-   # [http://kztr.us/ ktzros]
-   # [http://ooqx.com/ urlShort (ooqx.com)]
-   # [http://ri.ms/ RIMS]
-   # [http://tiny.pl/ Tiny.pl] as [http://plurl.me/ Plurl] replacement
-   # [http://hurl.no/ Hurl]
-   # [http://qux.in/ qux.in]
-   # [http://l.pr/ LinksPreadeR (l.pr)]
+== 0.2 ==
+ # Changed version number from 0.1 to 0.2 (see r189)
+ # new icon
+ # added tab context menu to shorten tab URL
+ # Adblock Plus integration
+ # added menu to toolbarbutton to quick select a shortener
+ # added more shorteners:
+  # [http://to.ly/ to.ly]
+  # [http://xxsurl.de/ xxsurl.de]
+  # [http://lt.tl/ lt.tl]
+  # [http://snipie.com Snipie]
+  # [http://gl.am/ gl.am]
+  # [http://snkr.me/ snkr.me]
+  # [http://kztr.us/ ktzros]
+  # [http://ooqx.com/ urlShort (ooqx.com)]
+  # [http://ri.ms/ RIMS]
+  # [http://tiny.pl/ Tiny.pl] as [http://plurl.me/ Plurl] replacement
+  # [http://hurl.no/ Hurl]
+  # [http://qux.in/ qux.in]
+  # [http://l.pr/ LinksPreadeR (l.pr)]
 
- * 0.1 beta 4
-  * added
-   # [http://2su.de/ 2 Short.Url (2su.de)]
-   # [http://qr.cx/ qr.cx]
-   # [http://sfu.ca/ SFU.ca]
-   # [http://su.pr/ StumbleUpon (su.pr)]
-   # [http://twtr.us/ twtr.us (tw6.us)]
-   # [http://zi.pe/ Zi.pe]
+== 0.1 beta 4 ==
+ * added
+  # [http://2su.de/ 2 Short.Url (2su.de)]
+  # [http://qr.cx/ qr.cx]
+  # [http://sfu.ca/ SFU.ca]
+  # [http://su.pr/ StumbleUpon (su.pr)]
+  # [http://twtr.us/ twtr.us (tw6.us)]
+  # [http://zi.pe/ Zi.pe]
 
+== 0.1 beta 3 ==
+ # added current selected URL shortening service name to context menuitems' labels and toolbarbutton's tooltip
+ # fixed message logging
+ # added 'buttons' attribute in options dialog
+ # shorter extension description
 
- * 0.1 beta 3
-  # added current selected URL shortening service name to context menuitems' labels and toolbarbutton's tooltip
-  # fixed message logging
-  # added 'buttons' attribute in options dialog
-  # shorter extension description
+== 0.1 beta 2 ==
+ # made [http://identi.ca/ identi.ca] the default Laconica server if laconica server field in options dialog is empty
+ # added right click on bookmark to shorten bookmark URL
+ # added message logging
+ # dropped support for Firefox 2
+ # added URL shortener service:
+  # [http://fon.gs/ fon.gs]
+  # [http://g4.ms/ g4.ms]
+  # [http://kore.us/ Kore.us]
+  # [http://ndurl.com/ nd url]
+  # [http://pt2.me/ pt2.me]
+  # [http://redir.ec/ redir.ec]
+  # [http://safe.mn/ Safe.mn]
+  # [http://smfu.in/ SMFU]
+  # [http://uiop.me/ UiopME]
 
- * 0.1 beta 2
-  # made [http://identi.ca/ identi.ca] the default Laconica server if laconica server field in options dialog is empty
-  # added right click on bookmark to shorten bookmark URL
-  # added message logging
-  # dropped support for Firefox 2
-  # added URL shortener service:
-   # [http://fon.gs/ fon.gs]
-   # [http://g4.ms/ g4.ms]
-   # [http://kore.us/ Kore.us]
-   # [http://ndurl.com/ nd url]
-   # [http://pt2.me/ pt2.me]
-   # [http://redir.ec/ redir.ec]
-   # [http://safe.mn/ Safe.mn]
-   # [http://smfu.in/ SMFU]
-   # [http://uiop.me/ UiopME]
+== 0.1 beta 1 ==
+ # added post to any [http://laconi.ca/ Laconica] server (default is [http://identi.ca/ identi.ca])
+ # added services:
+  # [http://3.ly/ 3.ly]
+  # [http://fwd4.me/ FWD4.me]
+  # [http://lurl.no/ lurl.no]
+  # [http://show.me/ Shw.me]
+  # [http://srnk.net/ srnk.net]
 
- * 0.1 beta 1
-  # added post to any [http://laconi.ca/ Laconica] server (default is [http://identi.ca/ identi.ca])
-  # added services:
-   # [http://3.ly/ 3.ly]
-   # [http://fwd4.me/ FWD4.me]
-   # [http://lurl.no/ lurl.no]
-   # [http://show.me/ Shw.me]
-   # [http://srnk.net/ srnk.net]
+== 0.1 alpha 2 ==
+ # fixed regexp for MP3 URLs
+ # fixed TightURL
+ # added API keys for bit.ly, cli.gs, kl.am
+ # [http://2to.us/ 2to.us] isn't working anymore, replaced it with [http://good.ly/ Good.ly]
+ # added more services:
+  # [http://gurl.es/ Gurl.es]
+  # [http://linxfix.com/ LinxFix]
+  # [http://min2.me/ min2me]
+  # [http://pic.gd/ Pic.gd]
+  # [http://rnk.me/ rnk.me]
+  # [http://sai.ly Sai.ly]
+  # [http://shrtn.com/ Shrtn]
+  # [http://unfaker.it URL (un)faker]
+  # [http://vtc.es/ VTC]
 
- * 0.1 alpha 2
-  # fixed regexp for MP3 URLs
-  # fixed TightURL
-  # added API keys for bit.ly, cli.gs, kl.am
-  # [http://2to.us/ 2to.us] isn't working anymore, replaced it with [http://good.ly/ Good.ly]
-  # added more services:
-   # [http://gurl.es/ Gurl.es]
-   # [http://linxfix.com/ LinxFix]
-   # [http://min2.me/ min2me]
-   # [http://pic.gd/ Pic.gd]
-   # [http://rnk.me/ rnk.me]
-   # [http://sai.ly Sai.ly]
-   # [http://shrtn.com/ Shrtn]
-   # [http://unfaker.it URL (un)faker]
-   # [http://vtc.es/ VTC]
+== 0.1 alpha 1 ==
+ # added extension icon
+ # added shorten image URL on context menu
+ # added toolbarbutton and drag and drop support
+ # added more services:
+  # [http://buk.me/ Buk.me] (r76)
+  # [http://a.nf/ a.nf] (r79)
+  # [http://vl.am/ vl.am]
+  # [http://bloat.me/ bloat.me]
+  # [http://pnt.me/ pnt.me]
+  # [http://x.vu/ X.vu]
+  # [http://z.pe/ Z.PE] (r87)
+  # [http://2tu.us/ 2tu.us]
+  # [http://fly2.ws/ Fly2.ws]
+  # [http://shortn.me/ shortn.me]
+  # [http://xr.com/ XR.com]
+  # [http://to.vg/ to.vg] (r90)
+  # [http://poprl.com/ POPrl]
+  # [http://clop.in/ Clop.in] (r91)
+  # [http://zz.gd/ ZZ.GD] (r92)
 
+== 0.0.20090506.03 ==
+ # changed [http://code.google.com/p/shortenurl/source/browse/trunk/chrome/content/shortenURL.js?r=67#132 options dialog feature]
+ # added projectplaylist to [http://code.google.com/p/shortenurl/source/browse/trunk/chrome/content/shortenURL.js?r=67#72 mp3 regexp]
+ # changed [http://code.google.com/p/shortenurl/source/browse/trunk/defaults/preferences/shortenURL_prefs.js?r=67#94 Diggbar appkey]
+ # added services:
+  # [http://myurl.in/ MyURL.in]
+  # [http://rubyurl.com/ RubyURL]
+  # [http://shorl.com/ shorl]
+  # [http://short.to/ short.to]
+  # [http://twip.us/ Twip.us]
+  # [http://ur.ly ur.ly]
+  # [http://url.ue/ URL.ie]
+  # [http://virl.com/ Virl]
+  # [http://xrt.me/ XORTR]
 
- * 0.1 alpha 1
-  # added extension icon
-  # added shorten image URL on context menu
-  # added toolbarbutton and drag and drop support
-  # added more services:
-   # [http://buk.me/ Buk.me] (r76)
-   # [http://a.nf/ a.nf] (r79)
-   # [http://vl.am/ vl.am]
-   # [http://bloat.me/ bloat.me]
-   # [http://pnt.me/ pnt.me]
-   # [http://x.vu/ X.vu]
-   # [http://z.pe/ Z.PE] (r87)
-   # [http://2tu.us/ 2tu.us]
-   # [http://fly2.ws/ Fly2.ws]
-   # [http://shortn.me/ shortn.me]
-   # [http://xr.com/ XR.com]
-   # [http://to.vg/ to.vg] (r90)
-   # [http://poprl.com/ POPrl]
-   # [http://clop.in/ Clop.in] (r91)
-   # [http://zz.gd/ ZZ.GD] (r92)
+== 0.0.20090430.01 ==
+ # fixed arm.in and migre.me
+ # added [http://rde.me/ RDE.me], [http://timesurl.at/ TimesURL], [http://9mp.com/ 9mp]
 
- * 0.0.20090506.03
-  # changed [http://code.google.com/p/shortenurl/source/browse/trunk/chrome/content/shortenURL.js?r=67#132 options dialog feature]
-  # added projectplaylist to [http://code.google.com/p/shortenurl/source/browse/trunk/chrome/content/shortenURL.js?r=67#72 mp3 regexp]
-  # changed [http://code.google.com/p/shortenurl/source/browse/trunk/defaults/preferences/shortenURL_prefs.js?r=67#94 Diggbar appkey]
-  # added services:
-   # [http://myurl.in/ MyURL.in]
-   # [http://rubyurl.com/ RubyURL]
-   # [http://shorl.com/ shorl]
-   # [http://short.to/ short.to]
-   # [http://twip.us/ Twip.us]
-   # [http://ur.ly ur.ly]
-   # [http://url.ue/ URL.ie]
-   # [http://virl.com/ Virl]
-   # [http://xrt.me/ XORTR]
+== 0.0.20090429.03 ==
+ # added new optional feature: use [http://tra.kz/ tra.kz] or [http://song.ly/ song.ly] for MP3 URLs
+ # added [http://2ze.us/ 2ze.us] and [http://tini.us/ tini.us]
 
- * 0.0.20090430.01
-  # fixed arm.in and migre.me
-  # added [http://rde.me/ RDE.me], [http://timesurl.at/ TimesURL], [http://9mp.com/ 9mp]
+== 0.0.20090426.02 ==
+ # fixed error on Firefox 2.0.0.`*`
+ # added services:
+  # [http://lnk.by/ LNK.by]
+  # [http://u.nu/ u.nu]
+  # [http://puke.it/ Puke.It]
+  # [http://kots.nu/ Kots.Nu]
+  # [http://arm.in/ arm.in]
 
- * 0.0.20090429.03
-  # added new optional feature: use [http://tra.kz/ tra.kz] or [http://song.ly/ song.ly] for MP3 URLs
-  # added [http://2ze.us/ 2ze.us] and [http://tini.us/ tini.us]
+== 0.0.20090418.01 ==
+ * replaced [http://cowurl.com/ CowURL] with [http://micurl.com/ micURL] since CowURL won't work
 
- * 0.0.20090426.02
-  # fixed error on Firefox 2.0.0.`*`
-  # added services:
-   # [http://lnk.by/ LNK.by]
-   # [http://u.nu/ u.nu]
-   # [http://puke.it/ Puke.It]
-   # [http://kots.nu/ Kots.Nu]
-   # [http://arm.in/ arm.in]
+== 0.0.20090417.03 ==
+ # updated Firefox maxVersion to 3.5b4pre
+ # added services:
+  # [http://migra.me/ migra.me]
+  # [http://foxyurl.com/ Foxy URL]
+  # [http://tighturl.com/ TightURL]
 
- * 0.0.20090418.01
-  * replaced [http://cowurl.com/ CowURL] with [http://micurl.com/ micURL] since CowURL won't work
+== 0.0.20090415.03 ==
+ # added skin directory
+ # added style for options dialog
+ # strip "www." from shortened URL
+ # added [http://r.im/ r.im]
+ # added [http://qurl.com/ Qurl]
 
- * 0.0.20090417.03
-  # updated Firefox maxVersion to 3.5b4pre
-  # added services:
-   # [http://migra.me/ migra.me]
-   # [http://foxyurl.com/ Foxy URL]
-   # [http://tighturl.com/ TightURL]
+== 0.0.20090413.01 ==
+ # longer extension description
+ # added [https://developer.mozilla.org/En/NsIWindowCreator nsIWindowWatcher] to [http://code.google.com/p/shortenurl/source/browse/trunk/chrome/content/shortenURL.js?spec=svn30&r=30#117 prefDialog] method to focus the options dialog if it's already opened when it's called
 
- * 0.0.20090415.03
-  # added skin directory
-  # added style for options dialog
-  # strip "www." from shortened URL
-  # added [http://r.im/ r.im]
-  # added [http://qurl.com/ Qurl]
+== 0.0.20090412.04 ==
+ * added [http://cowurl.com/ cowurl.com]
 
- * 0.0.20090413.01
-  # longer extension description
-  # added [https://developer.mozilla.org/En/NsIWindowCreator nsIWindowWatcher] to [http://code.google.com/p/shortenurl/source/browse/trunk/chrome/content/shortenURL.js?spec=svn30&r=30#117 prefDialog] method to focus the options dialog if it's already opened when it's called
+== 0.0.20090412.03 ==
+ # added [http://minurl.fr/ MinURL]
+ # updated [http://urlborg.com/ urlBorg] API key
 
- * 0.0.20090412.04
-  * added [http://cowurl.com/ cowurl.com]
+== 0.0.20090412.02 ==
+ * added [http://tiny.cc/ Tiny.cc]
 
- * 0.0.20090412.03
-  # added [http://minurl.fr/ MinURL]
-  # updated [http://urlborg.com/ urlBorg] API key
+== 0.0.20090412.01 ==
+ * added [http://j2j.de/ J2j.de]
 
- * 0.0.20090412.02
-  * added [http://tiny.cc/ Tiny.cc]
+== 0.0.20090411.03 ==
+ # better l10n
+ # added new locale: Bahasa Indonesia (id)
 
- * 0.0.20090412.01
-  * added [http://j2j.de/ J2j.de]
+== 0.0.20090411.02 ==
+ # changed extension depcription
+ # changed Firefox maxVersion
+ # refactored
 
- * 0.0.20090411.03
-  # better l10n
-  # added new locale: Bahasa Indonesia (id)
-
- * 0.0.20090411.02
-  # changed extension depcription
-  # changed Firefox maxVersion
-  # refactored
-
- * 0.0.20090410.01
-  * addd [http://kissa.be/ kissa.be!]
+== 0.0.20090410.01 ==
+ * addd [http://kissa.be/ kissa.be!]
