@@ -5,3 +5,5 @@
  * User authentifications
  * Shorten URL customizations
  * [http://www.seamonkey-project.org/ SeaMonkey 2.0] compatibility
+ * Use [https://developer.mozilla.org/en/Toolkit_API/FUEL FUEL]
+ * Use RDF or MySQL for shorteners list
