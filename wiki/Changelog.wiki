@@ -1,6 +1,19 @@
 #summary Version history
 #labels Featured
 
+ * 0.3.5 alpha
+  # better error messages in console
+  # added user agent and referer header
+  # added more URL shorteners:
+   # [http://hurl.ws/ Hurl.ws]
+   # [http://jdem.cz/ Jdem.cz]
+   # [http://zip.li/ Zip.li]
+   # [http://vi.ly/ Vi.ly]
+   # [http://mysp.in/ My SharePoint URL (mysp.in)]
+   # [http://voizle.com/ Voizle]
+   # [http://qik.li/ qik.lu]
+   # [http://urloo.com/ URLoo]
+
  * 0.3.4
   * added shorteners:
    # [http://sl.ly/ sl.ly]
