@@ -8,7 +8,7 @@
   # [http://hurl.ws/ Hurl.ws]
   # [http://jdem.cz/ Jdem.cz]
   # [http://mysp.in/ My SharePoint URL (mysp.in)]
-  # [http://qik.li/ qik.lu]
+  # [http://qik.li/ qik.li]
   # [http://urloo.com/ URLoo]
   # [http://vi.ly/ Vi.ly]
   # [http://voizle.com/ Voizle] (issue 39)
