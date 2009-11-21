@@ -341,7 +341,8 @@ var ShortenURL = {
           shortURL = JSON.decode(req.responseText).success;
 
         } else if (this.isURLof(baseURL, "qik.li")) {
-          shortURL = JSON.decode(req.responseText).qikUrl;
+          shortURL = JSON.decode(req.responseText.replace(/^\(|\)$/g, ""))
+                         .qikUrl;
 
         } else if (this.isURLof(baseURL, "sfu.ca")) {
           shortURL = "http://get.sfu.ca/" +
