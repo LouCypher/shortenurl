@@ -299,6 +299,8 @@ var ShortenURL = {
     try {
       var req = new XMLHttpRequest();
       req.open("GET", api, false);
+      req.setRequestHeader("User-Agent", navigator.userAgent + " ShortenURL/0.3.5");
+      req.setRequestHeader("Referer", "http://code.google.com/p/shortenurl/");
       req.send(null);
 
       if (req.status == 200) {
@@ -337,6 +339,9 @@ var ShortenURL = {
 
         } else if (this.isURLof(baseURL, "p.ly")) {
           shortURL = JSON.decode(req.responseText).success;
+
+        } else if (this.isURLof(baseURL, "qik.li")) {
+          shortURL = JSON.decode(req.responseText).qikUrl;
 
         } else if (this.isURLof(baseURL, "sfu.ca")) {
           shortURL = "http://get.sfu.ca/" +
@@ -387,6 +392,10 @@ var ShortenURL = {
 
         } else if (this.isURLof(baseURL, "shw.me")) {
           shortURL = req.responseXML.getElementsByTagName("shwme-url")[0]
+                                    .textContent;
+
+        } else if (this.isURLof(baseURL, "voizle.com")) {
+          shortURL = req.responseXML.getElementsByTagName("voizleurl")[0]
                                     .textContent;
 
         } else if (this.isURLof(baseURL, "xxsurl.de")) {
@@ -478,7 +487,8 @@ var ShortenURL = {
     }
     // FAIL!
     this.alert(this.strings.getString("shorten_fail"));
-    throw new Error(error);
+    Components.utils.reportError(error);
+
   },
 
   changeLabelOrTooltip:
