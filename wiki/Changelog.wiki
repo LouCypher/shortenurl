@@ -3,7 +3,7 @@
 
 == 0.3.5 alpha ==
  # better error messages in console
- # added user agent and referer header
+ # added user agent and referer request header
  # added more URL shorteners:
   # [http://hurl.ws/ Hurl.ws]
   # [http://jdem.cz/ Jdem.cz]
