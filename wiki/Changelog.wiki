@@ -2,7 +2,7 @@
 #labels Featured
 
 == 0.3.5 alpha ==
- # better error messages in console
+ # better error message in console
  # added user agent and referer request header
  # added more URL shorteners:
   # [http://hurl.ws/ Hurl.ws]
@@ -11,7 +11,7 @@
   # [http://qik.li/ qik.lu]
   # [http://urloo.com/ URLoo]
   # [http://vi.ly/ Vi.ly]
-  # [http://voizle.com/ Voizle]
+  # [http://voizle.com/ Voizle] (issue 39)
   # [http://zip.li/ Zip.li]
 
 == 0.3.4 ==
