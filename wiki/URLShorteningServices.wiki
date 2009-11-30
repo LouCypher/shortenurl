@@ -155,3 +155,11 @@
 ^4^ the service has been shutdown and will be removed on the next build
 
 You can [http://code.google.com/p/shortenurl/issues/entry?template=Request%20for%20more%20service request] for more service.
+
+== To be addded on next release ==
+ # [http://qik.li/ qik.li]
+ # [http://urloo.com/ URLoo]
+ # [http://http://urlz.at/ URLZ.at]
+ # [http://zapt.in/ Zapt.In]
+ # [http://rt.nu/ RT.nu]
+ # [http://to/ to.]
