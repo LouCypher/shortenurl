@@ -1,6 +1,7 @@
 #summary Articles about this extension
 #labels Featured
 
+ * [http://www.howtogeek.com/howto/8260/get-access-to-100-url-shortening-services-in-firefox/ How-To Geek: Get Access to 100+ URL Shortening Services in Firefox]
  * [http://www.firefoxfacts.com/2009/04/15/better-way-to-make-tiny-shareable-urls/ Better Way to Make Tiny Shareable URLs] - Firefox Facts
  * [http://www.trackback.it/articolo/shorten-url-una-sola-estensione-per-restringere-url/9893/ Shorten URL: una sola estensione per restringere URL] ([http://translate.google.com/translate?u=http://www.trackback.it/articolo/shorten-url-una-sola-estensione-per-restringere-url/9893/&hl=en&langpair=it|en&tbb=1&ie=UTF-8 translate])
  * [http://blog.readburner.com/2009/04/11/cool-firefox-add-on-shorten-url/ Cool Firefox Add-On : Shorten URL] - Official !ReadBurner Blog
