@@ -44,7 +44,7 @@
  # [http://irt.me/ irt.me]
  # [http://j.mp/ j.mp]
  # [http://j2j.de/ J2j.de]
- # [http://Jdem.cz Jdem.cz]
+ # [http://Jdem.cz/ Jdem.cz]
  # [http://kissa.be/ kissa.be!]
  # [http://kisa.ch/ Kisa.Ch] ^2^
  # [http://kl.am/ kl.am]
