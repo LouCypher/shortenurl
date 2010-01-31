@@ -1,17 +1,29 @@
 #summary Version history
 #labels Featured
 
-== 0.3.5 beta ==
+== 0.3.5 ==
  # better error message in Error Console
  # added user agent and referer request header
- # added more URL shorteners:
+ # replaced dead URL shortening services:
+  # replaced [http://burnurl.com/ BurnURL] with [http://ow.ly/ Ow.ly]
+  # replaced [http://poprl.com/ POPrl] with [http://goo.gl/ Goo.gl]
+ # added more services:
+  # [http://aurls.info/ aurls.info]
   # [http://hurl.ws/ Hurl.ws]
   # [http://jdem.cz/ Jdem.cz]
+  # [http://lin.io/ lin.io]
   # [http://mysp.in/ My SharePoint URL (mysp.in)]
+  # [http://omf.gd/ omf.gd]
   # [http://qik.li/ qik.li]
+  # [http://rt.nu/ RT.nu]
+  # [http://to.je/ to.je]
+  # [http://urli.nl/ URLi.nl]
   # [http://urloo.com/ URLoo]
+  # [http://urlz.at/ URLZ.at]
   # [http://vi.ly/ Vi.ly]
-  # [http://voizle.com/ Voizle] (issue 39)
+  # [http://voizle.com/ Voizle]
+  # [http://xiy.net XiY!]
+  # [http://zapt.in/ Zapt.In]
   # [http://zip.li/ Zip.li]
 
 == 0.3.4 ==
