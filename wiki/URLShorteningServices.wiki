@@ -142,7 +142,7 @@
  # [http://urloo.com/ URLoo]
  # [http://urlborg.com/ urlBorg]
  # [http://urlg.info/ urlG]
- # [http://http://urlz.at/ URLZ.at]
+ # [http://urlz.at/ URLZ.at]
  # [http://ooqx.com/ urlShort (ooqx.com)]
  # [http://u.mavrev.com/ urlShort (u.mavrev.com)]
  # [http://urlu.ms/ urlu.ms]
