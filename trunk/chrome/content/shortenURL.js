@@ -321,6 +321,9 @@ var ShortenURL = {
         if (this.isURLof(baseURL, "pipes.yahoo.com")) {
           shortURL = JSON.decode(req.responseText).value.items[0].link;
 
+        } else if (this.isURLof(baseURL, "307.to")) {
+          shortURL = JSON.decode(req.responseText).urls[0];
+
         } else if (this.isURLof(baseURL, "2ze.us")) {
           var obj = JSON.decode(req.responseText);
           for (var i in obj.urls) {

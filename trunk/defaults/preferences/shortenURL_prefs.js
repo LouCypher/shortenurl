@@ -172,6 +172,7 @@ pref("extensions.shortenURL.name.159", "omf.gd");
 pref("extensions.shortenURL.name.160", "to.je");
 pref("extensions.shortenURL.name.161", "URLi.nl");
 pref("extensions.shortenURL.name.162", "aurls.info");
+pref("extensions.shortenURL.name.163", "307.to");
 
 pref("extensions.shortenURL.0", "http://tinyurl.com/api-create.php?url=");
 pref("extensions.shortenURL.1", "http://api.bit.ly/shorten?version=2.0.1&format=text&login=shortenurl&apiKey=R_9781b0da8391ffe5de4f63c4205ed372&history=1&longUrl=");
@@ -336,4 +337,5 @@ pref("extensions.shortenURL.159", "http://pipes.yahoo.com/pipes/pipe.run?_id=36b
 pref("extensions.shortenURL.160", "http://pipes.yahoo.com/pipes/pipe.run?_id=d385f9cc4504bea42486ac4a985e0808&_render=json&url=");
 pref("extensions.shortenURL.161", "http://urli.nl/api.php?&format=simple&action=shorturl&url=");
 pref("extensions.shortenURL.162", "http://aurls.info/yourls-api.php?action=shorturl&format=simple&url=");
+pref("extensions.shortenURL.163", "http://a.307.to/api2/post?u=");
 
