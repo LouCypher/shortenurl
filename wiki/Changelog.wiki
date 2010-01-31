@@ -8,6 +8,7 @@
   # replaced [http://burnurl.com/ BurnURL] with [http://ow.ly/ Ow.ly]
   # replaced [http://poprl.com/ POPrl] with [http://goo.gl/ Goo.gl]
  # added more services:
+  # [http://307.to/ 307.to]
   # [http://aurls.info/ aurls.info]
   # [http://hurl.ws/ Hurl.ws]
   # [http://jdem.cz/ Jdem.cz]
