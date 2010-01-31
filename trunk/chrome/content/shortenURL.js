@@ -295,11 +295,17 @@ var ShortenURL = {
       this.logMessage(api);
     }
 
+    var version = Components.classes["@mozilla.org/extensions/manager;1"]
+                            .getService(Components.interfaces.nsIExtensionManager)
+                            .getItemForID("ShortenURL@loucypher")
+                            .version;
+
     var error = null;
     try {
       var req = new XMLHttpRequest();
       req.open("GET", api, false);
-      req.setRequestHeader("User-Agent", navigator.userAgent + " ShortenURL/0.3.5");
+      req.setRequestHeader("User-Agent", navigator.userAgent + " ShortenURL/"
+                                                             + version);
       req.setRequestHeader("Referer", "http://code.google.com/p/shortenurl/");
       req.send(null);
 
@@ -328,6 +334,9 @@ var ShortenURL = {
         } else if (this.isURLof(baseURL, "durl.me")) {
           shortURL = JSON.decode(req.responseText).shortUrl;
 
+        } else if (this.isURLof(baseURL, "ggl-shortener.appspot.com")) {
+          shortURL = JSON.decode(req.responseText).short_url;
+
         } else if (this.isURLof(baseURL, "linkee.com")) {
           shortURL = JSON.decode(req.responseText).result;
 
@@ -337,12 +346,18 @@ var ShortenURL = {
         } else if (this.isURLof(baseURL, "ndurl.com")) {
           shortURL = JSON.decode(req.responseText).data.shortURL;
 
+        } else if (this.isURLof(baseURL, "ow.ly")) {
+          shortURL = JSON.decode(req.responseText).results.shortUrl;
+
         } else if (this.isURLof(baseURL, "p.ly")) {
           shortURL = JSON.decode(req.responseText).success;
 
         } else if (this.isURLof(baseURL, "qik.li")) {
           shortURL = JSON.decode(req.responseText.replace(/^\(|\)$/g, ""))
                          .qikUrl;
+
+        } else if (this.isURLof(baseURL, "rt.nu")) {
+          shortURL = JSON.decode(req.responseText).response;
 
         } else if (this.isURLof(baseURL, "sfu.ca")) {
           shortURL = "http://get.sfu.ca/" +
@@ -440,9 +455,6 @@ var ShortenURL = {
         }
 
         if (shortURL.indexOf("http") == 0) {
-          if (this.isURLof(shortURL, "snurl.com")) {
-            shortURL = shortURL.replace(/snurl\.com/, "sn.im");
-          }
 
           if (this.isURLof(shortURL, "/www.")) {
             shortURL = shortURL.replace(/\/www\./, "/");
