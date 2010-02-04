@@ -1,4 +1,5 @@
 #summary Unshorten short URL into its original URL
+#labels Featured
 
 == Long URL ==
  * Web site: http://longurl.org/ 
