@@ -1,0 +1,25 @@
+#summary Unshorten short URL into its original URL
+
+== Long URL ==
+ * Web site: http://longurl.org/ 
+ * Extension: [https://addons.mozilla.org/addon/8636 LongURL Mobile Expander]
+
+== Long URL Please ==
+ * Web site: http://www.longurlplease.com/
+ * Extension: [https://addons.mozilla.org/addon/9549 Long URL Please]
+
+== Untiny ==
+ * Web site: http://untiny.me/
+ * Extension: [https://addons.mozilla.org/addon/10181 UntinyFox]
+
+== DeTinyIt! ==
+ * Web site: http://detinyit.com/
+ * Extension: [https://addons.mozilla.org/addon/13140 DeTiny URL Expander]
+
+== TheRealURL ==
+ * Web site: http://www.therealurl.net/
+ * Extension: [https://addons.mozilla.org/addon/60152 TheRealURL]
+
+== UnshortMe ==
+ * Web site: http://unshort.me/
+ * Extension: _n/a_
