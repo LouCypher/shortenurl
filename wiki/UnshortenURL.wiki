@@ -12,7 +12,7 @@
  * Web site: http://untiny.me/
  * Extension: [https://addons.mozilla.org/addon/10181 UntinyFox]
 
-== DeTinyIt! ==
+== !DeTinyIt! ==
  * Web site: http://detinyit.com/
  * Extension: [https://addons.mozilla.org/addon/13140 DeTiny URL Expander]
 
@@ -20,6 +20,6 @@
  * Web site: http://www.therealurl.net/
  * Extension: [https://addons.mozilla.org/addon/60152 TheRealURL]
 
-== UnshortMe ==
+== !UnshortMe ==
  * Web site: http://unshort.me/
  * Extension: _n/a_
