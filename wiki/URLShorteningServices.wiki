@@ -173,7 +173,7 @@
 ^1^ uses frame/toolbar<br>
 ^2^ uses preview/delay<br>
 ^3^ for MP3 URL only<br>
-^4^ currently only available on dev build
+^4^ currently only available on dev build<br>
 ^5^ the service has been shutdown and will be removed on the next build
 
 You can [http://code.google.com/p/shortenurl/issues/entry?template=Request%20for%20more%20service request] for more service.
