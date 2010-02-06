@@ -4,17 +4,17 @@
 <!ENTITY context.bookmark                     "Pendekkan URL Bookmark Ini">
 <!ENTITY context.tab                          "Pendekkan URL Tab Ini">
 <!ENTITY context.image                        "Pendekkan Lokasi Gambar Ini">
-<!ENTITY context.adblock                      "Shorten item's address">
+<!ENTITY context.adblock                      "Pendekkan alamat item">
 
 <!ENTITY options.title                        "Pengaturan Shorten URL">
 <!ENTITY options.shortener.caption            "Pemendek URL">
 <!ENTITY options.shortener.select             "Layanan pilihan">
 <!ENTITY options.shortener.select.key         "a">
-<!ENTITY options.mp3.caption                  "Menggunakan pemendek yang berbeda untuk tautan MP3">
+<!ENTITY options.mp3.caption                  "Gunakan pemendek yang berbeda untuk tautan MP3">
 <!ENTITY options.more.caption                 "Pengaturan Tambahan">
 <!ENTITY options.more.autocopy                "Salin ke clipboard">
 <!ENTITY options.more.autocopy.key            "c">
 <!ENTITY options.more.post                    "Kirim ke layanan micro-blogging">
 <!ENTITY options.more.post.key                "m">
-<!ENTITY options.more.showicons               "Tampilkan icon pada konteks menu">
+<!ENTITY options.more.showicons               "Tampilkan ikon pada menu konteks">
 <!ENTITY options.more.showicons.key           "i">
