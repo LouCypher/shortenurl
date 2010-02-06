@@ -24,6 +24,7 @@
  # [http://clk.my/ clk.my]
  # [http://clop.in/ Clop.in] ^1^
  # [http://coge.la/ COGE.LA]
+ # [http://crum.pl/ Crum.pl] ^4^
  # [http://durl.me/ durl]
  # [http://digg.com/tools/diggbar DiggBar]
  # [http://fly2.ws/ Fly2.ws]
@@ -46,6 +47,7 @@
  # [http://j.mp/ j.mp]
  # [http://j2j.de/ J2j.de]
  # [http://Jdem.cz/ Jdem.cz]
+ # [http://ketkp.in/ keTKP.in] ^4^
  # [http://kissa.be/ kissa.be!]
  # [http://kisa.ch/ Kisa.Ch] ^2^
  # [http://kl.am/ kl.am]
@@ -171,7 +173,8 @@
 ^1^ uses frame/toolbar<br>
 ^2^ uses preview/delay<br>
 ^3^ for MP3 URL only<br>
-^4^ the service has been shutdown and will be removed on the next build
+^4^ currently only available on dev build
+^5^ the service has been shutdown and will be removed on the next build
 
 You can [http://code.google.com/p/shortenurl/issues/entry?template=Request%20for%20more%20service request] for more service.
 
