@@ -24,3 +24,7 @@
 == !UnshortMe ==
  * Web site: http://unshort.me/
  * Extension: _n/a_
+
+== UNFWD4.me ==
+ * Web site: http://unfwd4.me/
+ * Extension: _n/a_
