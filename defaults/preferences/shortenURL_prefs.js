@@ -329,7 +329,7 @@ pref("extensions.shortenURL.151", "http://api.voizle.com/?u=");
 pref("extensions.shortenURL.152", "http://qik.li/api/shorten.php?url=");
 pref("extensions.shortenURL.153", "http://pipes.yahoo.com/pipes/pipe.run?_id=70b8a21e18303900b650b436225b9e38&_render=json&url=");
 pref("extensions.shortenURL.154", "http://pipes.yahoo.com/pipes/pipe.run?_id=4b54d3271986249dbf28412922ec1d7d&_render=json&url=");
-pref("extensions.shortenURL.155", "http://pipes.yahoo.com/pipes/pipe.run?_id=59eb4d59a88fda230b4813f6e31aca93&_render=json&url=");
+pref("extensions.shortenURL.155", "http://zapt.in/api/links/shorten?version=1.0&format=json&login=ShortenURL&key=Z_6d972b23881b82987c9f6e575d48e6f6&longUrl=");
 pref("extensions.shortenURL.156", "http://rt.nu/api/shorten/?url=");
 pref("extensions.shortenURL.157", "http://lin.io/?api=1&u=");
 pref("extensions.shortenURL.158", "http://pipes.yahoo.com/pipes/pipe.run?_id=10a10fefb8a711cf2b9b4de5251d90d0&_render=json&url=");

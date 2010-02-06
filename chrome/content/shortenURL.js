@@ -391,6 +391,13 @@ var ShortenURL = {
         } else if (this.isURLof(baseURL, "vb.ly")) {
           shortURL = JSON.decode(req.responseText).shorturl;
 
+        } else if (this.isURLof(baseURL, "zapt.in")) {
+          var obj = JSON.decode(req.responseText);
+          for (var i in obj.results) {
+            shortURL = obj.results[i].shortUrl;
+            break;
+          }
+
         } else if (this.isURLof(baseURL, "zipmyurl.com")) {
           shortURL = "http://zipmyurl.com/" +
                      JSON.decode(req.responseText).zipURL;
