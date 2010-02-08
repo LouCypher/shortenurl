@@ -30,7 +30,7 @@
  # [http://fly2.ws/ Fly2.ws]
  # [http://fon.gs/ fon.gs]
  # [http://foxyurl.com/ Foxy URL]
- # [http://fwd4.me/ FWD4.me]
+ # [http://fwd4.me/ FWD4.me] (default)
  # [http://gl.am/ gl.am] ^1^
  # [http://goo.gl/ Goo.gl]
  # [http://good.ly/ Good.ly]
@@ -123,13 +123,13 @@
  # [http://tini.us/ tini.us]
  # [http://tiny.cc/ Tiny.cc]
  # [http://tiny.pl/ Tiny.pl]
- # [http://tinyurl.com/ TinyURL] (default)
+ # [http://tinyurl.com/ TinyURL]
  # [http://to.je/ to.je]
  # [http://to.ly/ to.ly]
  # [http://to.vg/ to.vg]
  # [http://tr.im/ tr.im]
  # [http://tra.kz/ tra.kz] ^3^
- # [http://trumpink.lt/ tump!nk]
+ # [http://trumpink.lt/ tump!nk] ^4^
  # [http://tsort.us/ tsort.us]
  # [http://tweet.me/ tweet.me]
  # [http://tweetburner.com/ Tweetburner (twurl.nl)]
