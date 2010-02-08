@@ -441,14 +441,14 @@ var ShortenURL = {
         } else if (this.isURLof(baseURL, "micurl.com")) {
           shortURL = "http://micurl.com/" + req.responseText;
 
-        } else if (this.isURLof(baseURL, "poprl.com")) {
-          shortURL = req.responseText.match(/^[^\s]+/).toString();
-
         } else if (this.isURLof(baseURL, "pt2.me")) {
           shortURL = "http://pt2.me/" + req.responseText;
 
         } else if (this.isURLof(baseURL, "r.im")) {
           shortURL = req.responseText.match(/[^\s]+/).toString();
+
+        } else if (this.isURLof(baseURL, "trumpink.lt")) {
+          shortURL = req.responseText.match(/^[^\s]+/).toString();
 
         } else if (this.isURLof(baseURL, "xrl.in")) {
           shortURL = "http://xrl.in/" + req.responseText;
