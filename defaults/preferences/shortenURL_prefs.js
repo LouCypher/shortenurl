@@ -176,6 +176,11 @@ pref("extensions.shortenURL.name.163", "307.to");
 pref("extensions.shortenURL.name.164", "keTKP.in");
 pref("extensions.shortenURL.name.165", "Crum.pl");
 pref("extensions.shortenURL.name.166", "trump!nk");
+pref("extensions.shortenURL.name.167", "iKr.me");
+pref("extensions.shortenURL.name.168", "slki.ru");
+pref("extensions.shortenURL.name.169", "tllg.net");
+pref("extensions.shortenURL.name.170", "Zi.ma");
+pref("extensions.shortenURL.name.171", "shrt.ws");
 
 pref("extensions.shortenURL.0", "http://tinyurl.com/api-create.php?url=");
 pref("extensions.shortenURL.1", "http://api.bit.ly/shorten?version=2.0.1&format=text&login=shortenurl&apiKey=R_9781b0da8391ffe5de4f63c4205ed372&history=1&longUrl=");
@@ -344,4 +349,9 @@ pref("extensions.shortenURL.163", "http://a.307.to/api2/post?u=");
 pref("extensions.shortenURL.164", "http://pipes.yahoo.com/pipes/pipe.run?_id=2adc71a8df592db071cc91b447107069&_render=json&url=");
 pref("extensions.shortenURL.165", "http://pipes.yahoo.com/pipes/pipe.run?_id=f7638e208abb6ae4b214887dca488de8&_render=json&url=");
 pref("extensions.shortenURL.166", "http://api.trumpink.lt/qAdd.php?u=");
+pref("extensions.shortenURL.167", "http://ikr.me/api/?url=");
+pref("extensions.shortenURL.168", "http://slki.ru/api/add/?url=");
+pref("extensions.shortenURL.169", "http://tllg.net/hA");
+pref("extensions.shortenURL.170", "http://zi.ma/?module=ShortURL&file=Add&mode=API&url=");
+pref("extensions.shortenURL.171", "http://shrt.ws/index.46.api?shrt[cmd]=add_url&shrt[url]=");
 

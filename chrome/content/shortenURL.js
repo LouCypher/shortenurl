@@ -444,10 +444,12 @@ var ShortenURL = {
         } else if (this.isURLof(baseURL, "pt2.me")) {
           shortURL = "http://pt2.me/" + req.responseText;
 
-        } else if (this.isURLof(baseURL, "r.im")) {
+        } else if (this.isURLof(baseURL, "ikr.me") ||
+                   this.isURLof(baseURL, "r.im")) {
           shortURL = req.responseText.match(/[^\s]+/).toString();
 
-        } else if (this.isURLof(baseURL, "trumpink.lt")) {
+        } else if (this.isURLof(baseURL, "shrt.ws") ||
+                   this.isURLof(baseURL, "trumpink.lt")) {
           shortURL = req.responseText.match(/^[^\s]+/).toString();
 
         } else if (this.isURLof(baseURL, "xrl.in")) {
