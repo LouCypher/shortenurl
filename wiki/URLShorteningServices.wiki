@@ -41,6 +41,7 @@
  # [http://hurl.no/ hurl.no]
  # [http://hurl.ws/ Hurl.ws]
  # [http://idek.net/ idek.net]
+ # [http://ikr.me/ iKr.me] ^4^
  # [http://is.gd/ is.gd]
  # [http://ir.pe/ ir.pe]
  # [http://irt.me/ irt.me]
@@ -101,12 +102,14 @@
  # [http://safe.mn/ Safe.mn] ^2^
  # [http://sai.ly/ Sai.ly]
  # [http://sl.ly/ Sexy URL (sl.ly)]
+ # [http://slki.ru/ slki.ru] ^4^
  # [http://sfu.ca/ SFU.ca]
  # [http://shorl.com/ shorl] ^2^
  # [http://short.ie/ Short.ie]
  # [http://short.to/ short.to]
  # [http://s4c.in/ shorten4charity] ^2^
  # [http://shortn.me/ shortn.me]
+ # [http://shrt.ws/ shrt.ws] ^4^
  # [http://shrtn.com/ Shrtn]
  # [http://shw.me/ Shw.me]
  # [http://siteo.us/ siteous]
@@ -124,6 +127,7 @@
  # [http://tiny.cc/ Tiny.cc]
  # [http://tiny.pl/ Tiny.pl]
  # [http://tinyurl.com/ TinyURL]
+ # [http://tllg.net/ tllg.net] ^4^
  # [http://to.je/ to.je]
  # [http://to.ly/ to.ly]
  # [http://to.vg/ to.vg]
@@ -166,10 +170,12 @@
  # [http://xxsurl.de/ xxsURL]
  # [http://z.pe/ Z.PE]
  # [http://zapt.in/ Zapt.In]
+ # [http://zi.me/ Zi.ma] ^4^
  # [http://zi.pe/ Zi.pe]
  # [http://zip.li/ Zip.li]
  # [http://zipmyurl.com/ ZipMyURL]
  # [http://zz.gd/ ZZ.GD]
+
 
 ^1^ uses frame/toolbar<br>
 ^2^ uses preview/delay<br>
