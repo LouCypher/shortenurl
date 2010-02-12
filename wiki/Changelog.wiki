@@ -6,13 +6,11 @@
   # [http://ketkp.in/ keTKP.in]
   # [http://crum.pl/ Crum.pl] (issue 63)
   # [http://tumpink.lt/ trump!nk] (issue 62)
-<wiki:comment>
   # [http://ikr.me/ iKr.me]
   # [http://slki.ru/ slki.ru]
   # [http://tllg.net/ tllg.net]
   # [http://zi.me/ Zi.ma]
   # [http://shrt.ws/ shrt.ws] (issue 70)
-</wiki:comment>
 
 == 0.3.5.1 ==
  # fixed: Zapt.In shortening not working (issue 64)
