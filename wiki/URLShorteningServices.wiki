@@ -25,7 +25,7 @@
  # [http://clop.in/ Clop.in] ^1^
  # [http://coge.la/ COGE.LA]
  # [http://crum.pl/ Crum.pl] ^4^
- # [http://durl.me/ durl]
+ # [http://durl.me/ durl] ^2^
  # [http://digg.com/tools/diggbar DiggBar]
  # [http://fly2.ws/ Fly2.ws]
  # [http://fon.gs/ fon.gs]
@@ -77,6 +77,7 @@
  # [http://myurl.in/ MyURL.in]
  # [http://nbx.ch/ nbx.ch]
  # [http://ndurl.com/ ndurl] ^2^ ^3^
+ # [http://nm.ly/ nm.ly (namely)] ^1^ ^4^
  # [http://omf.gd/ omf.gd]
  # [http://ow.ly/ Ow.ly] ^1^
  # [http://pendek.in/ Pendek.in]
@@ -90,9 +91,10 @@
  # [http://qr.cx/ qr.cx]
  # [http://qurl.com/ Qurl]
  # [http://qux.in/ qux.in]
- # [http://r.im/ r.im]
+ # [http://r.im/ r.im] ^1^
  # [http://rde.me/ RDE.me]
  # [http://p.ly/ re.p.ly (p.ly)]
+ # [http://retwt.me/ retwt.me]
  # [http://qik.li/ qik.li]
  # [http://redir.ec/ redir.ec]
  # [http://ri.ms/ RIMS]
@@ -126,6 +128,7 @@
  # [http://tini.us/ tini.us]
  # [http://tiny.cc/ Tiny.cc]
  # [http://tiny.pl/ Tiny.pl]
+ # [http://tinypl.us/ TinyPl.us] ^2^ ^4^
  # [http://tinyurl.com/ TinyURL]
  # [http://tllg.net/ tllg.net] ^4^
  # [http://to.je/ to.je]
@@ -177,8 +180,8 @@
  # [http://zz.gd/ ZZ.GD]
 
 
-^1^ uses frame/toolbar<br>
-^2^ uses preview/delay<br>
+^1^ using frame/toolbar<br>
+^2^ using preview/delay<br>
 ^3^ for MP3 URL only<br>
 ^4^ currently only available on dev build<br>
 ^5^ the service has been shutdown and will be removed on the next build
