@@ -334,7 +334,9 @@ var ShortenURL = {
         } else if (this.isURLof(baseURL, "digg.com")) {
           shortURL = JSON.decode(req.responseText).shorturls[0].short_url;
 
-        } else if (this.isURLof(baseURL, "durl.me")) {
+        } else if (this.isURLof(baseURL, "durl.me") ||
+                   this.isURLof(baseURL, "retwt.me") ||
+                   this.isURLof(baseURL, "song.ly")) {
           shortURL = JSON.decode(req.responseText).shortUrl;
 
         } else if (this.isURLof(baseURL, "ggl-shortener.appspot.com")) {
@@ -365,9 +367,6 @@ var ShortenURL = {
         } else if (this.isURLof(baseURL, "sfu.ca")) {
           shortURL = "http://get.sfu.ca/" +
                      JSON.decode(req.responseText).shorturl;
-
-        } else if (this.isURLof(baseURL, "song.ly")) {
-          shortURL = JSON.decode(req.responseText).shortUrl;
 
         } else if (this.isURLof(baseURL, "su.pr")) {
           var obj = JSON.decode(req.responseText);
