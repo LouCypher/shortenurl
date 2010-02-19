@@ -14,6 +14,7 @@
   # [http://retwt.me/ retwt.me]
   # [http://tinypl.us/ TinyPl.us]
   # [http://nm.ly/ nm.ly] (issue 71)
+  # [http://shadyurl.com/ ShadyURL]
 
 == 0.3.5.1 ==
  # fixed: Zapt.In shortening not working (issue 64)
