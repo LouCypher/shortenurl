@@ -9,4 +9,4 @@
 
  * [http://mozillaca.com/?action=newnotice&status_textarea=%40shortenurl post message to @shortenurl] on [http://mozillaca.com/shortenurl Mozillaca]
 
-[https://addons.mozilla.org/en-US/firefox/addons/contribute/11423?source=addon-detail https://www.paypal.com/en_US/i/btn/btn_donate_LG.gif]
+[ttps://addons.mozilla.org/en-US/firefox/addons/contribute/11423?source=external-support&type=suggested https://www.paypal.com/en_US/i/btn/btn_donate_LG.gif]
