@@ -48,6 +48,7 @@
  # [http://j.mp/ j.mp]
  # [http://j2j.de/ J2j.de]
  # [http://Jdem.cz/ Jdem.cz]
+ # [http://k.vu/ k.vu]
  # [http://ketkp.in/ keTKP.in]
  # [http://kissa.be/ kissa.be!]
  # [http://kisa.ch/ Kisa.Ch] ^2^
@@ -147,6 +148,7 @@
  # [http://u.nu/ u.nu]
  # [http://uiop.me/ UiopMe]
  # [http://ur.ly/ ur.ly]
+ # [http://urizy.com/ urizy.com]
  # [http://unfaker.it/ URL (un)faker]
  # [http://url.ag/ URL.AG]
  # [http://url.ie/ URL.ie]
