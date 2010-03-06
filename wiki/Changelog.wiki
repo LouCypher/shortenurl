@@ -17,6 +17,7 @@
   # [http://shadyurl.com/ ShadyURL]
   # [http://urizy.com/ urizy.com] (issue 76)
   # [http://k.vu/ k.vu] (issue 77)
+  # [http://gkurl.us/ gkurl.us] (issue 80)
 
 == 0.3.5.1 ==
  # fixed: Zapt.In shortening not working (issue 64)
