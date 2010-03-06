@@ -187,6 +187,7 @@ pref("extensions.shortenURL.name.174", "nm.ly (namely)");
 pref("extensions.shortenURL.name.175", "ShadyURL");
 pref("extensions.shortenURL.name.176", "urizy.com");
 pref("extensions.shortenURL.name.177", "k.vu");
+pref("extensions.shortenURL.name.178", "gkurl.us");
 
 pref("extensions.shortenURL.0", "http://tinyurl.com/api-create.php?url=");
 pref("extensions.shortenURL.1", "http://api.bit.ly/shorten?version=2.0.1&format=text&login=shortenurl&apiKey=R_9781b0da8391ffe5de4f63c4205ed372&history=1&longUrl=");
@@ -366,4 +367,5 @@ pref("extensions.shortenURL.174", "http://pipes.yahoo.com/pipes/pipe.run?_id=d95
 pref("extensions.shortenURL.175", "http://pipes.yahoo.com/pipes/pipe.run?_id=44e19eb7985ccee094782d36e964a0e4&_render=json&shady=y&url=");
 pref("extensions.shortenURL.176", "http://pipes.yahoo.com/pipes/pipe.run?_id=64b944ff8e1b28534fdf9252ea65380c&_render=json&shady=y&url=");
 pref("extensions.shortenURL.177", "http://k.vu/shorten/?s=");
+pref("extensions.shortenURL.178", "http://gkurl.us/api.php?action=shorturl&format=simple&url=");
 
