@@ -31,6 +31,7 @@
  # [http://fon.gs/ fon.gs]
  # [http://foxyurl.com/ Foxy URL]
  # [http://fwd4.me/ FWD4.me] (default)
+ # [http://gkurl.us/ gkurl.us]
  # [http://gl.am/ gl.am] ^1^
  # [http://goo.gl/ Goo.gl]
  # [http://good.ly/ Good.ly]
