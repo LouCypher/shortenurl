@@ -139,7 +139,7 @@
  # [http://to.vg/ to.vg]
  # [http://tr.im/ tr.im]
  # [http://tra.kz/ tra.kz] ^3^
- # [http://trumpink.lt/ tump!nk]
+ # [http://trumpink.lt/ trump!nk]
  # [http://tsort.us/ tsort.us]
  # [http://tweet.me/ tweet.me]
  # [http://tweetburner.com/ Tweetburner (twurl.nl)]
