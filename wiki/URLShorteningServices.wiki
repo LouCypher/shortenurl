@@ -151,6 +151,7 @@
  # [http://ur.ly/ ur.ly]
  # [http://urizy.com/ urizy.com]
  # [http://unfaker.it/ URL (un)faker]
+ # [http://urlcorta.es/ URL Corta]
  # [http://url.ag/ URL.AG]
  # [http://url.ie/ URL.ie]
  # [http://urli.nl/ URLi.nl]
