@@ -278,7 +278,8 @@ var ShortenURL = {
 
     var baseURL =  this.getBaseURL(baseNum);
 
-    var api = baseURL + ((this.isURLof(baseURL, "arm.in") ||
+    var api = baseURL + ((this.isURLof(baseURL, "7rz.de") ||
+                          this.isURLof(baseURL, "arm.in") ||
                           this.isURLof(baseURL, "min2.me") ||
                           this.isURLof(baseURL, "qr.cx") ||
                           this.isURLof(baseURL, "rde.me") ||
@@ -428,6 +429,9 @@ var ShortenURL = {
                                     .textContent;
 
         // plain text output formats
+        } else if (this.isURLof(baseURL, "7rz.de")) {
+          shortURL = "http://" + req.responseText;
+
         } else if (this.isURLof(baseURL, "buk.me")) {
           shortURL = req.responseText.match(/^[^\<]+/).toString();
 
