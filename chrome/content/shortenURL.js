@@ -305,9 +305,12 @@ var ShortenURL = {
     try {
       var req = new XMLHttpRequest();
       req.open("GET", api, false);
-      req.setRequestHeader("User-Agent", navigator.userAgent + " ShortenURL/"
-                                                             + version);
-      req.setRequestHeader("Referer", "http://code.google.com/p/shortenurl/");
+      if (!this.isURLof(baseURL, "hj.to")) {
+        req.setRequestHeader("User-Agent",
+                             navigator.userAgent + " ShortenURL/" + version);
+        req.setRequestHeader("Referer",
+                             "http://code.google.com/p/shortenurl/");
+      }
       req.send(null);
 
       if (req.status == 200) {
@@ -369,7 +372,8 @@ var ShortenURL = {
           shortURL = "http://get.sfu.ca/" +
                      JSON.decode(req.responseText).shorturl;
 
-        } else if (this.isURLof(baseURL, "su.pr")) {
+        } else if (this.isURLof(baseURL, "su.pr") ||
+                   this.isURLof(baseURL, "hj.to")) {
           var obj = JSON.decode(req.responseText);
           for (var i in obj.results) {
             shortURL = obj.results[i].shortUrl;
