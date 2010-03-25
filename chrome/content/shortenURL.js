@@ -361,6 +361,9 @@ var ShortenURL = {
         } else if (this.isURLof(baseURL, "p.ly")) {
           shortURL = JSON.decode(req.responseText).success;
 
+        } else if (this.isURLof(baseURL, "plo.cc")) {
+          shortURL = JSON.decode(req.responseText).hmmph;
+
         } else if (this.isURLof(baseURL, "qik.li")) {
           shortURL = JSON.decode(req.responseText.replace(/^\(|\)$/g, ""))
                          .qikUrl;
