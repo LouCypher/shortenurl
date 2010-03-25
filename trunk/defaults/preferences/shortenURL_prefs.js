@@ -193,6 +193,7 @@ pref("extensions.shortenURL.name.180", "wa.la");
 pref("extensions.shortenURL.name.181", "SevenRZ (7rz.de)");
 pref("extensions.shortenURL.name.182", "SwU");
 pref("extensions.shortenURL.name.183", "hj.to");
+pref("extensions.shortenURL.name.184", "Plo.cc");
 
 pref("extensions.shortenURL.0", "http://tinyurl.com/api-create.php?url=");
 pref("extensions.shortenURL.1", "http://api.bit.ly/shorten?version=2.0.1&format=text&login=shortenurl&apiKey=R_9781b0da8391ffe5de4f63c4205ed372&history=1&longUrl=");
@@ -378,4 +379,5 @@ pref("extensions.shortenURL.180", "http://wa.la/shorten.php?longurl=");
 pref("extensions.shortenURL.181", "http://7rz.de/create/?");
 pref("extensions.shortenURL.182", "http://swu.me/Api/?url=");
 pref("extensions.shortenURL.183", "http://5pzlpt832u0vm8z5:6PHKs9eeJixxx4XBE@hj.to/shorten/shorten?version=2.0.1&longUrl=");
+pref("extensions.shortenURL.184", "http://plo.cc/go_json.php?url=");
 
