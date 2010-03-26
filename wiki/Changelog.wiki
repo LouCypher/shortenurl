@@ -1,6 +1,14 @@
 #summary Version history
 #labels Featured
 
+== 0.3.7 ==
+ * added:
+  # [http://wa.la/ wa.la] (issue 84)
+  # [http://7rz.de/ SevenRZ] (issue 85)
+  # [http://swu.me/ SwU]
+  # [http://hj.to/ hj.to] (issue 86)
+  # [http://plo.cc/ Plo.cc] (issue 87)
+
 == 0.3.6 ==
  * added:
   # [http://ketkp.in/ keTKP.in]
