@@ -38,6 +38,7 @@
  # [http://gurl.es/ Gurl.es]
  # [http://hao.jp/ hao.jp]
  # [http://hex.io/ hex.io]
+ # [http://hj.to/ hj.to] ^4^
  # [http://hop.im/ Hop.im]
  # [http://hurl.no/ hurl.no]
  # [http://hurl.ws/ Hurl.ws]
@@ -86,6 +87,7 @@
  # [http://pic.gd/ Pic.gd]
  # [http://piko.me/ Piko.me]
  # [http://piurl.com/ PiURL]
+ # [http://plo.cc/ Plo.cc] ^4^
  # [http://pnt.me/ pnt.me]
  # [http://pt2.me/ pt2.me]
  # [http://puke.it/ Puke.It]
@@ -105,6 +107,7 @@
  # [http://rubyurl.com/ RubyURL]
  # [http://safe.mn/ Safe.mn] ^2^
  # [http://sai.ly/ Sai.ly]
+ # [http://7rz.de/ SevenRZ] (7rz.de) ^4^
  # [http://sl.ly/ Sexy URL (sl.ly)]
  # [http://shadyurl.com/ ShadyURL]
  # [http://slki.ru/ slki.ru]
@@ -126,6 +129,7 @@
  # [http://song.ly/ song.ly] ^3^
  # [http://srnk.net/ srnk.net]
  # [http://su.pr/ StumbleUpon (su.pr)] ^1^
+ # [http://swu.me/ SwU] ^4^
  # [http://tighturl.com/ TightURL]
  # [http://timesurl.at/ TimesURL]
  # [http://tini.us/ tini.us]
@@ -170,6 +174,7 @@
  # [http://voizle.com/ Voizle]
  # [http://vtc.es/ VTC]
  # [http://w3t.org/ W3T.org] ^1^
+ # [http://wa.la/ wa.la] ^4^
  # [http://xiy.net XiY!]
  # [http://xrt.me/ XORTR (xrt.me)]
  # [http://xr.com/ XR.com]
