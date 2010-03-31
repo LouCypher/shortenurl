@@ -7,6 +7,6 @@
 
  * [http://twitter.com/home/?status=%40ShortenURL%20&in_reply_to=ShortenURL post message to @ShortenURL] on [http://twitter.com/ShortenURL Twitter]
 
- * [http://mozillaca.com/?action=newnotice&status_textarea=%40shortenurl post message to @shortenurl] on [http://mozilla.status.net/shortenurl StatusNet]
+ * [http://mozilla.status.net/main/ostatus?nickname=shortenurl subscribe to @shortenurl] on [http://mozilla.status.net/shortenurl StatusNet]
 
 <a href="https://addons.mozilla.org/en-US/firefox/addons/contribute/11423?source=external-support&type=suggested" title="Donate via PayPal"><img src="https://www.paypal.com/en_US/i/btn/btn_donate_LG.gif" alt="Donate"/></a>
