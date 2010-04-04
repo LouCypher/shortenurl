@@ -69,6 +69,7 @@
  # [http://lnk.sk/ LNK.sk]
  # [http://lt.tl/ lt.tl]
  # [http://lurl.no/ lurl.no]
+ # [http://mangk.us/ mangk.us] ^4^
  # [http://metamark.net/ Metamark (xrl.us)]
  # [http://migre.me/ migre.me]
  # [http://micurl.com micURL]
