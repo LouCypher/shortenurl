@@ -280,6 +280,7 @@ var ShortenURL = {
 
     var api = baseURL + ((this.isURLof(baseURL, "7rz.de") ||
                           this.isURLof(baseURL, "arm.in") ||
+                          this.isURLof(baseURL, "mangk.us") ||
                           this.isURLof(baseURL, "min2.me") ||
                           this.isURLof(baseURL, "qr.cx") ||
                           this.isURLof(baseURL, "rde.me") ||
