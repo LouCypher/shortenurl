@@ -8,6 +8,7 @@
   # [http://swu.me/ SwU]
   # [http://hj.to/ hj.to] (issue 86)
   # [http://plo.cc/ Plo.cc] (issue 87)
+  # [http://mangk.us/ mangk.us]
 
 == 0.3.6 ==
  * added:
