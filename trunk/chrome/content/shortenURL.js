@@ -35,12 +35,34 @@
 
 var ShortenURL = {
 
-  _DEFAULT: 86, // default shortener, depends on who wants to collaborate ;)
+  _DEFAULT: 86, // default shortener, depends on who wants to collaborate :)
 
   get prefService() {
     return Components.classes["@mozilla.org/preferences-service;1"]
                      .getService(Components.interfaces.nsIPrefBranch)
                      .getBranch("extensions.shortenURL.");
+  },
+
+  setVersion: function shortenURL_setVersion(aString) {
+    if (this.prefService.getCharPref("version") != aString) {
+      this.prefService.setCharPref("version", aString);
+    }
+  },
+
+  checkVersion: function shortenURL_checkVersion() {
+    if (typeof Components.interfaces.nsIExtensionManager == "object") {
+      var version = Components.classes['@mozilla.org/extensions/manager;1']
+                              .getService(Components.interfaces
+                                                    .nsIExtensionManager)
+                              .getItemForID("ShortenURL@loucypher")
+                              .version;
+      this.setVersion(version);
+    } else {
+      Components.utils.import("resource://gre/modules/AddonManager.jsm");
+      AddonManager.getAddonByID("ShortenURL@loucypher", function (aAddon) {
+        ShortenURL.setVersion(aAddon.version);
+      });
+    }
   },
 
   // set default shortener
@@ -280,7 +302,6 @@ var ShortenURL = {
 
     var api = baseURL + ((this.isURLof(baseURL, "7rz.de") ||
                           this.isURLof(baseURL, "arm.in") ||
-                          this.isURLof(baseURL, "mangk.us") ||
                           this.isURLof(baseURL, "min2.me") ||
                           this.isURLof(baseURL, "qr.cx") ||
                           this.isURLof(baseURL, "rde.me") ||
@@ -297,15 +318,19 @@ var ShortenURL = {
       this.logMessage(api);
     }
 
-    var version = Components.classes["@mozilla.org/extensions/manager;1"]
-                            .getService(Components.interfaces.nsIExtensionManager)
-                            .getItemForID("ShortenURL@loucypher")
-                            .version;
+    var version = this.prefService.getCharPref("version");
 
     var error = null;
     try {
       var req = new XMLHttpRequest();
-      req.open("GET", api, false);
+
+      if (this.isURLof(baseURL, "goo.gl")) {
+        req.open("POST", api, false);
+        req.setRequestHeader("X-Auth-Google-Url-Shortener", "true");
+      } else {
+        req.open("GET", api, false);
+      }
+
       if (!this.isURLof(baseURL, "hj.to")) {
         req.setRequestHeader("User-Agent",
                              navigator.userAgent + " ShortenURL/" + version);
@@ -314,7 +339,7 @@ var ShortenURL = {
       }
       req.send(null);
 
-      if (req.status == 200) {
+      if (req.status == 200 || req.status == 201) {
         if (typeof JSON != "object") {
           var JSON = Components.classes["@mozilla.org/dom/json;1"]
                                .createInstance(Components.interfaces.nsIJSON);
@@ -344,14 +369,14 @@ var ShortenURL = {
                    this.isURLof(baseURL, "song.ly")) {
           shortURL = JSON.decode(req.responseText).shortUrl;
 
-        } else if (this.isURLof(baseURL, "ggl-shortener.appspot.com")) {
+        } else if (this.isURLof(baseURL, "goo.gl")) {
           shortURL = JSON.decode(req.responseText).short_url;
 
         } else if (this.isURLof(baseURL, "linkee.com")) {
           shortURL = JSON.decode(req.responseText).result;
 
         } else if (this.isURLof(baseURL, "lnk.by")) {
-          shortURL = "http://" + JSON.decode(req.responseText).ShortUrl;
+          shortURL = JSON.decode(req.responseText).ShortUrl;
 
         } else if (this.isURLof(baseURL, "ndurl.com")) {
           shortURL = JSON.decode(req.responseText).data.shortURL;
@@ -632,6 +657,7 @@ var ShortenURL = {
   init: function shortenURL_init() {
     // set default shortener
     ShortenURL.setDefault();
+    ShortenURL.checkVersion();
 
     // main context menu initalizations
     var cm = document.getElementById("contentAreaContextMenu");
