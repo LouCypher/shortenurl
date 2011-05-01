@@ -674,7 +674,9 @@ var ShortenURL = {
     // tab context menu initializations
     var shortenTab = document.getElementById("context-shortenTab");
     var bookmarkTab = document.getElementById("context_bookmarkTab");
-    var tabContext = bookmarkTab.parentNode;
+    var tabContext = document.getElementById("tabContextMenu")
+                     ? document.getElementById("tabContextMenu")
+                     : bookmarkTab.parentNode;
     tabContext.insertBefore(shortenTab, bookmarkTab);
     tabContext.addEventListener("popupshowing",
                                 ShortenURL.initTabPopup, false);
