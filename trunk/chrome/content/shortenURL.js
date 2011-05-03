@@ -695,8 +695,10 @@ var ShortenURL = {
 
     // Firefox 4 appmenu initializations
     var appMenu = document.getElementById("appmenu-popup");
-    appMenu.addEventListener("popupshowing", ShortenURL.initAppmenu, false);
-    appMenu.addEventListener("popuphiding", ShortenURL.initAppmenu, false);
+    if (appMenu) {
+      appMenu.addEventListener("popupshowing", ShortenURL.initAppmenu, false);
+      appMenu.addEventListener("popuphiding", ShortenURL.initAppmenu, false);
+    }
 
     // populate toolbarbutton context menu
     var popup = document.getElementById("shortenurl-toolbarbutton-popup");
