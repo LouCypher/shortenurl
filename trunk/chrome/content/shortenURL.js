@@ -654,6 +654,16 @@ var ShortenURL = {
     ShortenURL.changeLabelOrTooltip("context-shortenTab", null);
   },
 
+  // initiate Firefox 4 appmenu
+  initAppmenu: function shortenURL_initAppmenu(aEvent) {
+    ShortenURL.toggleMenuIcons(aEvent);
+
+    var shortenMenu = document.getElementById("appmenu-shorten-pageURL");
+    shortenMenu.hidden = !ShortenURL.isValidScheme(content.location.protocol);
+
+    ShortenURL.changeLabelOrTooltip("appmenu-shorten-pageURL", null);
+  },
+
   init: function shortenURL_init() {
     // set default shortener
     ShortenURL.setDefault();
@@ -682,6 +692,11 @@ var ShortenURL = {
                                 ShortenURL.initTabPopup, false);
     tabContext.removeEventListener("popuphiding",
                                    ShortenURL.initTabPopup, false);
+
+    // Firefox 4 appmenu initializations
+    var appMenu = document.getElementById("appmenu-popup");
+    appMenu.addEventListener("popupshowing", ShortenURL.initAppmenu, false);
+    appMenu.addEventListener("popuphiding", ShortenURL.initAppmenu, false);
 
     // populate toolbarbutton context menu
     var popup = document.getElementById("shortenurl-toolbarbutton-popup");
