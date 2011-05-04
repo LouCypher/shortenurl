@@ -209,7 +209,7 @@ pref("extensions.shortenURL.7", "http://piurl.com/api.php?url=");
 pref("extensions.shortenURL.8", "http://tr.im/api/trim_url.json?url=");
 pref("extensions.shortenURL.9", "http://kl.am/api/shorten?format=text&tags=shortenurl&api_key=fdc73ad994260843f7417a31d4e5df8a&url=");
 pref("extensions.shortenURL.10", "http://cli.gs/api/v1/cligs/create?key=6def57f8c2e11cc945c4378de3a6714e&appid=ShortenURL&url=");
-pref("extensions.shortenURL.11", "http://urlborg.com/api/766109-66f2/create_or_reuse/");
+pref("extensions.shortenURL.11", "http://urlborg.com/api/163129-ceaa/create_or_reuse/");
 pref("extensions.shortenURL.12", "http://pipes.yahoo.com/pipes/pipe.run?_id=7bb411cbb7bd34aa30900dd089c19e8f&_render=json&url=");
 pref("extensions.shortenURL.13", "http://pipes.yahoo.com/pipes/pipe.run?_id=KCghCsxk3hGQjQvfahVJvg&_render=json&url=");
 pref("extensions.shortenURL.14", "http://pendek.in/?url=");
