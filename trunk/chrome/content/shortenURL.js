@@ -49,6 +49,12 @@ var ShortenURL = {
     }
   },
 
+  logMessage: function shortenURL_logMessage(aString) {
+    Components.classes["@mozilla.org/consoleservice;1"]
+              .getService(Components.interfaces.nsIConsoleService)
+              .logStringMessage("Shorten URL:\n" + aString);
+  },
+
   checkVersion: function shortenURL_checkVersion() {
     if (typeof Components.interfaces.nsIExtensionManager == "object") {
       var version = Components.classes['@mozilla.org/extensions/manager;1']
@@ -126,39 +132,37 @@ var ShortenURL = {
       mi.setAttribute("value", shorteners[i].index);
       mi.setAttribute("label", shorteners[i].name);
       mi.setAttribute("type", "radio");
-      aNode.appendChild(mi);
+      if (shorteners[i].index == this._DEFAULT) {
+        aNode.insertBefore(mi, aNode.firstChild.nextSibling.nextSibling);
+      } else {
+        aNode.appendChild(mi);
+      }
       if (shorteners[i].index == this.baseNum) {
         var selectedIndex = i;
       }
     }
 
     aNode.childNodes[selectedIndex].setAttribute("checked", "true");
-
   },
 
   selectShortener: function shortenURL_selectShortener(aNum) {
     this.prefService.setIntPref("baseURL", parseInt(aNum));
   },
 
-  selectMenuitem: function shortenURL_selectShortener(aNode) {
+  selectMenuitem: function shortenURL_selectItem(aNode) {
     var num = this.prefService.getIntPref("baseURL").toString();
     var ms = aNode.childNodes;
     for (var i = 0; i < ms.length; i++) {
       if (ms[i].hasAttribute("value") && ms[i].value == num) {
         ms[i].setAttribute("checked", "true");
-        break;
+      } else {
+        ms[i].removeAttribute("checked");
       }
     }
   },
 
   setStatus: function shortenURL_setStatus(aString) {
     document.getElementById("statusbar-display").label = aString;
-  },
-
-  logMessage: function shortenURL_logMessage(aString) {
-    Components.classes["@mozilla.org/consoleservice;1"]
-              .getService(Components.interfaces.nsIConsoleService)
-              .logStringMessage("Shorten URL:\n" + aString);
   },
 
   alert: function shortenURL_alert(aString) {
@@ -203,7 +207,7 @@ var ShortenURL = {
 
   // post to Twitter
   twitter: function shortenURL_twitter(aString) {
-    // Open TwitterFox panel if it's installed
+    // Open Echofon panel if it's installed
     if ((typeof gTwitterNotifier == "object") &&
         (gTwitterNotifier._util.accounts) &&
         (gTwitterNotifier._util.pref().getBoolPref("login"))) {
@@ -213,6 +217,8 @@ var ShortenURL = {
       gTwitterNotifier._util.notify("getRecent", {type: "timeline"});
       t.value = aString;
       t.focus();
+    } else if ((typeof gEchofon == "object") && ("insertURL" in gEchofon )) {
+      gEchofon.insertURL(aString);
     } else {
       // open Twitter home in a new tab
       gBrowser.loadOneTab("http://twitter.com/home/?status=" +
@@ -700,9 +706,15 @@ var ShortenURL = {
       appMenu.addEventListener("popuphiding", ShortenURL.initAppmenu, false);
     }
 
-    // populate toolbarbutton context menu
-    var popup = document.getElementById("shortenurl-toolbarbutton-popup");
-    ShortenURL.populatePopup(popup);
+    // populate toolbarbutton menu
+    var buttonPopup = document.getElementById("shortenurl-toolbarbutton-popup");
+    ShortenURL.populatePopup(buttonPopup);
+
+    // populate Firefox 4 appmenu Shorten URL menu
+    var appmenuPopup = document.getElementById("appmenu-shortenurl-menu");
+    if (appmenuPopup) {
+      ShortenURL.populatePopup(appmenuPopup);
+    }
   }
 }
 

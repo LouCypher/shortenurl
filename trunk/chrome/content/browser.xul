@@ -95,6 +95,8 @@
       insertafter="placesContext_openLinks:tabs"
       class="menuitem-iconic shortenURL-context"
       label="&context.bookmark; (name)"
+      onmouseover="ShortenURL.setStatus(document.popupNode.node.uri);"
+      onmouseout="ShortenURL.setStatus('');"
       oncommand="ShortenURL.shorten(document.popupNode.node.uri);" />
   </popup>
 
@@ -109,29 +111,44 @@
       id="context-shortenTab"
       class="menuitem-iconic shortenURL-context"
       label="&context.tab; (name)"
+      onmouseover="var tab = document.popupNode.localName == 'tabs' ? getBrowser().mCurrentTab : getBrowser().mContextTab; ShortenURL.setStatus(tab.linkedBrowser.currentURI.spec);"
+      onmouseout="ShortenURL.setStatus('');"
       oncommand="var tab = document.popupNode.localName == 'tabs' ? getBrowser().mCurrentTab : getBrowser().mContextTab; ShortenURL.shorten(tab.linkedBrowser.currentURI.spec)" />
   </menupopup>
 
   <!-- begin Firefox 4 -->
   <vbox id="appmenuSecondaryPane">
-    <menuitem
+    <splitmenu
       id="appmenu-shorten-pageURL"
+      iconic="true"
       insertafter="appmenu_addons"
       class="menuitem-iconic shortenURL-context"
       label="&context.page; (name)"
       onmouseover="ShortenURL.setStatus(content.location.href);"
       onmouseout="ShortenURL.setStatus('');"
       onclick="if (event.button == 1) { ShortenURL.openPrefs(); closeMenus(this); }"
-      oncommand="ShortenURL.shorten(content.location.href);" />
+      oncommand="ShortenURL.shorten(content.location.href);">
+
+      <menupopup id="appmenu-shortenurl-menu"
+        onpopupshowing="ShortenURL.selectMenuitem(this);"
+        oncommand="event.stopPropagation(); ShortenURL.selectShortener(event.target.value);">
+        <menuitem
+          id="appmenu-shortenurl-options-1"
+          label="&options.title;"
+          class="menuitem-iconic shortenURL-menuitem"
+          oncommand="event.stopPropagation(); ShortenURL.openPrefs();" />
+        <menuseparator id="appmenu-shortenurl-menu-separator" />
+      </menupopup>
+    </splitmenu>
   </vbox>
 
   <menupopup id="appmenu_customizeMenu">
     <menuitem
-      id="appmenu-shortenurl-options"
+      id="appmenu-shortenurl-options-2"
       label="&options.title;"
       insertafter="appmenu_preferences"
       class="menuitem-iconic shortenURL-menuitem"
-      oncommand="ShortenURL.openPrefs();" />
+      oncommand="event.stopPropagation(); ShortenURL.openPrefs();" />
   </menupopup>
   <!-- end Firefox 4 -->
 
@@ -151,7 +168,7 @@
       ondragexit="nsDragAndDrop.dragExit(event, ShortenURL.dndObserver);">
       <menupopup
         id="shortenurl-toolbarbutton-popup"
-        onpopupshowing="ShortenURL.populatePopup(this); ShortenURL.selectMenuitem(this);"
+        onpopupshowing="ShortenURL.selectMenuitem(this);"
         oncommand="event.stopPropagation(); ShortenURL.selectShortener(event.target.value);">
         <menuitem
           id="shortenurl-toolbarbutton-popup-options"
