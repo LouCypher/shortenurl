@@ -18,7 +18,7 @@
   the Initial Developer. All Rights Reserved.
 
   Contributor(s):
-  - LouCypher <me@loucypher.mp>
+  - LouCypher <loucypher@mozillaca.com>
 
   Alternatively, the contents of this file may be used under the terms of
   either the GNU General Public License Version 2 or later (the "GPL"), or
@@ -384,6 +384,9 @@ var ShortenURL = {
         } else if (this.isURLof(baseURL, "lnk.by")) {
           shortURL = JSON.decode(req.responseText).ShortUrl;
 
+        } else if (this.isURLof(baseURL, "mcaf.ee")) {
+          shortURL = JSON.decode(req.responseText).data.url;
+
         } else if (this.isURLof(baseURL, "ndurl.com")) {
           shortURL = JSON.decode(req.responseText).data.shortURL;
 
@@ -493,9 +496,6 @@ var ShortenURL = {
         } else if (this.isURLof(baseURL, "shrt.ws") ||
                    this.isURLof(baseURL, "trumpink.lt")) {
           shortURL = req.responseText.match(/^[^\s]+/).toString();
-
-        } else if (this.isURLof(baseURL, "xrl.in")) {
-          shortURL = "http://xrl.in/" + req.responseText;
 
         } else if (this.isURLof(baseURL, "z.pe")) {
           shortURL = "http://z.pe/" +
@@ -627,17 +627,25 @@ var ShortenURL = {
     ShortenURL.toggleMenuIcons(aEvent);
 
     // "Shorten this bookmark URL",
-    // only shown if right click on a bookmark item, not bookmark folder
-    var isOnBookmark = (document.popupNode.node != undefined);
-    
+    // only visible when right click on a bookmark item, not bookmark folder
+    var isOnBookmark = (document.popupNode.node != "undefined") ||
+                       (document.popupNode._placesNode != "undefined");
+
     var item = document.getElementById("placesContext_shortenURL");
     item.hidden = !isOnBookmark ||
-                  !ShortenURL.isValidScheme(document.popupNode.node.uri);
+                  !ShortenURL.isValidScheme(
+                              document.popupNode.node
+                              ? document.popupNode.node.uri
+                              : document.popupNode._placesNode.uri);
 
     // change/add menuitems label to selected URL shortening service name
     if (isOnBookmark) {
-      ShortenURL.changeLabelOrTooltip("placesContext_shortenURL",
-                                      document.popupNode.node.uri);
+      ShortenURL.changeLabelOrTooltip(
+                  "placesContext_shortenURL",
+                  document.popupNode.node
+                  ? document.popupNode.node.uri
+                  : document.popupNode._placesNode.uri
+      );
     }
 
     // test
