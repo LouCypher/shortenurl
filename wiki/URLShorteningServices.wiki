@@ -3,10 +3,10 @@
 
 ^(In alphabetical order)^
 
- # [http://2su.de/ 2 Short.Url (2su.de)]
+ # ~~[http://2su.de/ 2 Short.Url (2su.de)]~~
  # [http://2.gp/ 2.gp]
  # [http://2.ly/ 2.ly]
- # [http://2ze.us/ 2Zeus]
+ # ~~[http://2ze.us/ 2Zeus]~~
  # [http://3.ly/ 3.ly]
  # [http://301.to/ 301.to]
  # [http://307.to/ 307.to]
