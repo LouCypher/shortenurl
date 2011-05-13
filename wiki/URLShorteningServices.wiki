@@ -7,18 +7,18 @@
  # [http://2.gp/ 2.gp]
  # [http://2.ly/ 2.ly]
  # ~~[http://2ze.us/ 2Zeus]~~
- # [http://3.ly/ 3.ly]
- # [http://301.to/ 301.to]
- # [http://307.to/ 307.to]
- # [http://9mp.com/ 9mp]
- # [http://a.gd/ a.gd]
- # [http://a.nf/ a.nf]
- # [http://abbr.com/ abbr]
- # [http://arm.in/ arm.in] ^1^
- # [http://aurls.info/ aurls.info]
+ # ~~[http://3.ly/ 3.ly]~~
+ # ~~[http://301.to/ 301.to]~~
+ # ~~[http://307.to/ 307.to]~~
+ # ~~[http://9mp.com/ 9mp]~~
+ # ~~[http://a.gd/ a.gd]~~
+ # ~~[http://a.nf/ a.nf]~~
+ # ~~[http://abbr.com/ abbr]~~
+ # [http://arm.in/ arm.in]
+ # ~~[http://aurls.info/ aurls.info]~~
  # [http://bit.ly/ bit.ly]
- # [http://bloat.me/ bloat.me]
- # [http://buk.me/ Buk.me]
+ # ~~[http://bloat.me/ bloat.me]~~
+ # ~~[http://buk.me/ Buk.me]~~
  # [http://chilp.it/ Chilp.it]
  # [http://cli.gs/ cli.gs]
  # [http://clk.my/ clk.my]
