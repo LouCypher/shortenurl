@@ -141,7 +141,6 @@ var ShortenURL = {
         var selectedIndex = i;
       }
     }
-
     aNode.childNodes[selectedIndex].setAttribute("checked", "true");
   },
 
@@ -386,6 +385,9 @@ var ShortenURL = {
 
         } else if (this.isURLof(baseURL, "mcaf.ee")) {
           shortURL = JSON.decode(req.responseText).data.url;
+
+        } else if (this.isURLof(baseURL, "mrte.ch")) {
+          shortURL = JSON.decode(req.responseText).shorturl;
 
         } else if (this.isURLof(baseURL, "ndurl.com")) {
           shortURL = JSON.decode(req.responseText).data.shortURL;
