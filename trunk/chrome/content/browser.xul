@@ -145,10 +145,12 @@
   <menupopup id="appmenu_customizeMenu">
     <menuitem
       id="appmenu-shortenurl-options-2"
-      label="&options.title;"
       insertafter="appmenu_preferences"
+      label="&options.title;"
       class="menuitem-iconic shortenURL-menuitem"
       oncommand="event.stopPropagation(); ShortenURL.openPrefs();" />
+    <menuseparator id="appmenu-shortenurl-menu-separator-2"
+                   insertbefore="appmenu-shortenurl-options-2" />
   </menupopup>
   <!-- end Firefox 4 -->
 

@@ -3,68 +3,33 @@
 
 ^(In alphabetical order)^
 
- # ~~[http://2su.de/ 2 Short.Url (2su.de)]~~
  # [http://2.gp/ 2.gp]
  # [http://2.ly/ 2.ly]
- # ~~[http://2ze.us/ 2Zeus]~~
- # ~~[http://3.ly/ 3.ly]~~
- # ~~[http://301.to/ 301.to]~~
- # ~~[http://307.to/ 307.to]~~
- # ~~[http://9mp.com/ 9mp]~~
- # ~~[http://a.gd/ a.gd]~~
- # ~~[http://a.nf/ a.nf]~~
- # ~~[http://abbr.com/ abbr]~~
  # [http://arm.in/ arm.in]
- # ~~[http://aurls.info/ aurls.info]~~
  # [http://bit.ly/ bit.ly]
- # ~~[http://bloat.me/ bloat.me]~~
- # ~~[http://buk.me/ Buk.me]~~
  # [http://chilp.it/ Chilp.it]
- # [http://cli.gs/ cli.gs]
- # [http://clk.my/ clk.my]
- # [http://clop.in/ Clop.in] ^1^
+ # [http://cli.gs/ cli.gs] ^2^
+ # [http://clop.in/ Clop.in] ^2^
  # [http://coge.la/ COGE.LA]
- # [http://crum.pl/ Crum.pl]
  # [http://durl.me/ durl] ^2^
- # [http://digg.com/tools/diggbar DiggBar]
- # [http://fly2.ws/ Fly2.ws]
  # [http://fon.gs/ fon.gs]
- # [http://foxyurl.com/ Foxy URL]
  # [http://fwd4.me/ FWD4.me] (default)
  # [http://gkurl.us/ gkurl.us]
- # [http://gl.am/ gl.am] ^1^
  # [http://goo.gl/ Goo.gl]
- # [http://good.ly/ Good.ly]
- # [http://gurl.es/ Gurl.es]
- # [http://hao.jp/ hao.jp]
- # [http://hex.io/ hex.io]
- # [http://hj.to/ hj.to] ^4^
- # [http://hop.im/ Hop.im]
+ # [http://hj.to/ hj.to]
  # [http://hurl.no/ hurl.no]
- # [http://hurl.ws/ Hurl.ws]
- # [http://idek.net/ idek.net]
- # [http://ikr.me/ iKr.me]
+ # [http://ikr.me/ iKr.me] ^2^
  # [http://is.gd/ is.gd]
- # [http://ir.pe/ ir.pe]
- # [http://irt.me/ irt.me]
+ # [http://irt.me/ irt.me] ^1^
  # [http://j.mp/ j.mp]
- # [http://j2j.de/ J2j.de]
  # [http://Jdem.cz/ Jdem.cz]
- # [http://k.vu/ k.vu]
- # [http://ketkp.in/ keTKP.in]
- # [http://kissa.be/ kissa.be!]
- # [http://kisa.ch/ Kisa.Ch] ^2^
- # [http://kl.am/ kl.am]
  # [http://kore.us/ Kore.us]
- # [http://kots.nu/ Kots.Nu]
  # [http://krz.ch/ krz.ch]
- # [http://ktzr.us/ ktzros]
- # [http://lin.cr/ Lincr]
  # [http://l.pr/ LinksPreadeR (l.pr)]
- # [http://lin.io/ lin.io]
- # [http://linxfix.de/ LinxFix]
+ # [http://lin.io/ lin.io] ^1^
  # [http://linkee.com/ Linkee]
  # [http://lnk.by/ LNK.by]
+
  # [http://lnk.ly/ lnk.ly]
  # [http://lnk.sk/ LNK.sk]
  # [http://lt.tl/ lt.tl]
@@ -197,7 +162,45 @@
 ^4^ currently only available on dev build<br>
 ^5^ the service has been shutdown and will be removed on the next build
 
-You can [http://code.google.com/p/shortenurl/issues/entry?template=Request%20for%20more%20service request] for more service.
+<wiki:comment>You can [http://code.google.com/p/shortenurl/issues/entry?template=Request%20for%20more%20service request] for more service.</wiki:comment>
 
-== To be addded on next release ==
- # [http://to/ to.]
+== To be decided ==
+ # [http://ir.pe/ ir.pe]
+
+== These services are dead or no longer working ==
+ # ~~[http://2su.de/ 2 Short.Url (2su.de)]~~
+ # ~~[http://2ze.us/ 2Zeus]~~
+ # ~~[http://3.ly/ 3.ly]~~
+ # ~~[http://301.to/ 301.to]~~
+ # ~~[http://307.to/ 307.to]~~
+ # ~~[http://9mp.com/ 9mp]~~
+ # ~~[http://a.gd/ a.gd]~~
+ # ~~[http://a.nf/ a.nf]~~
+ # ~~[http://abbr.com/ abbr]~~
+ # ~~[http://aurls.info/ aurls.info]~~
+ # ~~[http://bloat.me/ bloat.me]~~
+ # ~~[http://buk.me/ Buk.me]~~
+ # ~~[http://clk.my/ clk.my]~~
+ # ~~[http://crum.pl/ Crum.pl]~~
+ # ~~[http://digg.com/tools/diggbar DiggBar]~~
+ # ~~[http://fly2.ws/ Fly2.ws]~~
+ # ~~[http://foxyurl.com/ Foxy URL]~~
+ # ~~[http://gl.am/ gl.am] ^1^~~
+ # ~~[http://good.ly/ Good.ly]~~
+ # ~~[http://gurl.es/ Gurl.es]~~
+ # ~~[http://hao.jp/ hao.jp]~~
+ # ~~[http://hex.io/ hex.io]~~
+ # ~~[http://hop.im/ Hop.im]~~
+ # ~~[http://hurl.ws/ Hurl.ws]~~
+ # ~~[http://idek.net/ idek.net]~~
+ # ~~[http://j2j.de/ J2j.de]~~
+ # ~~[http://k.vu/ k.vu]~~
+ # ~~[http://ketkp.in/ keTKP.in]~~
+ # ~~[http://kissa.be/ kissa.be!]~~
+ # ~~[http://kisa.ch/ Kisa.Ch]~~ ^2^
+ # ~~[http://kl.am/ kl.am]~~
+ # ~~[http://kots.nu/ Kots.Nu]~~
+ # ~~[http://ktzr.us/ ktzros]~~
+ # ~~[http://lin.cr/ Lincr]~~
+ # ~~[http://linxfix.de/ LinxFix]~~
+

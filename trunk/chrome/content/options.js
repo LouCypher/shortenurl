@@ -43,7 +43,6 @@ function $(aID) {
                      .getService(Components.interfaces.nsIPrefService);
   },
 
-
   get pref() {
     return this.prefService.getBranch("extensions.shortenURL.");
   },
