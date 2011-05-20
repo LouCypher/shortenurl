@@ -37,6 +37,12 @@ var ShortenURL = {
 
   _DEFAULT: 86, // default shortener, depends on who wants to collaborate :)
 
+  _TEXT: "",
+
+  getText: function shortenURL_getText(aString) {
+    this._TEXT = aString;
+  },
+
   get prefService() {
     return Components.classes["@mozilla.org/preferences-service;1"]
                      .getService(Components.interfaces.nsIPrefBranch)
@@ -206,6 +212,7 @@ var ShortenURL = {
 
   // post to Twitter
   twitter: function shortenURL_twitter(aString) {
+    this._TEXT = "";
     // Open Echofon panel if it's installed
     if ((typeof gTwitterNotifier == "object") &&
         (gTwitterNotifier._util.accounts) &&
@@ -220,7 +227,7 @@ var ShortenURL = {
       gEchofon.insertURL(aString);
     } else {
       // open Twitter home in a new tab
-      gBrowser.loadOneTab("http://twitter.com/home/?status=" +
+      gBrowser.loadOneTab("http://twitter.com/?status=" +
                           encodeURIComponent(aString) +
                           "&in_reply_to=shortenurl",
                           null, null, null, false);
@@ -229,6 +236,7 @@ var ShortenURL = {
 
   // post to StatusNet server
   laconica: function shortenURL_laconica(aString) {
+    this._TEXT = "";
     var server = this.prefService.getCharPref("post.server.laconica");
     if (!server) server = "http://identi.ca/";
     gBrowser.loadOneTab(server + "?action=newnotice&status_textarea=" +
@@ -238,9 +246,10 @@ var ShortenURL = {
 
   // post to micro-blogging service
   post: function shortenURL_post(aString) {
+    var text = (this._TEXT == "") ? aString : this._TEXT + " " + aString;
     switch (this.prefService.getIntPref("post.server")) {
-      case 0: this.twitter(aString); break;
-      case 1: this.laconica(aString);
+      case 0: this.twitter(text); break;
+      case 1: this.laconica(text);
     }
   },
 
@@ -366,8 +375,12 @@ var ShortenURL = {
             break;
           }
 
-        } else if (this.isURLof(baseURL, "digg.com")) {
-          shortURL = JSON.decode(req.responseText).shorturls[0].short_url;
+        } else if (this.isURLof(baseURL, "dlvr.it")) {
+          var obj = JSON.decode(req.responseText);
+          for (var i in obj) {
+            shortURL = obj[i].short;
+            break;
+          }
 
         } else if (this.isURLof(baseURL, "durl.me") ||
                    this.isURLof(baseURL, "retwt.me") ||
