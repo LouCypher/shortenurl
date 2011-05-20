@@ -29,19 +29,21 @@
  # [http://lin.io/ lin.io] ^1^
  # [http://linkee.com/ Linkee]
  # [http://lnk.by/ LNK.by]
-
  # [http://lnk.ly/ lnk.ly]
- # [http://lnk.sk/ LNK.sk]
- # [http://lt.tl/ lt.tl]
- # [http://lurl.no/ lurl.no]
- # [http://mangk.us/ mangk.us] ^4^
+ # [http://ly.my/ ly.my]
+ # [http://moourl.com/ Moourl]
  # [http://metamark.net/ Metamark (xrl.us)]
+
+ # ~~[http://lnk.sk/ LNK.sk]~~
+ # ~~[http://lt.tl/ lt.tl]~~
+ # ~~[http://lurl.no/ lurl.no]~~
+ # ~~[http://mangk.us/ mangk.us]~~
+
  # [http://migre.me/ migre.me]
  # [http://micurl.com micURL]
  # [http://min2.me/ min2me]
  # [http://minilink.org/ minilink.org] ([http://lnk.nu/ lnk.nu])
  # [http://minurl.fr MinURL]
- # [http://moourl.com/ Moourl]
  # [http://mysp.in/ MySp.in]
  # [http://myurl.in/ MyURL.in]
  # [http://nbx.ch/ nbx.ch]
@@ -100,7 +102,6 @@
  # [http://timesurl.at/ TimesURL]
  # [http://tini.us/ tini.us]
  # [http://tiny.cc/ Tiny.cc]
- # [http://tiny.pl/ Tiny.pl]
  # [http://tinypl.us/ TinyPl.us] ^2^
  # [http://tinyurl.com/ TinyURL]
  # [http://tllg.net/ tllg.net]
@@ -203,4 +204,5 @@
  # ~~[http://ktzr.us/ ktzros]~~
  # ~~[http://lin.cr/ Lincr]~~
  # ~~[http://linxfix.de/ LinxFix]~~
+ # ~~[http://tiny.pl/ Tiny.pl]~~
 
