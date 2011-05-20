@@ -369,14 +369,14 @@ var ShortenURL = {
           shortURL = JSON.decode(req.responseText).urls[0];
 
         } else if (this.isURLof(baseURL, "2ze.us")) {
-          var obj = JSON.decode(req.responseText);
+          let obj = JSON.decode(req.responseText);
           for (var i in obj.urls) {
             shortURL = obj.urls[i].shortcut;
             break;
           }
 
         } else if (this.isURLof(baseURL, "dlvr.it")) {
-          var obj = JSON.decode(req.responseText);
+          let obj = JSON.decode(req.responseText);
           for (var i in obj) {
             shortURL = obj[i].short;
             break;
@@ -427,7 +427,7 @@ var ShortenURL = {
 
         } else if (this.isURLof(baseURL, "su.pr") ||
                    this.isURLof(baseURL, "hj.to")) {
-          var obj = JSON.decode(req.responseText);
+          let obj = JSON.decode(req.responseText);
           for (var i in obj.results) {
             shortURL = obj.results[i].shortUrl;
             break;
@@ -449,7 +449,7 @@ var ShortenURL = {
           shortURL = JSON.decode(req.responseText).shorturl;
 
         } else if (this.isURLof(baseURL, "zapt.in")) {
-          var obj = JSON.decode(req.responseText);
+          let obj = JSON.decode(req.responseText);
           for (var i in obj.results) {
             shortURL = obj.results[i].shortUrl;
             break;
