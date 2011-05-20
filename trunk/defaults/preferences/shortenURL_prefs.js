@@ -22,9 +22,9 @@ pref("extensions.shortenURL.name.8", "mrte.ch");
 pref("extensions.shortenURL.name.9", "min.ms");
 pref("extensions.shortenURL.name.10", "cli.gs");
 pref("extensions.shortenURL.name.11", "urlBorg");
-
 pref("extensions.shortenURL.name.12", "Moourl");
-pref("extensions.shortenURL.name.13", "Tiny.pl");
+
+pref("extensions.shortenURL.name.13", "Kro.co");
 pref("extensions.shortenURL.name.14", "Pendek.in");
 pref("extensions.shortenURL.name.15", "Chilp.it");
 pref("extensions.shortenURL.name.16", "Kurze (krz.ch)");
@@ -211,9 +211,9 @@ pref("extensions.shortenURL.8", "http://api.mrte.ch/go.php?action=shorturl&forma
 pref("extensions.shortenURL.9", "http://min.ms/api?m=");
 pref("extensions.shortenURL.10", "http://cli.gs/api/v1/cligs/create?key=6def57f8c2e11cc945c4378de3a6714e&appid=https%3A%2F%2Faddons.mozilla.org%2Ffirefox%2Faddon%2Fshorten-url%2F&url=");
 pref("extensions.shortenURL.11", "http://urlborg.com/api/163129-ceaa/create_or_reuse/");
-
 pref("extensions.shortenURL.12", "http://pipes.yahoo.com/pipes/pipe.run?_id=7bb411cbb7bd34aa30900dd089c19e8f&_render=json&url=");
-pref("extensions.shortenURL.13", "http://pipes.yahoo.com/pipes/pipe.run?_id=KCghCsxk3hGQjQvfahVJvg&_render=json&url=");
+pref("extensions.shortenURL.13", "http://kro.co/api.php?url=");
+
 pref("extensions.shortenURL.14", "http://pendek.in/?url=");
 pref("extensions.shortenURL.15", "http://chilp.it/api.php?url=");
 pref("extensions.shortenURL.16", "http://krz.ch/?module=ShortURL&file=Add&mode=API&url=");

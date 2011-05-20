@@ -58,8 +58,10 @@
       label="&context.page; (name)"
       onmouseover="ShortenURL.setStatus(content.location.href);"
       onmouseout="ShortenURL.setStatus('');"
-      onclick="if (event.button == 1) { ShortenURL.openPrefs(); closeMenus(this); }"
-      oncommand="ShortenURL.shorten(content.location.href);" />
+      onclick="if (event.button == 1) { ShortenURL.openPrefs();
+ closeMenus(this); }"
+      oncommand="ShortenURL.getText(content.document.title);
+ ShortenURL.shorten(content.location.href);" />
     <menuitem
       id="context-shorten-linkURL"
       insertafter="context-bookmarklink"
@@ -67,26 +69,35 @@
       label="&context.link; (name)"
       onmouseover="ShortenURL.setStatus(gContextMenu.linkURL);"
       onmouseout="ShortenURL.setStatus('');"
-      onclick="if (event.button == 1) { ShortenURL.openPrefs(); closeMenus(this); }"
-      oncommand="ShortenURL.shorten(gContextMenu.linkURL);" />
+      onclick="if (event.button == 1) { ShortenURL.openPrefs();
+ closeMenus(this); }"
+      oncommand="ShortenURL.getText(gContextMenu.linkText());
+ ShortenURL.shorten(gContextMenu.linkURL);" />
     <menuitem
       id="context-shorten-frameURL"
       insertafter="frame"
       class="menuitem-iconic shortenURL-context"
       label="&context.frame; (name)"
-      onmouseover="ShortenURL.setStatus(gContextMenu.target.ownerDocument.location.href);"
+      onmouseover="ShortenURL.setStatus
+(gContextMenu.target.ownerDocument.location.href);"
       onmouseout="ShortenURL.setStatus('');"
-      onclick="if (event.button == 1) { ShortenURL.openPrefs(); closeMenus(this); }"
-      oncommand="ShortenURL.shorten(gContextMenu.target.ownerDocument.location.href);" />
+      onclick="if (event.button == 1) { ShortenURL.openPrefs();
+ closeMenus(this); }"
+      oncommand="ShortenURL.getText(gContextMenu.target.ownerDocument.title);
+ ShortenURL.shorten(gContextMenu.target.ownerDocument.location.href);" />
     <menuitem
       id="context-shorten-imageURL"
       insertafter="context-copyimage"
       class="menuitem-iconic shortenURL-context"
       label="&context.image; (name)"
-      onmouseover="ShortenURL.setStatus('mediaURL' in gContextMenu ? gContextMenu.mediaURL : gContextMenu.imageURL);"
+      onmouseover="ShortenURL.setStatus('mediaURL' in gContextMenu
+ ? gContextMenu.mediaURL : gContextMenu.imageURL);"
       onmouseout="ShortenURL.setStatus('');"
-      onclick="if (event.button == 1) { ShortenURL.openPrefs(); closeMenus(this); }"
-      oncommand="ShortenURL.shorten('mediaURL' in gContextMenu ? gContextMenu.mediaURL : gContextMenu.imageURL);" />
+      onclick="if (event.button == 1) { ShortenURL.openPrefs();
+ closeMenus(this); }"
+      oncommand="ShortenURL.getText(gContextMenu.target.alt);
+ ShortenURL.shorten('mediaURL' in gContextMenu
+ ? gContextMenu.mediaURL : gContextMenu.imageURL);" />
   </popup>
 
   <popup id="placesContext">
@@ -95,9 +106,13 @@
       insertafter="placesContext_openLinks:tabs"
       class="menuitem-iconic shortenURL-context"
       label="&context.bookmark; (name)"
-      onmouseover="ShortenURL.setStatus(document.popupNode.node ? document.popupNode.node.uri : document.popupNode._placesNode.uri);"
+      onmouseover="ShortenURL.setStatus(document.popupNode.node
+ ? document.popupNode.node.uri : document.popupNode._placesNode.uri);"
       onmouseout="ShortenURL.setStatus('');"
-      oncommand="ShortenURL.shorten(document.popupNode.node ? document.popupNode.node.uri : document.popupNode._placesNode.uri);" />
+      oncommand="ShortenURL.getText(document.popupNode.node
+ ? document.popupNode.node.title : document.popupNode._placesNode.title);
+ ShortenURL.shorten(document.popupNode.node
+ ? document.popupNode.node.uri : document.popupNode._placesNode.uri);" />
   </popup>
 
   <menupopup id="menu_ToolsPopup">
@@ -111,9 +126,14 @@
       id="context-shortenTab"
       class="menuitem-iconic shortenURL-context"
       label="&context.tab; (name)"
-      onmouseover="var tab = document.popupNode.localName == 'tabs' ? getBrowser().mCurrentTab : getBrowser().mContextTab; ShortenURL.setStatus(tab.linkedBrowser.currentURI.spec);"
+      onmouseover="var tab = document.popupNode.localName == 'tabs'
+ ? getBrowser().mCurrentTab : getBrowser().mContextTab;
+ ShortenURL.setStatus(tab.linkedBrowser.currentURI.spec);"
       onmouseout="ShortenURL.setStatus('');"
-      oncommand="var tab = document.popupNode.localName == 'tabs' ? getBrowser().mCurrentTab : getBrowser().mContextTab; ShortenURL.shorten(tab.linkedBrowser.currentURI.spec)" />
+      oncommand="var tab = document.popupNode.localName == 'tabs'
+ ? getBrowser().mCurrentTab : getBrowser().mContextTab;
+ ShortenURL.getText(tab.label);
+ ShortenURL.shorten(tab.linkedBrowser.currentURI.spec)" />
   </menupopup>
 
   <!-- begin Firefox 4 -->
@@ -126,12 +146,15 @@
       label="&context.page; (name)"
       onmouseover="ShortenURL.setStatus(content.location.href);"
       onmouseout="ShortenURL.setStatus('');"
-      onclick="if (event.button == 1) { ShortenURL.openPrefs(); closeMenus(this); }"
-      oncommand="ShortenURL.shorten(content.location.href);">
+      onclick="if (event.button == 1) { ShortenURL.openPrefs();
+ closeMenus(this); }"
+      oncommand="ShortenURL.getText(content.document.title);
+ ShortenURL.shorten(content.location.href);">
 
       <menupopup id="appmenu-shortenurl-menu"
         onpopupshowing="ShortenURL.selectMenuitem(this);"
-        oncommand="event.stopPropagation(); ShortenURL.selectShortener(event.target.value);">
+        oncommand="event.stopPropagation();
+ ShortenURL.selectShortener(event.target.value);">
         <menuitem
           id="appmenu-shortenurl-options-1"
           label="&options.title;"
@@ -161,9 +184,13 @@
       type="menu-button"
       label="Shorten URL"
       tooltiptext="&context.page; (name)"
-      oncommand="if (event.shiftKey) ShortenURL.openPrefs(); else ShortenURL.shorten(content.document.documentURI);"
+      oncommand="if (event.shiftKey) ShortenURL.openPrefs(); else {
+ ShortenURL.getText(content.document.title);
+ ShortenURL.shorten(content.document.documentURI)
+ };"
       onclick="if (event.button == 1) ShortenURL.openPrefs();"
-      onmouseover="ShortenURL.changeLabelOrTooltip(this.id); ShortenURL.setStatus(content.document.documentURI);"
+      onmouseover="ShortenURL.changeLabelOrTooltip(this.id);
+ ShortenURL.setStatus(content.document.documentURI);"
       onmouseout="ShortenURL.setStatus('');"
       ondragover="nsDragAndDrop.dragOver(event, ShortenURL.dndObserver);"
       ondragdrop="nsDragAndDrop.drop(event, ShortenURL.dndObserver);"
@@ -171,7 +198,8 @@
       <menupopup
         id="shortenurl-toolbarbutton-popup"
         onpopupshowing="ShortenURL.selectMenuitem(this);"
-        oncommand="event.stopPropagation(); ShortenURL.selectShortener(event.target.value);">
+        oncommand="event.stopPropagation();
+ ShortenURL.selectShortener(event.target.value);">
         <menuitem
           id="shortenurl-toolbarbutton-popup-options"
           class="menuitem-iconic shortenURL-menuitem"
