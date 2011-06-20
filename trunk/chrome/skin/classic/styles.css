@@ -34,8 +34,9 @@
 */
 
 #shortenurl-toolbarbutton-popup,
-#shortenURL-config #menupopup {
-  max-height: 400px;
+#shortenURL-config #menupopup,
+#appmenu-shortenurl-menu {
+  max-height: 500px;
 }
 
 #shortenURL-config #menupopup menuitem[value="46"],

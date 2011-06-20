@@ -180,7 +180,7 @@
   <toolbarpalette id="BrowserToolbarPalette">
     <toolbarbutton
       id="shortenurl-toolbarbutton"
-      class="toolbarbutton-1"
+      class="toolbarbutton-1 chromeclass-toolbar-additional"
       type="menu-button"
       label="Shorten URL"
       tooltiptext="&context.page; (name)"
