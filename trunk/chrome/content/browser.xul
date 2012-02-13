@@ -136,7 +136,6 @@
  ShortenURL.shorten(tab.linkedBrowser.currentURI.spec)" />
   </menupopup>
 
-  <!-- begin Firefox 4 -->
   <vbox id="appmenuSecondaryPane">
     <splitmenu
       id="appmenu-shorten-pageURL"
@@ -172,10 +171,30 @@
       label="&options.title;"
       class="menuitem-iconic shortenURL-menuitem"
       oncommand="event.stopPropagation(); ShortenURL.openPrefs();" />
-    <menuseparator id="appmenu-shortenurl-menu-separator-2"
-                   insertbefore="appmenu-shortenurl-options-2" />
   </menupopup>
-  <!-- end Firefox 4 -->
+
+  <menupopup id="EOMappPopup">
+    <splitmenu
+      id="EOMappPopup-shortenurl"
+      iconic="true"
+      class="menuitem-iconic shortenURL-context"
+      label="&context.page; (name)"
+      oncommand="ShortenURL.openPrefs(); closeMenus(this);">
+
+      <menupopup id="appmenu-shortenurl-menu-2"
+        onpopupshowing="ShortenURL.selectMenuitem(this);"
+        oncommand="event.stopPropagation();
+ ShortenURL.selectShortener(event.target.value);">
+        <menuitem
+          id="appmenu-shortenurl-options-2"
+          label="&options.title;"
+          class="menuitem-iconic shortenURL-menuitem"
+          oncommand="event.stopPropagation(); ShortenURL.openPrefs();" />
+        <menuseparator id="appmenu-shortenurl-menu-separator" />
+      </menupopup>
+    </splitmenu>
+  </menupopup>
+
 
   <toolbarpalette id="BrowserToolbarPalette">
     <toolbarbutton

@@ -213,18 +213,28 @@ var ShortenURL = {
   // post to Twitter
   twitter: function shortenURL_twitter(aString) {
     this._TEXT = "";
+
     // Open Echofon panel if it's installed
-    if ((typeof gTwitterNotifier == "object") &&
-        (gTwitterNotifier._util.accounts) &&
-        (gTwitterNotifier._util.pref().getBoolPref("login"))) {
-      var t = gTwitterNotifier.$("twitternotifier-message-input");
-      t.setAttribute("rows", 5);
-      t.setAttribute("multiline", true);
-      gTwitterNotifier._util.notify("getRecent", {type: "timeline"});
-      t.value = aString;
-      t.focus();
-    } else if ((typeof gEchofon == "object") && ("insertURL" in gEchofon )) {
-      gEchofon.insertURL(aString);
+    if (typeof EchofonCommon == "object") {
+      if (EchofonCommon.pref().getBoolPref("login") == false ||
+          EchofonCommon.pref().getIntPref("activeUserId") == 0) {
+        var accounts = EchofonCommon.pref().getCharPref("accounts");
+        if (EchofonCommon.pref().getIntPref("activeUserId") == 0 &&
+            accounts == "{}") {
+          EchofonCommon.openPreferences();
+          return;
+        }
+        EchofonCommon.pref().setBoolPref("login", true);
+        if (EchofonCommon.pref().getIntPref("activeUserId") == 0) {
+          EchofonCommon.pref().setIntPref("activeUserId",
+                                          EchofonAccountManager.instance().
+                                          getPrimaryAccount());
+        }
+        EchofonCommon.notify("initSession");
+      }
+      let loc = document.getElementById("identity-box");
+      EchofonCommon.openComposeWindow(loc, aString, false);
+
     } else {
       // open Twitter home in a new tab
       gBrowser.loadOneTab("http://twitter.com/?status=" +
@@ -363,93 +373,82 @@ var ShortenURL = {
 
         // JSON output formats
         if (this.isURLof(baseURL, "pipes.yahoo.com")) {
-          shortURL = JSON.decode(req.responseText).value.items[0].link;
-
-        } else if (this.isURLof(baseURL, "307.to")) {
-          shortURL = JSON.decode(req.responseText).urls[0];
-
-        } else if (this.isURLof(baseURL, "2ze.us")) {
-          let obj = JSON.decode(req.responseText);
-          for (var i in obj.urls) {
-            shortURL = obj.urls[i].shortcut;
-            break;
-          }
+          shortURL = JSON.legacyDecode(req.responseText).value.items[0].link;
 
         } else if (this.isURLof(baseURL, "dlvr.it")) {
-          let obj = JSON.decode(req.responseText);
+          let obj = JSON.legacyDecode(req.responseText);
           for (var i in obj) {
             shortURL = obj[i].short;
             break;
           }
 
         } else if (this.isURLof(baseURL, "durl.me") ||
-                   this.isURLof(baseURL, "retwt.me") ||
                    this.isURLof(baseURL, "song.ly")) {
-          shortURL = JSON.decode(req.responseText).shortUrl;
+          shortURL = JSON.legacyDecode(req.responseText).shortUrl;
 
         } else if (this.isURLof(baseURL, "goo.gl")) {
-          shortURL = JSON.decode(req.responseText).short_url;
+          shortURL = JSON.legacyDecode(req.responseText).short_url;
 
         } else if (this.isURLof(baseURL, "linkee.com")) {
-          shortURL = JSON.decode(req.responseText).result;
+          shortURL = JSON.legacyDecode(req.responseText).result;
 
         } else if (this.isURLof(baseURL, "lnk.by")) {
-          shortURL = JSON.decode(req.responseText).ShortUrl;
+          shortURL = JSON.legacyDecode(req.responseText).ShortUrl;
 
         } else if (this.isURLof(baseURL, "mcaf.ee")) {
-          shortURL = JSON.decode(req.responseText).data.url;
+          shortURL = JSON.legacyDecode(req.responseText).data.url;
 
         } else if (this.isURLof(baseURL, "mrte.ch")) {
-          shortURL = JSON.decode(req.responseText).shorturl;
+          shortURL = JSON.legacyDecode(req.responseText).shorturl;
 
         } else if (this.isURLof(baseURL, "ndurl.com")) {
-          shortURL = JSON.decode(req.responseText).data.shortURL;
+          shortURL = JSON.legacyDecode(req.responseText).data.shortURL;
 
         } else if (this.isURLof(baseURL, "ow.ly")) {
-          shortURL = JSON.decode(req.responseText).results.shortUrl;
+          shortURL = JSON.legacyDecode(req.responseText).results.shortUrl;
 
         } else if (this.isURLof(baseURL, "p.ly")) {
-          shortURL = JSON.decode(req.responseText).success;
+          shortURL = JSON.legacyDecode(req.responseText).success;
 
         } else if (this.isURLof(baseURL, "plo.cc")) {
-          shortURL = JSON.decode(req.responseText).hmmph;
+          shortURL = JSON.legacyDecode(req.responseText).hmmph;
 
         } else if (this.isURLof(baseURL, "qik.li")) {
-          shortURL = JSON.decode(req.responseText.replace(/^\(|\)$/g, ""))
+          shortURL = JSON.legacyDecode(req.responseText.replace(/^\(|\)$/g, ""))
                          .qikUrl;
 
         } else if (this.isURLof(baseURL, "rt.nu")) {
-          shortURL = JSON.decode(req.responseText).response;
+          shortURL = JSON.legacyDecode(req.responseText).response;
 
         } else if (this.isURLof(baseURL, "sfu.ca")) {
           shortURL = "http://get.sfu.ca/" +
-                     JSON.decode(req.responseText).shorturl;
+                     JSON.legacyDecode(req.responseText).shorturl;
 
         } else if (this.isURLof(baseURL, "su.pr") ||
                    this.isURLof(baseURL, "hj.to")) {
-          let obj = JSON.decode(req.responseText);
+          let obj = JSON.legacyDecode(req.responseText);
           for (var i in obj.results) {
             shortURL = obj.results[i].shortUrl;
             break;
           }
 
         } else if (this.isURLof(baseURL, "tra.kz")) {
-          shortURL = "http://tra.kz/" + JSON.decode(req.responseText).s;
+          shortURL = "http://tra.kz/" + JSON.legacyDecode(req.responseText).s;
 
         } else if (this.isURLof(baseURL, "2.gp") ||
                    this.isURLof(baseURL, "2.ly") ||
                    this.isURLof(baseURL, "safe.mn") ||
                    this.isURLof(baseURL, "tr.im")) {
-          shortURL = JSON.decode(req.responseText).url;
+          shortURL = JSON.legacyDecode(req.responseText).url;
 
         } else if (this.isURLof(baseURL, "ur.ly")) {
-          shortURL = "http://ur.ly/" + JSON.decode(req.responseText).code;
+          shortURL = "http://ur.ly/" + JSON.legacyDecode(req.responseText).code;
 
         } else if (this.isURLof(baseURL, "vb.ly")) {
-          shortURL = JSON.decode(req.responseText).shorturl;
+          shortURL = JSON.legacyDecode(req.responseText).shorturl;
 
         } else if (this.isURLof(baseURL, "zapt.in")) {
-          let obj = JSON.decode(req.responseText);
+          let obj = JSON.legacyDecode(req.responseText);
           for (var i in obj.results) {
             shortURL = obj.results[i].shortUrl;
             break;
@@ -457,7 +456,7 @@ var ShortenURL = {
 
         } else if (this.isURLof(baseURL, "zipmyurl.com")) {
           shortURL = "http://zipmyurl.com/" +
-                     JSON.decode(req.responseText).zipURL;
+                     JSON.legacyDecode(req.responseText).zipURL;
 
         // XML output formats
         } else if (this.isURLof(baseURL, "arm.in")) {
@@ -485,7 +484,7 @@ var ShortenURL = {
           shortURL = req.responseXML.getElementsByTagName("shortlink")[0]
                                     .textContent;
 
-        // plain text output formats
+        // plain text or html output formats
         } else if (this.isURLof(baseURL, "7rz.de")) {
           shortURL = "http://" + req.responseText;
 
@@ -500,6 +499,10 @@ var ShortenURL = {
 
         } else if (this.isURLof(baseURL, "micurl.com")) {
           shortURL = "http://micurl.com/" + req.responseText;
+
+        } else if (this.isURLof(baseURL, "al.ly")) {
+          shortURL = req.responseText.match(/http\:\/\/al\.ly\/\w+/)
+                                     .toString();
 
         } else if (this.isURLof(baseURL, "pt2.me")) {
           shortURL = "http://pt2.me/" + req.responseText;
