@@ -95,7 +95,7 @@
             <menupopup id="menupopup" />
           </menulist>
         </hbox>
-          <label>Options</label>
+        <label>Options</label>
         <checkbox id="mp3"
                   label="&options.mp3.caption;"
                   accesskey="3"
